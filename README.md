@@ -1,5 +1,3 @@
-
-
 # Install_GHDL_Ubintu
 
 ````bash
@@ -31,7 +29,16 @@ cd
 wget -c https://github.com/hneemann/Digital/releases/latest/download/Digital.zip
 rm Di*zip
 ````
-
+#Creamos un alias para Digital:
+````bash
+cd
+nano .bashrc
+````
+Al final del archivo agregamos las líneas:
+````bash
+export PATH=$PATH:$HOME/Digital/
+alias digital=Digital.sh
+````
 
 # Install_GHDL_Debian
 
