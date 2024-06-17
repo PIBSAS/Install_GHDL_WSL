@@ -1,4 +1,4 @@
-# Install_GHDL_Ubintu
+# Instalar GHDL en Ubuntu con WSL
 
 ````bash
 wsl --install
@@ -19,7 +19,7 @@ Agregamos GHDL a .bashrc:
 cd
 nano .bashrc
 ````
-Al final del archivo agregamos la linea:
+Al final del archivo agregamos la línea:
 ````bash
 export PATH=$PATH:$HOME/ghdl/bin/
 ````
@@ -40,10 +40,10 @@ export PATH=$PATH:$HOME/Digital/
 alias digital=Digital.sh
 ````
 
-# Install_GHDL_Debian
+# Instalar GHDL en Debian con WSL
 
 ````bash
-wsl --install debian
+wsl --install Debian
 ````
 
 ````bash
