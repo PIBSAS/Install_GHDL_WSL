@@ -38,7 +38,7 @@ echo "alias digital=Digital.sh" >> $HOME/.bashrc
 ````
 
 # Instalar GHDL en Debian con WSL
-
+GHDL Requiere GLIBC 2.34 y debian tiene 2.31 usar ubuntu
 ````bash
 wsl --install Debian
 ````
