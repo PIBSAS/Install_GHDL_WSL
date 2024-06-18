@@ -55,7 +55,7 @@ Ctrl + S, Ctrl + X.
 
 ````bash
 sudo apt update
-sudo apt install -y zlib1g-dev gnat-10
+sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-17-jdk
 ````
 
 ````bash
