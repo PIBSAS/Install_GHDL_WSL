@@ -6,7 +6,7 @@ wsl --install
 ### Actualizamos e instalamos dependencias:
 ````bash
 sudo apt update
-sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-19-jdk
+sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-19-jdk gtkwave
 ````
 
 ### Obtenemos GHDL:
@@ -45,7 +45,7 @@ wsl --install Debian
 ### Actualizamos e instalamos dependencias:
 ````bash
 sudo apt update
-sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-17-jdk
+sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-17-jdk gtkwave
 ````
 ### Obtenemos GHDL:
 ````bash
