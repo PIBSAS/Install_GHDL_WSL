@@ -1,4 +1,4 @@
-# Instalar GHDL en Ubuntu con WSL
+# Instalar GHDL en Ubuntu con WSL Usar este
 
 ````bash
 wsl --install
