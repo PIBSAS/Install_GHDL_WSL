@@ -18,27 +18,21 @@ rm g*tgz
 Agregamos GHDL a .bashrc:
 ````bash
 cd
-nano .bashrc
-````
-Al final del archivo agregamos la línea:
-````bash
 echo "export PATH=$PATH:$HOME/ghdl/bin/" >> $HOME/.bashrc
 ````
 # Obtenemos Digital un fork de LogiSim:
 ````bash
 cd
 wget -c https://github.com/hneemann/Digital/releases/latest/download/Digital.zip
+unzip Di*zip
 rm Di*zip
 ````
 #Creamos un alias para Digital:
 ````bash
 cd
-nano .bashrc
-````
-Al final del archivo agregamos las líneas:
-````bash
-export PATH=$PATH:$HOME/Digital/
-alias digital=Digital.sh
+echo "export PATH=$PATH:$HOME/Digital/" >> $HOME/.bashrc
+echo >> $HOME/.bashrc
+echo "alias digital=Digital.sh" >> $HOME/.bashrc
 ````
 
 # Instalar GHDL en Debian con WSL
