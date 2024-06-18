@@ -9,6 +9,7 @@ sudo apt update
 sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-19-jdk
 ````
 ````bash
+mkdir ghdl
 wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-gha-ubuntu-22.04-gcc.tgz -P ghdl/
 cd ghdl
 tar -xzvf ghdl*.tgz
