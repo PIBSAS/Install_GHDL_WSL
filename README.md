@@ -22,7 +22,7 @@ nano .bashrc
 ````
 Al final del archivo agregamos la línea:
 ````bash
-export PATH=$PATH:$HOME/ghdl/bin/
+echo "export PATH=$PATH:$HOME/ghdl/bin/" >> $HOME/.bashrc
 ````
 # Obtenemos Digital un fork de LogiSim:
 ````bash
