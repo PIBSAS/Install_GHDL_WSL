@@ -20,7 +20,7 @@ rm g*tgz
 ### Agregamos GHDL a .bashrc:
 ````bash
 cd
-echo "export PATH=$HOME/ghdl/bin/" >> $HOME/.bashrc
+echo 'export PATH="$HOME/ghdl/bin:$PATH"' >> $HOME/.bashrc
 source .bashrc
 ````
 ### Obtenemos Digital un fork de LogiSim:
@@ -33,8 +33,8 @@ rm Di*zip
 ### Creamos un alias para Digital:
 ````bash
 cd
-echo "export PATH=$HOME/Digital/" >> $HOME/.bashrc
-echo "alias digital=Digital.sh" >> $HOME/.bashrc
+echo 'export PATH="$HOME/Digital:$PATH"' >> $HOME/.bashrc
+echo 'alias digital=Digital.sh' >> $HOME/.bashrc
 source .bashrc
 ````
 
@@ -68,7 +68,7 @@ rm g*tgz
 ### Agregamos GHDL a .bashrc:
 ````bash
 cd
-echo "export PATH=$HOME/ghdl/bin/" >> $HOME/.bashrc
+echo 'export PATH="$HOME/ghdl/bin:$PATH"' >> $HOME/.bashrc
 source .bashrc
 ````
 ### Obtenemos Digital un fork de LogiSim:
@@ -81,8 +81,8 @@ rm Di*zip
 ### Creamos un alias para Digital:
 ````bash
 cd
-echo "export PATH=$HOME/Digital/" >> $HOME/.bashrc
-echo "alias digital=Digital.sh" >> $HOME/.bashrc
+echo 'export PATH="$HOME/Digital:$PATH"' >> $HOME/.bashrc
+echo 'alias digital=Digital.sh' >> $HOME/.bashrc
 source .bashrc
 ````
 
