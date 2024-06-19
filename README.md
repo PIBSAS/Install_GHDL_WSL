@@ -1,5 +1,5 @@
 # Instalar GHDL en Ubuntu con WSL Usar este
-
+![GHDL](https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true)
 ````bash
 wsl --install
 ````
