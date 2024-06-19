@@ -20,7 +20,8 @@ rm g*tgz
 ### Agregamos GHDL a .bashrc:
 ````bash
 cd
-echo "export PATH=$PATH:$HOME/ghdl/bin/" >> $HOME/.bashrc
+echo "export PATH=$HOME/ghdl/bin/" >> $HOME/.bashrc
+source .bashrc
 ````
 ### Obtenemos Digital un fork de LogiSim:
 ````bash
@@ -32,17 +33,26 @@ rm Di*zip
 ### Creamos un alias para Digital:
 ````bash
 cd
-echo "export PATH=$PATH:$HOME/Digital/" >> $HOME/.bashrc
-echo >> $HOME/.bashrc
+echo "export PATH=$HOME/Digital/" >> $HOME/.bashrc
 echo "alias digital=Digital.sh" >> $HOME/.bashrc
+source .bashrc
 ````
 
 # Instalar GHDL en Debian con WSL
-GHDL Requiere GLIBC 2.34 y debian tiene 2.31 usar ubuntu
+GHDL Requiere GLIBC 2.34 y Debian Bullseye tiene 2.31 , si instalamos desde Microsoft Store obtendremos Debian Bookworm que viene con GLIBC 2.36
+### Bullseye:
 ````bash
 wsl --install Debian
 ````
+#### Bookworm:
+
 ### Actualizamos e instalamos dependencias:
+### Bullseye:
+````bash
+sudo apt update
+sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-17-jdk gtkwave
+````
+### Bookworm:
 ````bash
 sudo apt update
 sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-17-jdk gtkwave
@@ -58,7 +68,8 @@ rm g*tgz
 ### Agregamos GHDL a .bashrc:
 ````bash
 cd
-echo "export PATH=$PATH:$HOME/ghdl/bin/" >> $HOME/.bashrc
+echo "export PATH=$HOME/ghdl/bin/" >> $HOME/.bashrc
+source .bashrc
 ````
 ### Obtenemos Digital un fork de LogiSim:
 ````bash
@@ -70,9 +81,9 @@ rm Di*zip
 ### Creamos un alias para Digital:
 ````bash
 cd
-echo "export PATH=$PATH:$HOME/Digital/" >> $HOME/.bashrc
-echo >> $HOME/.bashrc
+echo "export PATH=$HOME/Digital/" >> $HOME/.bashrc
 echo "alias digital=Digital.sh" >> $HOME/.bashrc
+source .bashrc
 ````
 
 - [GHDL](https://ghdl-rad.readthedocs.io/en/latest/examples/quick_start/README.html)
