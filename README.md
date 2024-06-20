@@ -60,7 +60,7 @@ O directamente desde el repo de winget:
 ````bash
 winget install Debian.Debian
 ````
-Lo llanzamos con:
+Lo lanzamos con:
 ````bash
 debian
 ````
@@ -104,7 +104,7 @@ wget -c https://github.com/hneemann/Digital/releases/latest/download/Digital.zip
 unzip Di*zip
 rm Di*zip
 ````
-### Creamos un alias para Digital:
+### Creamos un alias para Digital, asi lo lanzamos escribiendo en la Terminal ```` digital ````:
 ````bash
 cd
 echo 'export PATH="$HOME/Digital:$PATH"' >> $HOME/.bashrc
