@@ -132,19 +132,63 @@ source .bashrc
 - [32 bit Última version hoy. ghdl-MINGW32 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip)
 - [64 bit Última version hoy. ghdl-UCRT64 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip)
 
-Descomprimimos:
+- Descomprimimos:
 
-Desde PowerShell se puede descomprimir con:
-````bash
-cd Downloads/
-Expand-Archive ghdl*.zip -DestinationPath .
-````
+- Desde PowerShell se puede descomprimir con:
+  ````bash
+  cd Downloads/
+  Expand-Archive ghdl*.zip -DestinationPath .
+  ````
 
-El ejecutable quedará en(Podemos mover la carpeta a otro lugar:
-- 32 bit: `` Downloads/GHDL-MINGW32/GHDL/bin/ghdl ``
-- 64 bit: `` Downloads/GHDL/bin/ghdl ``
+### El ejecutable quedará en:
+- 32 bit: `` Downloads/ghdl-MINGW32/GHDL/bin/ghdl ``
+- 64 bit: `` Downloads/GHDL/bin/ghdl `` o `` Downloads/ghdl-UCRT64/GHDL/bin/ghdl ``
 
-### Obtenemos Digital un fork de LogiSim:
+### Mover a la unidad C por ejemplo:
+#### CMD:
+- 32 bit
+  ````bash
+  MOVE Downloads/ghdl-MINGW32/GHDL C:\
+  ````
+  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+  ````bash
+  setx PATH "%PATH%;C:\GHDL\bin"
+  ````
+- 64bit
+  ````bash
+  MOVE Downloads/GHDL C:\
+  ````
+  Si se descomprime desde el explorador:
+   ````bash
+  MOVE Downloads/ghdl-UCRT64/GHDL C:\
+  ````
+  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+  ````bash
+  setx PATH "%PATH%;C:\GHDL\bin"
+  ````
+#### Powershell:
+- 32 bit
+  ````bash
+  mv Downloads/ghdl-MINGW32/GHDL C:\
+  ````
+  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+  ````bash
+  $Env:PATH += "C:\GHDL\bin"
+  ````
+- 64bit
+  ````bash
+  mv Downloads/GHDL C:\
+  ````
+  Si se descomprime desde el explorador:
+   ````bash
+   mv Downloads/ghdl-UCRT64/GHDL C:\
+   ````
+  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+  ````bash
+  $Env:PATH += "C:\GHDL\bin"
+  ````
+
+## Obtenemos Digital un fork de LogiSim:
 - Dependencia [Java Runtime Environment >= 1.8.0](https://javadl.oracle.com/webapps/download/AutoDL?BundleId=249851_43d62d619be4e416215729597d70b8ac)
   ````bash
   winget install "Java 8"
@@ -160,33 +204,32 @@ Expand-Archive Di*.zip -DestinationPath .
 rm Di*zip
 ````
 
-#### Por ejemplo podemos mover el directorio Digital a C para luego agregarlo a la variable de entorno:
-
+### Mover a la unidad C por ejemplo:
 #### CMD:
-````bash
-MOVE Downloads/Digital C:\
-````
-Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
-````bash
-setx PATH "%PATH%;C:\Digital"
-````
+  ````bash
+  MOVE Downloads/Digital C:\
+  ````
+  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+  ````bash
+  setx PATH "%PATH%;C:\Digital"
+  ````
 
 ## GTKWave
-Visor de diagrama temporal archivo `` .vcd `` generado con GHDL.
+  Visor de diagrama temporal archivo `` .vcd `` generado con GHDL.
 ### Opción fácil, bajamos una versión antigua, que nos evita compilar GTKWave:
 - [32 bit](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win32/gtkwave-3.3.100-bin-win32.zip/download)
 - [64 bit](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip/download)
 
-Descomprimimos el zip.
+- Descomprimimos el zip.
 
-Desde PowerShell se puede descomprimir con:
-````bash
-cd Downloads/
-Expand-Archive gtk*.zip -DestinationPath .
-````
-El ejecutable quedará en:
-- 32 bit: `` Downloads/gtkwave/bin/gtkwave ``
-- 64 bit: `` Downloads/gtkwave64/bin/gtkwave ``
+- Desde PowerShell se puede descomprimir con:
+  ````bash
+  cd Downloads/
+  Expand-Archive gtk*.zip -DestinationPath .
+  ````
+  El ejecutable quedará en:
+  - 32 bit: `` Downloads/gtkwave/bin/gtkwave ``
+  - 64 bit: `` Downloads/gtkwave64/bin/gtkwave ``
 
 #### CMD:
 - 32 bit
@@ -223,13 +266,12 @@ El ejecutable quedará en:
   $Env:PATH += "C:\gtkwave64\bin"
   ````
 
-
 ### Opción no tan fácil, bajamos el código fuente para compilar una versión más actual(últimos cambios hace 2 días):
 #### Cygwin necesario para Compilar GTKWave:
-- [Cygwin](https://www.cygwin.com/install.html)
-- [Descarga directa](https://www.cygwin.com/setup-x86_64.exe)
-- [Instrucciones de instalación](https://gtkwave.github.io/gtkwave/install/win.html)
-- [Instrucciones de compilación](https://gtkwave.github.io/gtkwave/install/unix_linux.html#compiling-and-installing)
+  - [Cygwin](https://www.cygwin.com/install.html)
+  - [Descarga directa](https://www.cygwin.com/setup-x86_64.exe)
+  - [Instrucciones de instalación](https://gtkwave.github.io/gtkwave/install/win.html)
+  - [Instrucciones de compilación](https://gtkwave.github.io/gtkwave/install/unix_linux.html#compiling-and-installing)
 
 ### Ejecutamos el instalador:
   1. ![](media/01.png)
@@ -244,22 +286,22 @@ El ejecutable quedará en:
   10. ![](media/10.png)
   11. ![](media/11.png)
 
-Una vez instalado usamos Cygwin para instalar las dependencias de GTKWave:
-````bash
-Downloads/.\setup-x86_64.exe -q -P gcc-g++,gperf,libbz2-devel,liblzma-devel,zlib-devel,libgtk3-devel,make,git,xinit,tcl-tk-devel,autotools-dev,automake,libJudy-devel
-````
+#### Una vez instalado usamos Cygwin para instalar las dependencias de GTKWave:
+  ````bash
+  Downloads/.\setup-x86_64.exe -q -P gcc-g++,gperf,libbz2-devel,liblzma-devel,zlib-devel,libgtk3-devel,make,git,xinit,tcl-tk-devel,autotools-dev,automake,libJudy-devel
+  ````
   12. ![](media/12.png)
   13. ![](media/13.png)
 
 ### Abrimos la Terminal de  Cygwin, clonamos la repo de GTKWave y Compilamos:
 
-````bash
-git clone https://github.com/gtkwave/gtkwave/ -b lts gtkwave
-cd gtkwave/gtkwave3-gtk3 && ./autogen.sh
-./configure --enable-gtk3 --enable-judy
-make -j
-make install
-````
+  ````bash
+  git clone https://github.com/gtkwave/gtkwave/ -b lts gtkwave
+  cd gtkwave/gtkwave3-gtk3 && ./autogen.sh
+  ./configure --enable-gtk3 --enable-judy
+  make -j
+  make install
+  ````
   14. ![](media/14.png)
 
 #### Ahora iniciamos XServer para poder ejecutar aplicaciones con GUI:
@@ -270,10 +312,10 @@ Aparecerán 2 iconos de sistemas.
   15. ![](media/15.png)
   
 #### Luego abrimos otra Cygwin Terminal y lanzamos GTKWave:
-````bash
-gtkwave
-````
-O desde el icono del Sistema opción Accesorios -> GTKWave
+  ````bash
+  gtkwave
+  ````
+  O desde el icono del Sistema opción Accesorios -> GTKWave
   16. ![](media/16.png)
   
 ### Como Desinstalar Cygwin correctamente:
