@@ -144,11 +144,11 @@ source .bashrc
     ````
     
   - 64 bit:
-  ````bash
-  cd Downloads/
-  wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip -OutFile ghdl-UCRT64.zip
-  Expand-Archive ghdl*.zip -DestinationPath .
-  ````
+    ````bash
+    cd Downloads/
+    wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip -OutFile ghdl-UCRT64.zip
+    Expand-Archive ghdl*.zip -DestinationPath .
+    ````
 
 ### El ejecutable quedará en:
 - 32 bit: `` Downloads/ghdl-MINGW32/GHDL/bin/ghdl ``
@@ -206,7 +206,7 @@ source .bashrc
   ````
 ### Descargando manualmente el zip o desde PowerShell:
 
-- [Descrga ZIP](https://github.com/hneemann/Digital/releases/download/v0.30/Digital.zip)
+- [Descarga ZIP](https://github.com/hneemann/Digital/releases/download/v0.30/Digital.zip)
 - Descomprimir con el Explorador de Windows.
 - O con PowerShell descargamos y descomprimimos:
   ````bash
@@ -321,12 +321,13 @@ source .bashrc
 
 #### Una vez instalado usamos Cygwin para instalar las dependencias de GTKWave:
   ````bash
-  Downloads/.\setup-x86_64.exe -q -P gcc-g++,gperf,libbz2-devel,liblzma-devel,zlib-devel,libgtk3-devel,make,git,xinit,tcl-tk-devel,autotools-dev,automake,libJudy-devel
+  cd Downloads/
+  .\setup-x86_64.exe -q -P gcc-g++,gperf,libbz2-devel,liblzma-devel,zlib-devel,libgtk3-devel,make,git,xinit,tcl-tk-devel,autotools-dev,automake,libJudy-devel
   ````
   12. ![](media/12.png)
   13. ![](media/13.png)
 
-### Abrimos la Terminal de  Cygwin, clonamos la repo de GTKWave y Compilamos:
+### Abrimos la Terminal de Cygwin, clonamos la repo de GTKWave y Compilamos:
 
   ````bash
   git clone https://github.com/gtkwave/gtkwave/ -b lts gtkwave
@@ -338,9 +339,9 @@ source .bashrc
   14. ![](media/14.png)
 
 #### Ahora iniciamos XServer para poder ejecutar aplicaciones con GUI:
-````bash
-startxwin
-````
+  ````bash
+  startxwin
+  ````
 Aparecerán 2 iconos de sistemas.
   15. ![](media/15.png)
   
@@ -353,20 +354,20 @@ Aparecerán 2 iconos de sistemas.
   
 ### Como Desinstalar Cygwin correctamente:
 Si el Sistema esta en Español abre CMD:
-````bash
-takeown /f C:\cygwin64 /r /d s
-icacls c:\cygwin64 /t /grant todos:f
-del /s /q C:\cygwin64
-rmdir /s /q C:\cygwin64
-````
+  ````bash
+  takeown /f C:\cygwin64 /r /d s
+  icacls c:\cygwin64 /t /grant todos:f
+  del /s /q C:\cygwin64
+  rmdir /s /q C:\cygwin64
+  ````
 
 Si el Sistema esta en Inglés abre CMD:
-````bash
-takeown /f C:\cygwin64 /r /d y
-icacls c:\cygwin64 /t /grant everyone:f
-del /s /q C:\cygwin64
-rmdir /s /q C:\cygwin64
-````
+  ````bash
+  takeown /f C:\cygwin64 /r /d y
+  icacls c:\cygwin64 /t /grant everyone:f
+  del /s /q C:\cygwin64
+  rmdir /s /q C:\cygwin64
+  ````
 
 - [GHDL](https://ghdl-rad.readthedocs.io/en/latest/examples/quick_start/README.html)
 - [Digital](https://github.com/hneemann/Digital/releases/)
