@@ -176,13 +176,14 @@ make -j
 make install
 ````
   14. ![](media/14.png)
-  15. 
+
 #### Ahora iniciamos XServer para poder ejecutar aplicaciones con GUI:
 ````bash
 startxwin
 ````
 Aparecerán 2 iconos de sistemas.
   15. ![](media/15.png)
+  
 #### Luego abrimos otra Cygwin Terminal y lanzamos GTKWave:
 ````bash
 gtkwave
