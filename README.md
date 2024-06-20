@@ -1,5 +1,5 @@
 # Instalar GHDL en Ubuntu con WSL Usar este
-![GHDL](https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true)
+![GHDL](https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true) ![Ubuntu](https://assets.ubuntu.com/v1/a7e3c509-Canonical%20Ubuntu.svg)
 ````bash
 wsl --install
 ````
@@ -40,6 +40,7 @@ source .bashrc
 
 # Instalar GHDL en Debian con WSL
 ![Debian](https://www.debian.org/logos/openlogo-100.png)
+
 GHDL Requiere GLIBC 2.34 y Debian Bullseye tiene 2.31 , si instalamos desde Microsoft Store obtendremos Debian Bookworm que viene con GLIBC 2.36
 
 ### Bullseye:
