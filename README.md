@@ -123,13 +123,92 @@ source .bashrc
 ````
 
 # Windows:
-### Cygwin necesario para GTKWave:
+### Versión antigua, que evita compilar GTKWave:
+- [32 bit](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win32/gtkwave-3.3.100-bin-win32.zip/download)
+- [64 bit](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip/download)
+
+Descomprimimos el zip.
+
+Desde PowerShell se puede descomprimir con:
+````bash
+cd Downloads/
+ Expand-Archive gtk*.zip -DestinationPath .
+````
+El ejecutable quedará en:
+- 32 bit: `` Downloads/gtkwave/bin/gtkwave ``
+- 64 bit: `` Downloads/gtkwave64/bin/gtkwave ``
+
+### Ultima versión:
+### Cygwin necesario para Compilar GTKWave:
 Visor de diagrama temporal archivo `` .vcd `` generado con GHDL.
 - [Cygwin](https://www.cygwin.com/install.html)
 - [Descarga directa](https://www.cygwin.com/setup-x86_64.exe)
+- [Instrucciones de instalación](https://gtkwave.github.io/gtkwave/install/win.html)
+- [Instrucciones de compilación](https://gtkwave.github.io/gtkwave/install/unix_linux.html#compiling-and-installing)
 
 ### Ejecutamos el instalador:
--
+  1. ![](media/01.png)
+  2. ![](media/02.png)
+  3. ![](media/03.png)
+  4. ![](media/04.png)
+  5. ![](media/05.png)
+  6. ![](media/06.png)
+  7. ![](media/07.png)
+  8. ![](media/08.png)
+  9. ![](media/09.png)
+  10. ![](media/10.png)
+  11. ![](media/11.png)
+
+Una vez instalado usamos Cygwin para instalar las dependencias de GTKWave:
+````bash
+Downloads/.\setup-x86_64.exe -q -P gcc-g++,gperf,libbz2-devel,liblzma-devel,zlib-devel,libgtk3-devel,make,git,xinit,tcl-tk-devel,autotools-dev,automake,libJudy-devel
+````
+  12. ![](media/12.png)
+  13. ![](media/13.png)
+
+### Abrimos la Terminal de  Cygwin, clonamos la repo de GTKWave y Compilamos:
+
+````bash
+git clone https://github.com/gtkwave/gtkwave/ -b lts gtkwave
+cd gtkwave/gtkwave3-gtk3 && ./autogen.sh
+./configure --enable-gtk3 --enable-judy
+make -j
+make install
+````
+  14. ![](media/14.png)
+  15. 
+#### Ahora iniciamos XServer para poder ejecutar aplicaciones con GUI:
+````bash
+startxwin
+````
+Aparecerán 2 iconos de sistemas.
+  15. ![](media/15.png)
+#### Luego abrimos otra Cygwin Terminal y lanzamos GTKWave:
+````bash
+gtkwave
+````
+O desde el icono del Sistema opción Accesorios -> GTKWave
+  16. ![](media/16.png)
+  
+### Como Desinstalar Cygwin correctamente:
+Si el Sistema esta en Español abre CMD:
+````bash
+takeown /f C:\cygwin64 /r /d s
+icacls c:\cygwin64 /t /grant todos:f
+del /s /q C:\cygwin64
+rmdir /s /q C:\cygwin64
+````
+
+Si el Sistema esta en Inglés abre CMD:
+````bash
+takeown /f C:\cygwin64 /r /d y
+icacls c:\cygwin64 /t /grant everyone:f
+del /s /q C:\cygwin64
+rmdir /s /q C:\cygwin64
+````
 
 - [GHDL](https://ghdl-rad.readthedocs.io/en/latest/examples/quick_start/README.html)
 - [Digital](https://github.com/hneemann/Digital/releases/)
+- [Manual GTKWave](https://gtkwave.sourceforge.net/gtkwave.pdf)
+- [GitHub GTKWave](https://github.com/gtkwave/gtkwave)
+- [SourceForge GTKWave](https://sourceforge.net/projects/gtkwave/)
