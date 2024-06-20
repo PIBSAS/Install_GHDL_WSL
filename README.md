@@ -123,6 +123,11 @@ source .bashrc
 ````
 
 # Windows:
+<p align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Windows_11_logo.svg/1280px-Windows_11_logo.svg.png" style="width:50%" />
+<image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
+</p>
+
 ### Versión antigua, que evita compilar GTKWave:
 - [32 bit](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win32/gtkwave-3.3.100-bin-win32.zip/download)
 - [64 bit](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip/download)
