@@ -122,5 +122,14 @@ echo 'alias digital=Digital.sh' >> $HOME/.bashrc
 source .bashrc
 ````
 
+# Windows:
+### Cygwin necesario para GTKWave:
+Visor de diagrama temporal archivo `` .vcd `` generado con GHDL.
+- [Cygwin](https://www.cygwin.com/install.html)
+- [Descarga directa](https://www.cygwin.com/setup-x86_64.exe)
+
+### Ejecutamos el instalador:
+-
+
 - [GHDL](https://ghdl-rad.readthedocs.io/en/latest/examples/quick_start/README.html)
 - [Digital](https://github.com/hneemann/Digital/releases/)
