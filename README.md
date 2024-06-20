@@ -39,6 +39,7 @@ source .bashrc
 ````
 
 # Instalar GHDL en Debian con WSL
+![Debian](https://www.debian.org/logos/openlogo-100.png)
 GHDL Requiere GLIBC 2.34 y Debian Bullseye tiene 2.31 , si instalamos desde Microsoft Store obtendremos Debian Bookworm que viene con GLIBC 2.36
 
 ### Bullseye:
