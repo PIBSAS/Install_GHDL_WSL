@@ -229,7 +229,7 @@ source .bashrc
   ````bash
   mv Downloads/Digital C:\
   ````
-  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+  Agregamos la carpeta a la variable de entorno del Sistema para poder ejecutarlo desde la Terminal al solo escribir `` Digital``.
   ````bash
   $Env:PATH += "C:\Digital\"
   ````
