@@ -44,8 +44,6 @@ GHDL Requiere GLIBC 2.34 y Debian Bullseye tiene 2.31 , si instalamos desde Micr
 ````bash
 wsl --install Debian
 ````
-#### Bookworm:
-
 ### Actualizamos e instalamos dependencias:
 ### Bullseye:
 ````bash
@@ -53,10 +51,31 @@ sudo apt update
 sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-17-jdk gtkwave
 ````
 ### Bookworm:
+Usando Winget evitamos usar la interfaz grafica
+````bash
+winget install Debian -s msstore
+````
+O directamente desde el repo de winget:
+````bash
+winget install Debian.Debian
+````
+
+Agregamos temporalmente la repo de Bullseye para obtener gnat-10:
+````bash
+echo 'deb http://deb.debian.org/debian bullseye main' | sudo tee -a /etc/apt/sources.list
+````
+
+### Actualizamos e instalamos dependencias:
 ````bash
 sudo apt update
-sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-17-jdk gtkwave
+sudo apt install -y gnat-10
+sudo apt install -y wget zlib1g-dev unzip openjdk-17-jdk gtkwave
 ````
+Eliminamos el repo de bullseye(Opcional, podmos dejarlo):
+````bash
+sudo sed -i '$ d' /etc/apt/sources.list
+````
+
 ### Obtenemos GHDL:
 ````bash
 mkdir ghdl
