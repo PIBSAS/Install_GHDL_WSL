@@ -133,8 +133,7 @@ source .bashrc
 - [Descarga 32 bit Última version hoy. ghdl-MINGW32 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip)
 - [Descarga 64 bit Última version hoy. ghdl-UCRT64 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip)
 
-- Descomprimimos:
-
+- Descomprimimos con el Explorador de Windows.
 - O Desde PowerShell se puede descargar y descomprimir con:
   - 32 bit:
     ````bash
@@ -177,7 +176,7 @@ source .bashrc
   ````bash
   setx PATH "%PATH%;C:\GHDL\bin\"
   ````
-#### Con Powershell:
+#### Con PowerShell:
 - 32 bit
   ````bash
   mv Downloads/ghdl-MINGW32/GHDL C:\
@@ -205,17 +204,17 @@ source .bashrc
   ````bash
   winget install "Java 8"
   ````
-### Descargando manualmente el zip o desde Powershell:
+### Descargando manualmente el zip o desde PowerShell:
 
 - [Descrga ZIP](https://github.com/hneemann/Digital/releases/download/v0.30/Digital.zip)
-
-#### Powershell:
-````bash
-cd Downloads/
-wget https://github.com/hneemann/Digital/releases/latest/download/Digital.zip -OutFile Digital.zip
-Expand-Archive Di*.zip -DestinationPath .
-rm Di*zip
-````
+- Descomprimir con el Explorador de Windows.
+- O con PowerShell descargamos y descomprimimos:
+  ````bash
+  cd Downloads/
+  wget https://github.com/hneemann/Digital/releases/latest/download/Digital.zip -OutFile Digital.zip
+  Expand-Archive Di*.zip -DestinationPath .
+  rm Di*zip
+  ````
 
 ### Mover a la unidad C por ejemplo:
 #### Con CMD:
@@ -226,7 +225,7 @@ rm Di*zip
   ````bash
   setx PATH "%PATH%;C:\Digital\"
   ````
-#### Con Powershell:
+#### Con PowerShell:
   ````bash
   mv Downloads/Digital C:\
   ````
@@ -237,12 +236,12 @@ rm Di*zip
 
 ## GTKWave
   Visor de diagrama temporal archivo `` .vcd `` generado con GHDL.
+
 ### Opción fácil, bajamos una versión antigua, que nos evita compilar GTKWave:
 - [Descargar 32 bit](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win32/gtkwave-3.3.100-bin-win32.zip/download)
 - [Descarcar 64 bit](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip/download)
 
-- Descomprimimos el zip.
-
+- Descomprimimos con el Explorador de Windows.
 - O Desde PowerShell se puede descargar y descomprimir con:
   - 32 bit:
     ````bash
@@ -282,7 +281,7 @@ rm Di*zip
   ````bash
   setx PATH "%PATH%;C:\gtkwave4\bin\"
   ````
-#### Con Powershell:
+#### Con PowerShell:
 - 32 bit
   ````bash
   mv Downloads/gtkwave C:\
