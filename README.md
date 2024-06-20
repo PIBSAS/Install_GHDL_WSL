@@ -71,9 +71,10 @@ sudo apt update
 sudo apt install -y gnat-10
 sudo apt install -y wget zlib1g-dev unzip openjdk-17-jdk gtkwave
 ````
-Eliminamos el repo de bullseye(Opcional, podmos dejarlo):
+Eliminamos el repo de bullseye(Opcional, podemos dejarlo):
 ````bash
 sudo sed -i '$ d' /etc/apt/sources.list
+sudo apt update
 ````
 
 ### Obtenemos GHDL:
