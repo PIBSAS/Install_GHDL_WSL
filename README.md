@@ -61,7 +61,7 @@ wsl --install Debian
 sudo apt update
 sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-17-jdk gtkwave
 ````
-## Bookworm:
+### Bookworm:
 Usando Winget evitamos usar la interfaz grafica
 ````bash
 winget install Debian -s msstore
@@ -128,13 +128,13 @@ source .bashrc
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
 </p>
 
-- [Verificamos GHDL última versión](https://github.com/ghdl/ghdl/latest/releases/)
-- [32 bit Última version hoy. ghdl-MINGW32 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip)
-- [64 bit Última version hoy. ghdl-UCRT64 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip)
+- [Verificamos cual es la última versión de GHDL](https://github.com/ghdl/ghdl/latest/releases/)
+- [Descarga 32 bit Última version hoy. ghdl-MINGW32 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip)
+- [Descarga 64 bit Última version hoy. ghdl-UCRT64 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip)
 
 - Descomprimimos:
 
-- Desde PowerShell se puede descomprimir con:
+- O Desde PowerShell se puede descomprimir con:
   ````bash
   cd Downloads/
   Expand-Archive ghdl*.zip -DestinationPath .
@@ -145,14 +145,14 @@ source .bashrc
 - 64 bit: `` Downloads/GHDL/bin/ghdl `` o `` Downloads/ghdl-UCRT64/GHDL/bin/ghdl ``
 
 ### Mover a la unidad C por ejemplo:
-#### CMD:
+#### Con CMD:
 - 32 bit
   ````bash
   MOVE Downloads/ghdl-MINGW32/GHDL C:\
   ````
   Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
   ````bash
-  setx PATH "%PATH%;C:\GHDL\bin"
+  setx PATH "%PATH%;C:\GHDL\bin\"
   ````
 - 64bit
   ````bash
@@ -164,16 +164,16 @@ source .bashrc
   ````
   Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
   ````bash
-  setx PATH "%PATH%;C:\GHDL\bin"
+  setx PATH "%PATH%;C:\GHDL\bin\"
   ````
-#### Powershell:
+#### Con Powershell:
 - 32 bit
   ````bash
   mv Downloads/ghdl-MINGW32/GHDL C:\
   ````
   Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
   ````bash
-  $Env:PATH += "C:\GHDL\bin"
+  $Env:PATH += "C:\GHDL\bin\"
   ````
 - 64bit
   ````bash
@@ -185,18 +185,20 @@ source .bashrc
    ````
   Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
   ````bash
-  $Env:PATH += "C:\GHDL\bin"
+  $Env:PATH += "C:\GHDL\bin\"
   ````
 
 ## Obtenemos Digital un fork de LogiSim:
-- Dependencia [Java Runtime Environment >= 1.8.0](https://javadl.oracle.com/webapps/download/AutoDL?BundleId=249851_43d62d619be4e416215729597d70b8ac)
+- Dependencia [Descarga Java Runtime Environment >= 1.8.0](https://javadl.oracle.com/webapps/download/AutoDL?BundleId=249851_43d62d619be4e416215729597d70b8ac)
+#### O con Winget:
   ````bash
   winget install "Java 8"
   ````
 ### Descargando manualmente el zip o desde Powershell:
 
-- [ZIP](https://github.com/hneemann/Digital/releases/download/v0.30/Digital.zip)
+- [Descrga ZIP](https://github.com/hneemann/Digital/releases/download/v0.30/Digital.zip)
 
+#### Powershell:
 ````bash
 cd Downloads/
 wget https://github.com/hneemann/Digital/releases/latest/download/Digital.zip -OutFile Digital.zip
@@ -205,20 +207,28 @@ rm Di*zip
 ````
 
 ### Mover a la unidad C por ejemplo:
-#### CMD:
+#### Con CMD:
   ````bash
   MOVE Downloads/Digital C:\
   ````
   Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
   ````bash
-  setx PATH "%PATH%;C:\Digital"
+  setx PATH "%PATH%;C:\Digital\"
+  ````
+#### Con Powershell:
+  ````bash
+  mv Downloads/Digital C:\
+  ````
+  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+  ````bash
+  $Env:PATH += "C:\Digital\"
   ````
 
 ## GTKWave
   Visor de diagrama temporal archivo `` .vcd `` generado con GHDL.
 ### Opción fácil, bajamos una versión antigua, que nos evita compilar GTKWave:
-- [32 bit](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win32/gtkwave-3.3.100-bin-win32.zip/download)
-- [64 bit](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip/download)
+- [Descargar 32 bit](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win32/gtkwave-3.3.100-bin-win32.zip/download)
+- [Descarcar 64 bit](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip/download)
 
 - Descomprimimos el zip.
 
@@ -231,14 +241,14 @@ rm Di*zip
   - 32 bit: `` Downloads/gtkwave/bin/gtkwave ``
   - 64 bit: `` Downloads/gtkwave64/bin/gtkwave ``
 
-#### CMD:
+#### Con CMD:
 - 32 bit
   ````bash
   MOVE Downloads/gtkwave C:\
   ````
   Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
   ````bash
-  setx PATH "%PATH%;C:\gtkwave\bin"
+  setx PATH "%PATH%;C:\gtkwave\bin\"
   ````
 - 64bit
   ````bash
@@ -246,16 +256,16 @@ rm Di*zip
   ````
   Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
   ````bash
-  setx PATH "%PATH%;C:\gtkwave4\bin"
+  setx PATH "%PATH%;C:\gtkwave4\bin\"
   ````
-#### Powershell:
+#### Con Powershell:
 - 32 bit
   ````bash
   mv Downloads/gtkwave C:\
   ````
   Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
   ````bash
-  $Env:PATH += "C:\gtkwave\bin"
+  $Env:PATH += "C:\gtkwave\bin\"
   ````
 - 64bit
   ````bash
@@ -263,7 +273,7 @@ rm Di*zip
   ````
   Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
   ````bash
-  $Env:PATH += "C:\gtkwave64\bin"
+  $Env:PATH += "C:\gtkwave64\bin\"
   ````
 
 ### Opción no tan fácil, bajamos el código fuente para compilar una versión más actual(últimos cambios hace 2 días):
