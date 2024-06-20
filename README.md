@@ -40,6 +40,7 @@ source .bashrc
 
 # Instalar GHDL en Debian con WSL
 GHDL Requiere GLIBC 2.34 y Debian Bullseye tiene 2.31 , si instalamos desde Microsoft Store obtendremos Debian Bookworm que viene con GLIBC 2.36
+
 ### Bullseye:
 ````bash
 wsl --install Debian
@@ -64,7 +65,8 @@ Lo llanzamos con:
 debian
 ````
 Creamos usuario y contraseña.
-Agregamos temporalmente la repo de Bullseye para obtener gnat-10:
+
+### Agregamos temporalmente la repo de Bullseye para obtener gnat-10:
 ````bash
 echo 'deb http://deb.debian.org/debian bullseye main' | sudo tee -a /etc/apt/sources.list
 ````
@@ -75,7 +77,7 @@ sudo apt update
 sudo apt install -y gnat-10
 sudo apt install -y wget zlib1g-dev unzip openjdk-17-jdk gtkwave
 ````
-Eliminamos el repo de bullseye(Opcional, podemos dejarlo):
+### Eliminamos el repo de bullseye(Opcional, podemos dejarlo):
 ````bash
 sudo sed -i '$ d' /etc/apt/sources.list
 sudo apt update
