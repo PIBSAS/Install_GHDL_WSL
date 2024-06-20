@@ -159,6 +159,18 @@ wget https://github.com/hneemann/Digital/releases/latest/download/Digital.zip -O
 Expand-Archive Di*.zip -DestinationPath .
 rm Di*zip
 ````
+
+#### Por ejemplo podemos mover el directorio Digital a C para luego agregarlo a la variable de entorno:
+
+#### CMD:
+````bash
+MOVE Downloads/Digital C:\
+````
+Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+````bash
+setx PATH "%PATH%;C:\Digital"
+````
+
 ## GTKWave
 Visor de diagrama temporal archivo `` .vcd `` generado con GHDL.
 ### Opción fácil, bajamos una versión antigua, que nos evita compilar GTKWave:
@@ -175,6 +187,42 @@ Expand-Archive gtk*.zip -DestinationPath .
 El ejecutable quedará en:
 - 32 bit: `` Downloads/gtkwave/bin/gtkwave ``
 - 64 bit: `` Downloads/gtkwave64/bin/gtkwave ``
+
+#### CMD:
+- 32 bit
+  ````bash
+  MOVE Downloads/gtkwave C:\
+  ````
+  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+  ````bash
+  setx PATH "%PATH%;C:\gtkwave\bin"
+  ````
+- 64bit
+  ````bash
+  MOVE Downloads/gtkwave64 C:\
+  ````
+  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+  ````bash
+  setx PATH "%PATH%;C:\gtkwave4\bin"
+  ````
+#### Powershell:
+- 32 bit
+  ````bash
+  mv Downloads/gtkwave C:\
+  ````
+  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+  ````bash
+  $Env:PATH += "C:\gtkwave\bin"
+  ````
+- 64bit
+  ````bash
+  mv Downloads/gtkwave64 C:\
+  ````
+  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+  ````bash
+  $Env:PATH += "C:\gtkwave64\bin"
+  ````
+
 
 ### Opción no tan fácil, bajamos el código fuente para compilar una versión más actual(últimos cambios hace 2 días):
 #### Cygwin necesario para Compilar GTKWave:
