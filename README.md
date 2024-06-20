@@ -59,7 +59,11 @@ O directamente desde el repo de winget:
 ````bash
 winget install Debian.Debian
 ````
-
+Lo llanzamos con:
+````bash
+debian
+````
+Creamos usuario y contraseña.
 Agregamos temporalmente la repo de Bullseye para obtener gnat-10:
 ````bash
 echo 'deb http://deb.debian.org/debian bullseye main' | sudo tee -a /etc/apt/sources.list
