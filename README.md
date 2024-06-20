@@ -122,13 +122,46 @@ echo 'alias digital=Digital.sh' >> $HOME/.bashrc
 source .bashrc
 ````
 
-# Windows:
+# Instalar GHDL en Windows:
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Windows_11_logo.svg/1280px-Windows_11_logo.svg.png" style="width:50%" />
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
 </p>
 
-### Versión antigua, que evita compilar GTKWave:
+- [Verificamos GHDL última versión](https://github.com/ghdl/ghdl/latest/releases/)
+- [32 bit Última version hoy. ghdl-MINGW32 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip)
+- [64 bit Última version hoy. ghdl-UCRT64 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip)
+
+Descomprimimos:
+
+Desde PowerShell se puede descomprimir con:
+````bash
+cd Downloads/
+Expand-Archive ghdl*.zip -DestinationPath .
+````
+
+El ejecutable quedará en(Podemos mover la carpeta a otro lugar:
+- 32 bit: `` Downloads/GHDL-MINGW32/GHDL/bin/ghdl ``
+- 64 bit: `` Downloads/GHDL/bin/ghdl ``
+
+### Obtenemos Digital un fork de LogiSim:
+- Dependencia [Java Runtime Environment >= 1.8.0](https://javadl.oracle.com/webapps/download/AutoDL?BundleId=249851_43d62d619be4e416215729597d70b8ac)
+  ````bash
+  winget install "Java 8"
+  ````
+### Descargando manualmente el zip o desde Powershell:
+
+- [ZIP](https://github.com/hneemann/Digital/releases/download/v0.30/Digital.zip)
+
+````bash
+cd Downloads/
+wget https://github.com/hneemann/Digital/releases/latest/download/Digital.zip -OutFile Digital.zip
+Expand-Archive Di*.zip -DestinationPath .
+rm Di*zip
+````
+## GTKWave
+Visor de diagrama temporal archivo `` .vcd `` generado con GHDL.
+### Opción fácil, bajamos una versión antigua, que nos evita compilar GTKWave:
 - [32 bit](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win32/gtkwave-3.3.100-bin-win32.zip/download)
 - [64 bit](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip/download)
 
@@ -137,15 +170,14 @@ Descomprimimos el zip.
 Desde PowerShell se puede descomprimir con:
 ````bash
 cd Downloads/
- Expand-Archive gtk*.zip -DestinationPath .
+Expand-Archive gtk*.zip -DestinationPath .
 ````
 El ejecutable quedará en:
 - 32 bit: `` Downloads/gtkwave/bin/gtkwave ``
 - 64 bit: `` Downloads/gtkwave64/bin/gtkwave ``
 
-### Ultima versión:
-### Cygwin necesario para Compilar GTKWave:
-Visor de diagrama temporal archivo `` .vcd `` generado con GHDL.
+### Opción no tan fácil, bajamos el código fuente para compilar una versión más actual(últimos cambios hace 2 días):
+#### Cygwin necesario para Compilar GTKWave:
 - [Cygwin](https://www.cygwin.com/install.html)
 - [Descarga directa](https://www.cygwin.com/setup-x86_64.exe)
 - [Instrucciones de instalación](https://gtkwave.github.io/gtkwave/install/win.html)
