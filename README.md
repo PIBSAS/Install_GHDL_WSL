@@ -42,14 +42,14 @@ echo 'alias digital=Digital.sh' >> $HOME/.bashrc
 source .bashrc
 ````
 
+
 # Instalar GHDL en Debian con WSL
 <p align="center">
 <img src="https://www.debian.org/logos/openlogo.svg" style="width:50% height:100%" />
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
 </p>
 
-
-GHDL Requiere GLIBC 2.34 y Debian Bullseye tiene 2.31 , si instalamos desde Microsoft Store obtendremos Debian Bookworm que viene con GLIBC 2.36
+GHDL Requiere GLIBC 2.34 y Debian Bullseye tiene 2.31 , si instalamos desde Microsoft Store obtendremos Debian Bookworm que viene con GLIBC 2.36.
 
 ### Bullseye:
 ````bash
@@ -122,6 +122,7 @@ echo 'alias digital=Digital.sh' >> $HOME/.bashrc
 source .bashrc
 ````
 
+
 # Instalar GHDL en Windows:
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Windows_11_logo.svg/1280px-Windows_11_logo.svg.png" style="width:50%" />
@@ -134,9 +135,19 @@ source .bashrc
 
 - Descomprimimos:
 
-- O Desde PowerShell se puede descomprimir con:
+- O Desde PowerShell se puede descargar y descomprimir con:
+  - 32 bit:
+    ````bash
+    cd Downloads/
+    wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip -OutFile ghdl-MINGW32.zip
+    Expand-Archive ghdl*.zip -DestinationPath .
+    rm ghdl-MINGW32.zip
+    ````
+    
+  - 64 bit:
   ````bash
   cd Downloads/
+  wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip -OutFile ghdl-UCRT64.zip
   Expand-Archive ghdl*.zip -DestinationPath .
   ````
 
@@ -232,15 +243,28 @@ rm Di*zip
 
 - Descomprimimos el zip.
 
-- Desde PowerShell se puede descomprimir con:
-  ````bash
-  cd Downloads/
-  Expand-Archive gtk*.zip -DestinationPath .
-  ````
+- O Desde PowerShell se puede descargar y descomprimir con:
+  - 32 bit:
+    ````bash
+    cd Downloads/
+    wget https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win32/gtkwave-3.3.100-bin-win32.zip -OutFile gtkwave-3.3.100-bin-win32.zip
+    Expand-Archive gtk*.zip -DestinationPath .
+    rm gtk*.zip
+    ````
+    
+  - 64 bit:
+    ````bash
+    cd Downloads/
+    wget https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip -OutFile gtkwave-3.3.100-bin-win64.zip
+    Expand-Archive gtk*.zip -DestinationPath .
+    rm gtk*.zip
+    ````
+
   El ejecutable quedará en:
   - 32 bit: `` Downloads/gtkwave/bin/gtkwave ``
   - 64 bit: `` Downloads/gtkwave64/bin/gtkwave ``
 
+### Mover a la unidad C por ejemplo:
 #### Con CMD:
 - 32 bit
   ````bash
