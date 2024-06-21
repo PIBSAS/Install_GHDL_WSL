@@ -5,54 +5,55 @@
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
 </p>
 
-````bash
-wsl --install
-````
+- ````bash
+  wsl --install
+  ````
 
 ### Actualizamos e instalamos dependencias:
-````bash
-sudo apt update
-sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-19-jdk gtkwave
-````
+- ````bash
+  sudo apt update
+  sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-19-jdk gtkwave
+  ````
 
 ### Obtenemos GHDL:
-````bash
-mkdir ghdl
-wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-gha-ubuntu-22.04-gcc.tgz -P ghdl/
-cd ghdl
-tar -xzvf ghdl*.tgz
-rm g*tgz
-````
+- ````bash
+  mkdir ghdl
+  wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-gha-ubuntu-22.04-gcc.tgz -P ghdl/
+  cd ghdl
+  tar -xzvf ghdl*.tgz
+  rm g*tgz
+  ````
 
 ### Agregamos GHDL a .bashrc:
-````bash
-cd
-echo 'export PATH="$HOME/ghdl/bin:$PATH"' >> $HOME/.bashrc
-source .bashrc
-````
+- ````bash
+  cd
+  echo 'export PATH="$HOME/ghdl/bin:$PATH"' >> $HOME/.bashrc
+  source .bashrc
+  ````
 
 ### Obtenemos Digital un fork de LogiSim:
-````bash
-cd
-wget -c https://github.com/hneemann/Digital/releases/latest/download/Digital.zip
-unzip Di*zip
-rm Di*zip
-````
+- ````bash
+  cd
+  wget -c https://github.com/hneemann/Digital/releases/latest/download/Digital.zip
+  unzip Di*zip
+  rm Di*zip
+  ````
 
-### Creamos un alias para Digital, asi lo lanzamos escribiendo en la Terminal ```` digital ````:
-````bash
-cd
-echo 'export PATH="$HOME/Digital:$PATH"' >> $HOME/.bashrc
-echo 'alias digital=Digital.sh' >> $HOME/.bashrc
-source .bashrc
-````
+### Creamos un alias para Digital, asi lo lanzamos escribiendo en la Terminal `` digital ``:
+
+- ````bash
+  cd
+  echo 'export PATH="$HOME/Digital:$PATH"' >> $HOME/.bashrc
+  echo 'alias digital=Digital.sh' >> $HOME/.bashrc
+  source .bashrc
+  ````
 
 <br>
 
 <h2 align="center">$$\texttt{{\color{red} \large{Desinstalar\ todo}}}$$</h2>
 
 - ````bash
-  wsl wsl --unregister Ubuntu
+  wsl --unregister Ubuntu
   ````
   
 <br>
@@ -66,81 +67,81 @@ source .bashrc
 GHDL Requiere GLIBC 2.34 y Debian Bullseye tiene 2.31 , si instalamos desde Microsoft Store obtendremos Debian Bookworm que viene con GLIBC 2.36.
 
 ### Bullseye:
-````bash
-wsl --install Debian
-````
+- ````bash
+  wsl --install Debian
+  ````
 ### Actualizamos e instalamos dependencias:
 ### Bullseye:
-````bash
-sudo apt update
-sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-17-jdk gtkwave
-````
+- ````bash
+  sudo apt update
+  sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-17-jdk gtkwave
+  ````
 ### Bookworm:
 Usando Winget evitamos usar la interfaz grafica
-````bash
-winget install Debian -s msstore
-````
+- ````bash
+  winget install Debian -s msstore
+  ````
 O directamente desde el repo de winget:
-````bash
-winget install Debian.Debian
-````
+- ````bash
+  winget install Debian.Debian
+  ````
 Lo lanzamos con:
-````bash
-debian
-````
+- ````bash
+  debian
+  ````
 Creamos usuario y contraseña.
 
 ### Agregamos temporalmente la repo de Bullseye para obtener gnat-10:
-````bash
-echo 'deb http://deb.debian.org/debian bullseye main' | sudo tee -a /etc/apt/sources.list
-````
+- ````bash
+  echo 'deb http://deb.debian.org/debian bullseye main' | sudo tee -a /etc/apt/sources.list
+  ````
 
 ### Actualizamos e instalamos dependencias:
-````bash
-sudo apt update
-sudo apt install -y gnat-10
-sudo apt install -y wget zlib1g-dev unzip openjdk-17-jdk gtkwave
-````
+- ````bash
+  sudo apt update
+  sudo apt install -y gnat-10
+  sudo apt install -y wget zlib1g-dev unzip openjdk-17-jdk gtkwave
+  ````
 ### Eliminamos el repo de bullseye(Opcional, podemos dejarlo):
-````bash
-sudo sed -i '$ d' /etc/apt/sources.list
-sudo apt update
-````
+- ````bash
+  sudo sed -i '$ d' /etc/apt/sources.list
+  sudo apt update
+  ````
 
 ### Obtenemos GHDL:
-````bash
-mkdir ghdl
-wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-gha-ubuntu-22.04-gcc.tgz -P ghdl/
-cd ghdl
-tar -xzvf ghdl*.tgz
-rm g*tgz
-````
+- ````bash
+  mkdir ghdl
+  wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-gha-ubuntu-22.04-gcc.tgz -P ghdl/
+  cd ghdl
+  tar -xzvf ghdl*.tgz
+  rm g*tgz
+  ````
 ### Agregamos GHDL a .bashrc:
-````bash
-cd
-echo 'export PATH="$HOME/ghdl/bin:$PATH"' >> $HOME/.bashrc
-source .bashrc
-````
+- ````bash
+  cd
+  echo 'export PATH="$HOME/ghdl/bin:$PATH"' >> $HOME/.bashrc
+  source .bashrc
+  ````
 ### Obtenemos Digital un fork de LogiSim:
-````bash
-cd
-wget -c https://github.com/hneemann/Digital/releases/latest/download/Digital.zip
-unzip Di*zip
-rm Di*zip
-````
-### Creamos un alias para Digital, asi lo lanzamos escribiendo en la Terminal ```` digital ````:
-````bash
-cd
-echo 'export PATH="$HOME/Digital:$PATH"' >> $HOME/.bashrc
-echo 'alias digital=Digital.sh' >> $HOME/.bashrc
-source .bashrc
-````
+- ````bash
+  cd
+  wget -c https://github.com/hneemann/Digital/releases/latest/download/Digital.zip
+  unzip Di*zip
+  rm Di*zip
+  ````
+### Creamos un alias para Digital, asi lo lanzamos escribiendo en la Terminal ``digital``:
+- ````bash
+  cd
+  echo 'export PATH="$HOME/Digital:$PATH"' >> $HOME/.bashrc
+  echo 'alias digital=Digital.sh' >> $HOME/.bashrc
+  source .bashrc
+  ````
 
 <br>
 <h2 align="center">$$\texttt{{\color{red} \large{Desinstalar\ todo}}}$$</h2>
 
 - ````bash
-  wsl wsl --unregister Debian
+  wsl --unregister Debian
   ````
 
 <br>
@@ -158,37 +159,37 @@ source .bashrc
 - Descomprimimos con el Explorador de Windows.
 - O Desde PowerShell se puede descargar y descomprimir con:
   - 32 bit:
-    ````bash
-    cd $HOME\Downloads\
-    wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip -OutFile ghdl-MINGW32.zip
-    Expand-Archive ghdl*.zip -DestinationPath C:\
-    rm ghdl-MINGW32.zip
-    cd ..
-    ````
+    - ````bash
+      cd $HOME\Downloads\
+      wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip -OutFile ghdl-MINGW32.zip
+      Expand-Archive ghdl*.zip -DestinationPath C:\
+      rm ghdl-MINGW32.zip
+      cd ..
+      ````
     
   - 64 bit:
-    ````bash
-    cd $HOME\Downloads\
-    wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip -OutFile ghdl-UCRT64.zip
-    Expand-Archive ghdl*.zip -DestinationPath C:\
-    rm ghdl-UCRT64.zip
-    cd ..
-    ````
+    - ````bash
+      cd $HOME\Downloads\
+      wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip -OutFile ghdl-UCRT64.zip
+      Expand-Archive ghdl*.zip -DestinationPath C:\
+      rm ghdl-UCRT64.zip
+      cd ..
+      ````
     Al ver `` cd ..`` presionamos Enter.
 
 ### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta GHDL:
 - 32 bit
-  ````bash
-  cd $HOME\Downloads\
-  Move-Item -Path ghdl-MINGW32/GHDL -Destination C:\
-  cd ..
-  ````
+  - ````bash
+    cd $HOME\Downloads\
+    Move-Item -Path ghdl-MINGW32/GHDL -Destination C:\
+    cd ..
+    ````
 - 64bit:
-  ````bash
-  cd $HOME\Downloads\
-  Move-Item -Path ghdl-UCRT64/GHDL -Destination C:\
-  cd ..
-  ````
+  - ````bash
+    cd $HOME\Downloads\
+    Move-Item -Path ghdl-UCRT64/GHDL -Destination C:\
+    cd ..
+    ````
 
 #### El ejecutable quedará en:
   ````bash
@@ -200,45 +201,45 @@ source .bashrc
 
 - Dependencia [Descarga Java Runtime Environment >= 1.8.0](https://javadl.oracle.com/webapps/download/AutoDL?BundleId=249851_43d62d619be4e416215729597d70b8ac)
 - O con Winget:
-  ````bash
-  winget install "Java 8"
-  ````
+  - ````bash
+    winget install "Java 8"
+    ````
   
 ### Descargando manualmente el zip o desde PowerShell:
 
 - [Descarga ZIP](https://github.com/hneemann/Digital/releases/download/v0.30/Digital.zip)
 - Descomprimir con el Explorador de Windows.
 - O con PowerShell descargamos y descomprimimos:
-  ````bash
-  cd $HOME\Downloads\
-  wget https://github.com/hneemann/Digital/releases/latest/download/Digital.zip -OutFile Digital.zip
-  Expand-Archive Di*.zip -DestinationPath C:\
-  rm Di*zip
-  cd ..
-  ````
+  - ````bash
+    cd $HOME\Downloads\
+    wget https://github.com/hneemann/Digital/releases/latest/download/Digital.zip -OutFile Digital.zip
+    Expand-Archive Di*.zip -DestinationPath C:\
+    rm Di*zip
+    cd ..
+    ````
   Al ver `` cd ..`` presionamos Enter.
   
 ### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta Digital:
 
-  ````bash
-  cd $HOME\Downloads\
-  Move-Item -Path Digital -Destination C:\
-  cd ..
-  ````
+  - ````bash
+    cd $HOME\Downloads\
+    Move-Item -Path Digital -Destination C:\
+    cd ..
+    ````
 
  ### El ejecutable quedará en:
-  ````bash
-  C:\Digital\
-  ````
+  - ````bash
+    C:\Digital\
+    ````
   Usaremos esto después.
 
 ### Como editor de texto además de Digital, podemos utilizar Notepad++ que nos permite guardar con la extensión `` .vhdl `` al igual que el bloc de notas, pero detecta la sintaxis:
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
 
 - Con Winget:
-  ````bash
-  winget install "notepad++"
-  ````
+  - ````bash
+    winget install "notepad++"
+    ````
 
 ## GTKWave
   Visor de diagrama temporal archivo `` .vcd `` generado con GHDL.
@@ -250,39 +251,39 @@ source .bashrc
 - Descomprimimos con el Explorador de Windows.
 - O Desde PowerShell se puede descargar y descomprimir con:
   - 32 bit:
-    ````bash
-    cd $HOME\Downloads\
-    Start-BitsTransfer -Source https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win32/gtkwave-3.3.100-bin-win32.zip/download -Destination gtkwave.zip
-    Expand-Archive gtk*.zip -DestinationPath C:\
-    rm gtk*.zip
-    cd ..
-    ````
+    - ````bash
+      cd $HOME\Downloads\
+      Start-BitsTransfer -Source https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win32/gtkwave-3.3.100-bin-win32.zip/download -Destination gtkwave.zip
+      Expand-Archive gtk*.zip -DestinationPath C:\
+      rm gtk*.zip
+      cd ..
+      ````
     
   - 64 bit:
-    ````bash
-    cd $HOME\Downloads\
-    Start-BitsTransfer -Source https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip/download -Destination gtkwave.zip
-    Expand-Archive gtk*.zip -DestinationPath C:\
-    rm gtk*.zip
-    Rename-Item -Path "C:\gtkwave64" -NewName "gtkwave"
-    cd ..
-    ````
+    - ````bash
+      cd $HOME\Downloads\
+      Start-BitsTransfer -Source https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip/download -Destination gtkwave.zip
+      Expand-Archive gtk*.zip -DestinationPath C:\
+      rm gtk*.zip
+      Rename-Item -Path "C:\gtkwave64" -NewName "gtkwave"
+      cd ..
+      ````
     Al ver `` cd ..`` presionamos Enter.
 
 ### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta gtkwave:
   - 32 bit
-    ````bash
-    cd $HOME\Downloads\
-    Move-Item -Path gtkwave -Destination C:\
-    cd ..
-    ````
+    - ````bash
+      cd $HOME\Downloads\
+      Move-Item -Path gtkwave -Destination C:\
+      cd ..
+      ````
   - 64bit
-    ````bash
-    cd $HOME\Downloads\
-    Rename-Item -Path "C:\gtkwave64" -NewName "gtkwave"
-    Move-Item -Path gtkwave -Destination C:\
-    cd ..
-    ````
+    - ````bash
+      cd $HOME\Downloads\
+      Rename-Item -Path "C:\gtkwave64" -NewName "gtkwave"
+      Move-Item -Path gtkwave -Destination C:\
+      cd ..
+      ````
     Al ver `` cd ..`` presionamos Enter.
     
 ### El ejecutable quedará en:
@@ -310,15 +311,15 @@ source .bashrc
 
   - Ingresamos las 3 rutas de los ejecutables:
     
-    ````bash
-    C:\GHDL\bin\
-    ````
-    ````bash
-    C:\Digital\
-    ````
-    ````bash
-    C:\gtkwave\bin\
-    ````
+    - ````bash
+      C:\GHDL\bin\
+      ````
+    - ````bash
+      C:\Digital\
+      ````
+    - ````bash
+      C:\gtkwave\bin\
+      ````
     
     ![Rutas de los ejecutables](media/22.png)
 
@@ -349,39 +350,39 @@ source .bashrc
   11. ![](media/11.png)
 
 #### Una vez instalado usamos Cygwin para instalar las dependencias de GTKWave:
-  ````bash
-  cd $HOME\Downloads\
-  .\setup-x86_64.exe -q -P gcc-g++,gperf,libbz2-devel,liblzma-devel,zlib-devel,libgtk3-devel,make,git,xinit,tcl-tk-devel,autotools-dev,automake,libJudy-devel
-  ````
+  - ````bash
+    cd $HOME\Downloads\
+    .\setup-x86_64.exe -q -P gcc-g++,gperf,libbz2-devel,liblzma-devel,zlib-devel,libgtk3-devel,make,git,xinit,tcl-tk-devel,autotools-dev,automake,libJudy-devel
+    ````
   12. ![](media/12.png)
   13. ![](media/13.png)
 
 ### Abrimos la Terminal de Cygwin, clonamos la repo de GTKWave y Compilamos:
 
-  ````bash
-  git clone https://github.com/gtkwave/gtkwave/ -b lts gtkwave
-  cd gtkwave/gtkwave3-gtk3 && ./autogen.sh
-  ./configure --enable-gtk3 --enable-judy
-  make -j
-  make install
-  ````
+  - ````bash
+    git clone https://github.com/gtkwave/gtkwave/ -b lts gtkwave
+    cd gtkwave/gtkwave3-gtk3 && ./autogen.sh
+    ./configure --enable-gtk3 --enable-judy
+    make -j
+    make install
+    ````
   14. ![](media/14.png)
 
 #### Ahora iniciamos XServer para poder ejecutar aplicaciones con GUI:
-  ````bash
-  startxwin
-  ````
+  - ````bash
+    startxwin
+    ````
 Aparecerán 2 iconos de sistemas.
 
-  15. ![](media/15.png)
+  15.  ![](media/15.png)
   
 #### Luego abrimos otra Cygwin Terminal y lanzamos GTKWave:
-  ````bash
-  gtkwave
-  ````
+  - ````bash
+    gtkwave
+    ````
   O desde el icono del Sistema opción Accesorios -> GTKWave
   
-  16. ![](media/16.png)
+  16.  ![](media/16.png)
 
 ### Uso de GHDL para crear archivo ``.vcd`` para GTKWave:
 - Creamos nuestro archivo ``.vhdl`` con Notepad++ o cualquier editor de texto.
@@ -390,19 +391,19 @@ Aparecerán 2 iconos de sistemas.
   
   [Testbench Creator Online](https://www.doulos.com/knowhow/perl/vhdl-testbench-creation-using-perl/)
   
-  ````bash
-  ghdl -s archivo.vhdl
-  ghdl -s archivo_tb.vhdl
-  ghdl -a archivo.vhdl
-  ghdl -a archivo_tb.vhdl
-  ghdl -e archivo_tb
-  ghdl -r archivo_tb
-  ghdl -r archivo_tb --vcd=archivo.vcd
-  ````
+  - ````bash
+    ghdl -s archivo.vhdl
+    ghdl -s archivo_tb.vhdl
+    ghdl -a archivo.vhdl
+    ghdl -a archivo_tb.vhdl
+    ghdl -e archivo_tb
+    ghdl -r archivo_tb
+    ghdl -r archivo_tb --vcd=archivo.vcd
+    ````
 - Abrimos el ``.vcd`` creado con GTKWave:
-  ````bash
-  gtkwave archivo.vcd
-  ````
+  - ````bash
+    gtkwave archivo.vcd
+    ````
   Existe una sintaxis/convención respecto al nombre del archivo, que debe ser el nombre de la entidad de nuestra descripción para que no nos dé error.
   ``-s`` chequea error de sintaxis.
   ``-a`` analiza la descripción.
