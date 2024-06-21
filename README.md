@@ -160,10 +160,6 @@ source .bashrc
   ````bash
   MOVE Downloads/ghdl-MINGW32/GHDL C:\
   ````
-  Agregamos la carpeta a la variable de entorno del Sistema para poder ejecutarlo desde la Terminal al solo escribir `` ghdl ``.
-  ````bash
-  setx PATH "%PATH%;C:\GHDL\bin\"
-  ````
 - 64bit
   ````bash
   MOVE Downloads/GHDL C:\
@@ -172,11 +168,7 @@ source .bashrc
    ````bash
   MOVE Downloads/ghdl-UCRT64/GHDL C:\
   ````
-  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
-  ````bash
-  setx PATH "%PATH%;C:\GHDL\bin\"
-  ````
-
+  
 ## Obtenemos Digital un fork de LogiSim:
 - Dependencia [Descarga Java Runtime Environment >= 1.8.0](https://javadl.oracle.com/webapps/download/AutoDL?BundleId=249851_43d62d619be4e416215729597d70b8ac)
 #### O con Winget:
@@ -199,10 +191,6 @@ source .bashrc
 #### Con CMD:
   ````bash
   MOVE Downloads/Digital C:\
-  ````
-  Agregamos la carpeta a la variable de entorno del Sistema para poder ejecutarlo desde la Terminal al solo escribir `` Digital ``.
-  ````bash
-  setx PATH "%PATH%;C:\Digital\"
   ````  
 
 ## GTKWave
@@ -240,18 +228,19 @@ source .bashrc
   ````bash
   MOVE Downloads/gtkwave C:\
   ````
-  Agregamos la carpeta a la variable de entorno del Sistema para poder ejecutarlo desde la Terminal al solo escribir `` gtkwave ``.
-  ````bash
-  setx PATH "%PATH%;C:\gtkwave\bin\"
-  ````
 - 64bit
   ````bash
   MOVE Downloads/gtkwave64 C:\
   ````
-  Agregamos la carpeta a la variable de entorno del Sistema para poder ejecutarlo desde la Terminal al solo escribir `` gtkwave ``.
-  ````bash
-  setx PATH "%PATH%;C:\gtkwave64\bin\"
-  ````
+  Agregamos las carpetas a las variable de entorno del Sitema para poder ejecutar desde la Terminal al solo escribir `` ghdl ``, `` Digital ``, `` gtkwave ``.
+  - 32 bit:
+    ````bash
+    setx PATH "%PATH%;C:\GHDL\bin\;C:\Digital\;C:\gtkwave\bin\"
+    ````
+  - 64 bit:
+    ````bash
+    setx PATH "%PATH%;C:\GHDL\bin\;C:\Digital\;C:\gtkwave64\bin\"
+    ````
 
 ### Opción no tan fácil, bajamos el código fuente para compilar una versión más actual(últimos cambios hace 2 días):
 #### Cygwin necesario para Compilar GTKWave:
