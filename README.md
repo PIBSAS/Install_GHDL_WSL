@@ -210,6 +210,13 @@ source .bashrc
   ````
   Usaremos esto después.
 
+### Como editor de texto además de Digital, podemos utilizar Notepad++ que nos permite guardar con la extensión `` .vhdl `` al igual que el bloc de notas, pero detecta la sintaxis:
+- [Notepad++](https://notepad-plus-plus.org/downloads/)
+
+- Con Winget:
+  ````bash
+  winget install "notepad++"
+  ````
 
 ## GTKWave
   Visor de diagrama temporal archivo `` .vcd `` generado con GHDL.
@@ -263,11 +270,41 @@ source .bashrc
     Usaremos esto después.
 
 ### Agregamos las carpetas a las variable de entorno del Sitema para poder ejecutar desde la Terminal al solo escribir `` ghdl ``, `` Digital ``, `` gtkwave ``.
+  - Buscamos Variables y nos saldrá el acceso a ``Editar las variables de entorno del sistema``
+    
+    ![Variables de Entorno del Sistema](media/18.png)
+    
+  - Pulsamos el botón ``Variables de entorno...``
 
-  - 64 bit:
+    ![Variables de entorno...](media/19.png)
+
+  - Se abre una nueva ventana, seleccionamos ``Path`` y pulsamos ``Editar...`` del recuadro superior.
+    
+    ![Editar...](media/20.png)
+
+  - Se abre otra ventana, seleccionamos ``Nuevo``
+
+    ![Nuevo](media/21.png)
+
+  - Ingresamos las 3 rutas de los ejecutables:
+    
     ````bash
-    setx PATH "%PATH%;C:\GHDL\bin\;C:\Digital\;C:\gtkwave64\bin\"
+    C:\GHDL\bin\
     ````
+    ````bash
+    C:\Digital\
+    ````
+    ````bash
+    C:\gtkwave\bin\
+    ````
+    
+    ![Rutas de los ejecutables](media/22.png)
+
+    Pulsamos ``Aceptar`` en cada ventana para cerrarlas.
+
+    Abrimos una Terminal y comprobamos(no es necesario) que obtenemos respuesta al preguntar por las versiones de los ejecutables, excepto en Digital que solo se ejecutará.
+
+    ![Version](media/23.png)
 
 ### Opción no tan fácil, bajamos el código fuente para compilar una versión más actual(últimos cambios hace 2 días):
 #### Cygwin necesario para Compilar GTKWave:
@@ -321,14 +358,6 @@ Aparecerán 2 iconos de sistemas.
   ````
   O desde el icono del Sistema opción Accesorios -> GTKWave
   16. ![](media/16.png)
-
-### Como editor de texto además de Digital, podemos utilizar Notepad++ que nos permite guardar con la extensión `` .vhdl `` al igual que el bloc de notas, pero detecta la sintaxis:
-- [Notepad++](https://notepad-plus-plus.org/downloads/)
-
-- Con Winget:
-  ````bash
-  winget install "notepad++"
-  ````
   
 ### Como Desinstalar Cygwin correctamente:
 Si el Sistema esta en Español abre CMD:
