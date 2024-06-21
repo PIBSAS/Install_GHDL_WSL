@@ -387,7 +387,9 @@ Aparecerán 2 iconos de sistemas.
 - Creamos nuestro archivo ``.vhdl`` con Notepad++ o cualquier editor de texto.
 - Abrimos una terminal donde se encuentre dicho archivo y realizamos los siguientes pasos:
   [Detalle de la Sintaxis utilizada](https://ghdl.github.io/ghdl/using/InvokingGHDL.html)
-  [VHDL Testbench Creator online](htps://www.doulos.com/knowhow/perl/vhdl-testbench-creation-using-perl/)
+  
+  [Testbench Creator Online](https://www.doulos.com/knowhow/perl/vhdl-testbench-creation-using-perl/)
+  
   ````bash
   ghdl -s archivo.vhdl
   ghdl -s archivo_tb.vhdl
