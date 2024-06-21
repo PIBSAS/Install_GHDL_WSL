@@ -146,9 +146,9 @@ source .bashrc
     
   - 64 bit:
     ````bash
-    cd Downloads/
-    wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip -OutFile ghdl-UCRT64.zip
-    Expand-Archive ghdl*.zip -DestinationPath C:\
+    cd Downloads/;
+    wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip -OutFile ghdl-UCRT64.zip;
+    Expand-Archive ghdl*.zip -DestinationPath C:\;
     rm ghdl-UCRT.zip
     ````
 
