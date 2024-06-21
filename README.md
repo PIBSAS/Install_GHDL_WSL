@@ -383,6 +383,32 @@ Aparecerán 2 iconos de sistemas.
   
   16. ![](media/16.png)
 
+### Uso de GHDL para crear archivo ``.vcd`` para GTKWave:
+- Creamos nuestro archivo ``.vhdl`` con Notepad++ o cualquier editor de texto.
+- Abrimos una terminal donde se encuentre dicho archivo y realizamos los siguientes pasos:
+  [Detalle de la Sintaxis utilizada](https://ghdl.github.io/ghdl/using/InvokingGHDL.html)
+  [VHDL Testbench Creator online](htps://www.doulos.com/knowhow/perl/vhdl-testbench-creation-using-perl/)
+  ````bash
+  ghdl -s archivo.vhdl
+  ghdl -s archivo_tb.vhdl
+  ghdl -a archivo.vhdl
+  ghdl -a archivo_tb.vhdl
+  ghdl -e archivo_tb
+  ghdl -r archivo_tb
+  ghdl -r archivo_tb --vcd=archivo.vcd
+  ````
+- Abrimos el ``.vcd`` creado con GTKWave:
+  ````bash
+  gtkwave archivo.vcd
+  ````
+  Existe una sintaxis/convención respecto al nombre del archivo, que debe ser el nombre de la entidad de nuestra descripción para que no nos dé error.
+  ``-s`` chequea error de sintaxis.
+  ``-a`` analiza la descripción.
+  ``-e`` elabora la unidad.
+  ``-r`` corre/simula el diseño.
+
+### En Digital el ``archivo_tb`` no se necesita y tiene herramientas para ver en tiempo real(no muy preciso) el diagrama temporal.
+
 <br>
 <h1 align="center">Desinstalar todo</h1>
 
@@ -426,3 +452,10 @@ Aparecerán 2 iconos de sistemas.
 - [GitHub Repo](https://github.com/grself/CIS221_Lab_Manual)
 - [YouTube CIS221 LogiSim Evolution Sirve para Digital](https://www.youtube.com/playlist?list=PLvjlcTfwDj4spSN4g3S8IHbqY4Qkb5LxP)
 - [VHDL Tutorial Universidad de California](http://esd.cs.ucr.edu/labs/tutorial/)
+- [Como escribir VHDL Testbench](https://fpgatutorial.com/how-to-write-a-basic-testbench-using-vhdl/)
+- [Video utilizado de base](https://youtu.be/5shVE94I3io)
+- [Introducción a VHDL](https://docta.ucm.es/rest/api/core/bitstreams/4ded6d60-6b62-4f59-a7cd-2511b9a73861/content)
+- [Web VHDL](https://www.vhdl.org/)
+- [VHDL Testbench Creator online](htps://www.doulos.com/knowhow/perl/vhdl-testbench-creation-using-perl/)
+- [VHDL online Workshop](https://www.vhdl-online.de/vhdl_workshop/start)
+- [Wkilibros Programación VHDL y Ejjemplos](https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_VHDL)
