@@ -138,18 +138,20 @@ source .bashrc
 - O Desde PowerShell se puede descargar y descomprimir con:
   - 32 bit:
     ````bash
-    cd Downloads/
+    cd Downloads\
     wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip -OutFile ghdl-MINGW32.zip
     Expand-Archive ghdl*.zip -DestinationPath C:\
     rm ghdl-MINGW32.zip
+    cd ..
     ````
     
   - 64 bit:
     ````bash
-    cd Downloads/;
-    wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip -OutFile ghdl-UCRT64.zip;
-    Expand-Archive ghdl*.zip -DestinationPath C:\;
-    rm ghdl-UCRT.zip
+    cd Downloads\
+    wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip -OutFile ghdl-UCRT64.zip
+    Expand-Archive ghdl*.zip -DestinationPath C:\
+    rm ghdl-UCRT64.zip
+    cd ..
     ````
 
 ### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta GHDL:
