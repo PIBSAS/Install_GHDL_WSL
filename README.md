@@ -175,7 +175,8 @@ source .bashrc
   ````
   Usaremos esto después.
 
-## Obtenemos Digital un fork de LogiSim:
+## Obtenemos Digital un fork de LogiSim(Al final hay un enlace a un servidor para obtener pre-release version):
+
 - Dependencia [Descarga Java Runtime Environment >= 1.8.0](https://javadl.oracle.com/webapps/download/AutoDL?BundleId=249851_43d62d619be4e416215729597d70b8ac)
 - O con Winget:
   ````bash
@@ -350,6 +351,7 @@ source .bashrc
   startxwin
   ````
 Aparecerán 2 iconos de sistemas.
+
   15. ![](media/15.png)
   
 #### Luego abrimos otra Cygwin Terminal y lanzamos GTKWave:
@@ -357,27 +359,49 @@ Aparecerán 2 iconos de sistemas.
   gtkwave
   ````
   O desde el icono del Sistema opción Accesorios -> GTKWave
-  16. ![](media/16.png)
   
-### Como Desinstalar Cygwin correctamente:
-Si el Sistema esta en Español abre CMD:
-  ````bash
-  takeown /f C:\cygwin64 /r /d s
-  icacls C:\cygwin64 /t /grant todos:f
-  del /s /q C:\cygwin64
-  rmdir /s /q C:\cygwin64
-  ````
+  16. ![](media/16.png)
 
-Si el Sistema esta en Inglés abre CMD:
-  ````bash
-  takeown /f C:\cygwin64 /r /d y
-  icacls C:\cygwin64 /t /grant everyone:f
-  del /s /q C:\cygwin64
-  rmdir /s /q C:\cygwin64
-  ````
+<br>
+<h1 align="center">Desinstalar todo</h1>
+
+#### Como Desinstalar Cygwin correctamente:
+
+  Si el Sistema esta en Español abre CMD:
+  
+  - ````bash
+    takeown /f C:\cygwin64 /r /d s
+    icacls C:\cygwin64 /t /grant todos:f
+    del /s /q C:\cygwin64
+    rmdir /s /q C:\cygwin64
+    ````
+  
+  Si el Sistema esta en Inglés abre CMD:
+  
+  - ````bash
+    takeown /f C:\cygwin64 /r /d y
+    icacls C:\cygwin64 /t /grant everyone:f
+    del /s /q C:\cygwin64
+    rmdir /s /q C:\cygwin64
+    ````
+    Eliminar el Acceso directo del escritorio manualmente, al no existir Cygwin tampoco existirá GTKWave(el compilado).
+    
+#### GHDL, GTKWave(Opción Fácil), Digital:
+- Eliminar carpetas y las variables de entorno.
+- Java Runtime Environment desde Panel de Control como cualquier app.
+
+<br>
+<h1 align="center">Documentación</h1>
 
 - [GHDL](https://ghdl-rad.readthedocs.io/en/latest/examples/quick_start/README.html)
 - [Digital](https://github.com/hneemann/Digital/releases/)
+- [Digital Pre-Release Server](https://infdigital.dhbw-mosbach.de/)
 - [Manual GTKWave](https://gtkwave.sourceforge.net/gtkwave.pdf)
 - [GitHub GTKWave](https://github.com/gtkwave/gtkwave)
 - [SourceForge GTKWave](https://sourceforge.net/projects/gtkwave/)
+- [Teoría CIS221](https://github.com/grself/CIS221_Text/raw/master/dl.pdf)
+- [GitHub Repo](https://github.com/grself/CIS221_Text)
+- [Lab Manual CIS221](https://github.com/grself/CIS221_Lab_Manual/raw/master/dl_lab.pdf)
+- [GitHub Repo](https://github.com/grself/CIS221_Lab_Manual)
+- [YouTube CIS221 LogiSim Evolution Sirve para Digital](https://www.youtube.com/playlist?list=PLvjlcTfwDj4spSN4g3S8IHbqY4Qkb5LxP)
+- [VHDL Tutorial Universidad de California](http://esd.cs.ucr.edu/labs/tutorial/)
