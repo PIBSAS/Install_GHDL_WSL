@@ -1,4 +1,5 @@
-# Instalar GHDL en Ubuntu con WSL
+<h1 align="center">Instalar GHDL en Ubuntu con WSL o Linux</h1>
+
 <p align="center">
 <img src="https://assets.ubuntu.com/v1/a7e3c509-Canonical%20Ubuntu.svg" style="width:50%" />
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
@@ -7,6 +8,7 @@
 ````bash
 wsl --install
 ````
+
 ### Actualizamos e instalamos dependencias:
 ````bash
 sudo apt update
@@ -21,12 +23,14 @@ cd ghdl
 tar -xzvf ghdl*.tgz
 rm g*tgz
 ````
+
 ### Agregamos GHDL a .bashrc:
 ````bash
 cd
 echo 'export PATH="$HOME/ghdl/bin:$PATH"' >> $HOME/.bashrc
 source .bashrc
 ````
+
 ### Obtenemos Digital un fork de LogiSim:
 ````bash
 cd
@@ -34,6 +38,7 @@ wget -c https://github.com/hneemann/Digital/releases/latest/download/Digital.zip
 unzip Di*zip
 rm Di*zip
 ````
+
 ### Creamos un alias para Digital, asi lo lanzamos escribiendo en la Terminal ```` digital ````:
 ````bash
 cd
@@ -42,8 +47,17 @@ echo 'alias digital=Digital.sh' >> $HOME/.bashrc
 source .bashrc
 ````
 
+<br>
 
-# Instalar GHDL en Debian con WSL
+<h2 align="center">$$\texttt{{\color{red} \large{Desinstalar\ todo}}}$$</h2>
+
+- ````bash
+  wsl wsl --unregister Ubuntu
+  ````
+  
+<br>
+<h1 align="center">Instalar GHDL en Debian con WSL o Linux</h1>
+
 <p align="center">
 <img src="https://www.debian.org/logos/openlogo.svg" style="width:50% height:100%" />
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
@@ -122,8 +136,15 @@ echo 'alias digital=Digital.sh' >> $HOME/.bashrc
 source .bashrc
 ````
 
+<br>
+<h2 align="center">$$\texttt{{\color{red} \large{Desinstalar\ todo}}}$$</h2>
 
-# Instalar GHDL en Windows:
+- ````bash
+  wsl wsl --unregister Debian
+  ````
+
+<br>
+<h1 align="center">Instalar GHDL en Windows</h1>
 
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Windows_11_logo.svg/1280px-Windows_11_logo.svg.png" style="width:50%" />
