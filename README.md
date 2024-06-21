@@ -160,7 +160,7 @@ source .bashrc
   ````bash
   MOVE Downloads/ghdl-MINGW32/GHDL C:\
   ````
-  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+  Agregamos la carpeta a la variable de entorno del Sistema para poder ejecutarlo desde la Terminal al solo escribir `` ghdl ``.
   ````bash
   setx PATH "%PATH%;C:\GHDL\bin\"
   ````
@@ -175,27 +175,6 @@ source .bashrc
   Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
   ````bash
   setx PATH "%PATH%;C:\GHDL\bin\"
-  ````
-#### Con PowerShell:
-- 32 bit
-  ````bash
-  mv Downloads/ghdl-MINGW32/GHDL C:\
-  ````
-  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
-  ````bash
-  $Env:PATH += "C:\GHDL\bin\"
-  ````
-- 64bit
-  ````bash
-  mv Downloads/GHDL C:\
-  ````
-  Si se descomprime desde el explorador:
-   ````bash
-   mv Downloads/ghdl-UCRT64/GHDL C:\
-   ````
-  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
-  ````bash
-  $Env:PATH += "C:\GHDL\bin\"
   ````
 
 ## Obtenemos Digital un fork de LogiSim:
@@ -221,18 +200,10 @@ source .bashrc
   ````bash
   MOVE Downloads/Digital C:\
   ````
-  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+  Agregamos la carpeta a la variable de entorno del Sistema para poder ejecutarlo desde la Terminal al solo escribir `` Digital ``.
   ````bash
   setx PATH "%PATH%;C:\Digital\"
-  ````
-#### Con PowerShell:
-  ````bash
-  mv Downloads/Digital C:\
-  ````
-  Agregamos la carpeta a la variable de entorno del Sistema para poder ejecutarlo desde la Terminal al solo escribir `` Digital``.
-  ````bash
-  $Env:PATH += "C:\Digital\"
-  ````
+  ````  
 
 ## GTKWave
   Visor de diagrama temporal archivo `` .vcd `` generado con GHDL.
@@ -264,12 +235,12 @@ source .bashrc
   - 64 bit: `` Downloads/gtkwave64/bin/gtkwave ``
 
 ### Mover a la unidad C por ejemplo:
-#### Con CMD:
+#### Con CMD o PowerShell:
 - 32 bit
   ````bash
   MOVE Downloads/gtkwave C:\
   ````
-  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+  Agregamos la carpeta a la variable de entorno del Sistema para poder ejecutarlo desde la Terminal al solo escribir `` gtkwave ``.
   ````bash
   setx PATH "%PATH%;C:\gtkwave\bin\"
   ````
@@ -277,26 +248,9 @@ source .bashrc
   ````bash
   MOVE Downloads/gtkwave64 C:\
   ````
-  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
+  Agregamos la carpeta a la variable de entorno del Sistema para poder ejecutarlo desde la Terminal al solo escribir `` gtkwave ``.
   ````bash
   setx PATH "%PATH%;C:\gtkwave4\bin\"
-  ````
-#### Con PowerShell:
-- 32 bit
-  ````bash
-  mv Downloads/gtkwave C:\
-  ````
-  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
-  ````bash
-  $Env:PATH += "C:\gtkwave\bin\"
-  ````
-- 64bit
-  ````bash
-  mv Downloads/gtkwave64 C:\
-  ````
-  Agregamos la carpeta a la variable de entorno del Sitema para poder ejecutarlo desde la Terminal.
-  ````bash
-  $Env:PATH += "C:\gtkwave64\bin\"
   ````
 
 ### Opción no tan fácil, bajamos el código fuente para compilar una versión más actual(últimos cambios hace 2 días):
