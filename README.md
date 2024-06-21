@@ -223,7 +223,7 @@ source .bashrc
   - 64 bit: `` Downloads/gtkwave64/bin/gtkwave ``
 
 ### Mover a la unidad C por ejemplo:
-#### Con CMD o PowerShell:
+#### Con CMD:
 - 32 bit
   ````bash
   MOVE Downloads/gtkwave C:\
