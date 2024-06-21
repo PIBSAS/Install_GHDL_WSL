@@ -221,7 +221,7 @@ source .bashrc
   - 32 bit:
     ````bash
     cd Downloads\
-    wget https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win32/gtkwave-3.3.100-bin-win32.zip -OutFile gtkwave-3.3.100-bin-win32.zip
+    Start-BitsTransfer -Source https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win32/gtkwave-3.3.100-bin-win32.zip/download -Destination gtkwave.zip
     Expand-Archive gtk*.zip -DestinationPath C:\
     rm gtk*.zip
     cd ..
@@ -230,7 +230,7 @@ source .bashrc
   - 64 bit:
     ````bash
     cd Downloads\
-    wget https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip -OutFile gtkwave-3.3.100-bin-win64.zip
+    Start-BitsTransfer -Source https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip/download -Destination gtkwave.zip
     Expand-Archive gtk*.zip -DestinationPath C:\
     rm gtk*.zip
     Rename-Item -Path "C:\gtkwave64" -NewName "gtkwave"
