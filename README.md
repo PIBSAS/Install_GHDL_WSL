@@ -501,5 +501,5 @@ Aparecerán 2 iconos de sistemas.
 - [Web VHDL](https://www.vhdl.org/)
 - [Testbench Creator Online](https://www.doulos.com/knowhow/perl/vhdl-testbench-creation-using-perl/)
 - [VHDL online Workshop](https://www.vhdl-online.de/vhdl_workshop/start)
-- [Wkilibros Programación VHDL y Ejjemplos](https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_VHDL)
+- [Wkilibros Programación VHDL y Ejemplos](https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_VHDL)
 
