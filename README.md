@@ -139,7 +139,7 @@ source .bashrc
     ````bash
     cd Downloads/
     wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip -OutFile ghdl-MINGW32.zip
-    Expand-Archive ghdl*.zip -DestinationPath .
+    Expand-Archive ghdl*.zip -DestinationPath C:\
     rm ghdl-MINGW32.zip
     ````
     
@@ -147,31 +147,28 @@ source .bashrc
     ````bash
     cd Downloads/
     wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip -OutFile ghdl-UCRT64.zip
-    Expand-Archive ghdl*.zip -DestinationPath .
+    Expand-Archive ghdl*.zip -DestinationPath C:\
     ````
 
-### El ejecutable quedará en:
-- 32 bit: `` Downloads/ghdl-MINGW32/GHDL/bin/ghdl ``
-- 64 bit: `` Downloads/GHDL/bin/ghdl `` o `` Downloads/ghdl-UCRT64/GHDL/bin/ghdl ``
-
-### Mover a la unidad C por ejemplo:
+### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta GHDL:
 #### Con CMD:
 - 32 bit
   ````bash
   MOVE Downloads/ghdl-MINGW32/GHDL C:\
   ````
-- 64bit
-  ````bash
-  MOVE Downloads/GHDL C:\
-  ````
-  Si se descomprime desde el explorador:
+- 64bit:
    ````bash
   MOVE Downloads/ghdl-UCRT64/GHDL C:\
   ````
-  
+### El ejecutable quedará en:
+- ````bash
+  C:\GHDL\bin\
+  ````
+  Usaremos esto después.
+
 ## Obtenemos Digital un fork de LogiSim:
 - Dependencia [Descarga Java Runtime Environment >= 1.8.0](https://javadl.oracle.com/webapps/download/AutoDL?BundleId=249851_43d62d619be4e416215729597d70b8ac)
-#### O con Winget:
+- O con Winget:
   ````bash
   winget install "Java 8"
   ````
@@ -183,15 +180,23 @@ source .bashrc
   ````bash
   cd Downloads/
   wget https://github.com/hneemann/Digital/releases/latest/download/Digital.zip -OutFile Digital.zip
-  Expand-Archive Di*.zip -DestinationPath .
+  Expand-Archive Di*.zip -DestinationPath C:\
   rm Di*zip
   ````
 
-### Mover a la unidad C por ejemplo:
-#### Con CMD:
+### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta Digital:
+
   ````bash
-  MOVE Downloads/Digital C:\
-  ````  
+  cd Downloads
+  Move-Item -Path Digital -Destination C:\
+  ````
+
+ ### El ejecutable quedará en:
+- ````bash
+  C:\Digital\
+  ````
+  Usaremos esto después.
+
 
 ## GTKWave
   Visor de diagrama temporal archivo `` .vcd `` generado con GHDL.
@@ -206,7 +211,7 @@ source .bashrc
     ````bash
     cd Downloads/
     wget https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win32/gtkwave-3.3.100-bin-win32.zip -OutFile gtkwave-3.3.100-bin-win32.zip
-    Expand-Archive gtk*.zip -DestinationPath .
+    Expand-Archive gtk*.zip -DestinationPath C:\
     rm gtk*.zip
     ````
     
@@ -214,25 +219,31 @@ source .bashrc
     ````bash
     cd Downloads/
     wget https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip -OutFile gtkwave-3.3.100-bin-win64.zip
-    Expand-Archive gtk*.zip -DestinationPath .
+    Expand-Archive gtk*.zip -DestinationPath C:\
     rm gtk*.zip
+    Rename-Item -Path "c:\gtkwave64" -NewName "gtkwave"
     ````
 
-  El ejecutable quedará en:
-  - 32 bit: `` Downloads/gtkwave/bin/gtkwave ``
-  - 64 bit: `` Downloads/gtkwave64/bin/gtkwave ``
-
-### Mover a la unidad C por ejemplo:
-#### Con CMD:
+### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta Digital:
 - 32 bit
   ````bash
-  MOVE Downloads/gtkwave C:\
+  cd Downloads
+  Move-Item -Path gtkwave -Destination C:\
   ````
 - 64bit
   ````bash
-  MOVE Downloads/gtkwave64 C:\
+  cd Downloads
+  Rename-Item -Path "c:\gtkwave64" -NewName "gtkwave"
+  Move-Item -Path gtkwave -Destination C:\
   ````
-  Agregamos las carpetas a las variable de entorno del Sitema para poder ejecutar desde la Terminal al solo escribir `` ghdl ``, `` Digital ``, `` gtkwave ``.
+
+El ejecutable quedará en:
+  - ````bash
+    C:\gtkwave\bin\
+    ````
+    Usaremos esto después.
+
+### Agregamos las carpetas a las variable de entorno del Sitema para poder ejecutar desde la Terminal al solo escribir `` ghdl ``, `` Digital ``, `` gtkwave ``.
   - 32 bit:
     ````bash
     setx PATH "%PATH%;C:\GHDL\bin\;C:\Digital\;C:\gtkwave\bin\"
