@@ -294,6 +294,12 @@ Aparecerán 2 iconos de sistemas.
   ````
   O desde el icono del Sistema opción Accesorios -> GTKWave
   16. ![](media/16.png)
+
+Como editor de texto además de Digital, podemos utilizar Notepad++ que nos permite guardar con la extensión `` .vhdl `` al igual que el bloc de notas:
+- [Notepad++](https://notepad-plus-plus.org/downloads/)
+
+Con Winget:
+
   
 ### Como Desinstalar Cygwin correctamente:
 Si el Sistema esta en Español abre CMD:
