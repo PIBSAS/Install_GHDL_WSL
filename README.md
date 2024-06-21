@@ -250,7 +250,7 @@ source .bashrc
   ````
   Agregamos la carpeta a la variable de entorno del Sistema para poder ejecutarlo desde la Terminal al solo escribir `` gtkwave ``.
   ````bash
-  setx PATH "%PATH%;C:\gtkwave4\bin\"
+  setx PATH "%PATH%;C:\gtkwave64\bin\"
   ````
 
 ### Opción no tan fácil, bajamos el código fuente para compilar una versión más actual(últimos cambios hace 2 días):
