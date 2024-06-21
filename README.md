@@ -157,13 +157,15 @@ source .bashrc
 ### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta GHDL:
 - 32 bit
   ````bash
-  cd Downloads
+  cd Downloads\
   Move-Item -Path ghdl-MINGW32/GHDL -Destination C:\
+  cd ..
   ````
 - 64bit:
   ````bash
-  cd Downloads
+  cd Downloads\
   Move-Item -Path ghdl-UCRT64/GHDL -Destination C:\
+  cd ..
   ````
 
 #### El ejecutable quedará en:
@@ -185,17 +187,19 @@ source .bashrc
 - Descomprimir con el Explorador de Windows.
 - O con PowerShell descargamos y descomprimimos:
   ````bash
-  cd Downloads/
+  cd Downloads\
   wget https://github.com/hneemann/Digital/releases/latest/download/Digital.zip -OutFile Digital.zip
   Expand-Archive Di*.zip -DestinationPath C:\
   rm Di*zip
+  cd ..
   ````
 
 ### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta Digital:
 
   ````bash
-  cd Downloads
+  cd Downloads\
   Move-Item -Path Digital -Destination C:\
+  cd ..
   ````
 
  ### El ejecutable quedará en:
@@ -216,32 +220,36 @@ source .bashrc
 - O Desde PowerShell se puede descargar y descomprimir con:
   - 32 bit:
     ````bash
-    cd Downloads/
+    cd Downloads\
     wget https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win32/gtkwave-3.3.100-bin-win32.zip -OutFile gtkwave-3.3.100-bin-win32.zip
     Expand-Archive gtk*.zip -DestinationPath C:\
     rm gtk*.zip
+    cd ..
     ````
     
   - 64 bit:
     ````bash
-    cd Downloads/
+    cd Downloads\
     wget https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip -OutFile gtkwave-3.3.100-bin-win64.zip
     Expand-Archive gtk*.zip -DestinationPath C:\
     rm gtk*.zip
-    Rename-Item -Path "c:\gtkwave64" -NewName "gtkwave"
+    Rename-Item -Path "C:\gtkwave64" -NewName "gtkwave"
+    cd ..
     ````
 
 ### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta gtkwave:
   - 32 bit
     ````bash
-    cd Downloads
+    cd Downloads\
     Move-Item -Path gtkwave -Destination C:\
+    cd ..
     ````
   - 64bit
     ````bash
-    cd Downloads
-    Rename-Item -Path "c:\gtkwave64" -NewName "gtkwave"
+    cd Downloads\
+    Rename-Item -Path "C:\gtkwave64" -NewName "gtkwave"
     Move-Item -Path gtkwave -Destination C:\
+    cd ..
     ````
 
 ### El ejecutable quedará en:
@@ -279,7 +287,7 @@ source .bashrc
 
 #### Una vez instalado usamos Cygwin para instalar las dependencias de GTKWave:
   ````bash
-  cd Downloads/
+  cd Downloads\
   .\setup-x86_64.exe -q -P gcc-g++,gperf,libbz2-devel,liblzma-devel,zlib-devel,libgtk3-devel,make,git,xinit,tcl-tk-devel,autotools-dev,automake,libJudy-devel
   ````
   12. ![](media/12.png)
@@ -322,7 +330,7 @@ Aparecerán 2 iconos de sistemas.
 Si el Sistema esta en Español abre CMD:
   ````bash
   takeown /f C:\cygwin64 /r /d s
-  icacls c:\cygwin64 /t /grant todos:f
+  icacls C:\cygwin64 /t /grant todos:f
   del /s /q C:\cygwin64
   rmdir /s /q C:\cygwin64
   ````
