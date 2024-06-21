@@ -124,6 +124,7 @@ source .bashrc
 
 
 # Instalar GHDL en Windows:
+
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Windows_11_logo.svg/1280px-Windows_11_logo.svg.png" style="width:50%" />
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
@@ -148,20 +149,23 @@ source .bashrc
     cd Downloads/
     wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip -OutFile ghdl-UCRT64.zip
     Expand-Archive ghdl*.zip -DestinationPath C:\
+    rm ghdl-UCRT.zip
     ````
 
 ### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta GHDL:
-#### Con CMD:
 - 32 bit
   ````bash
-  MOVE Downloads/ghdl-MINGW32/GHDL C:\
+  cd Downloads
+  Move-Item -Path ghdl-MINGW32/GHDL -Destination C:\
   ````
 - 64bit:
-   ````bash
-  MOVE Downloads/ghdl-UCRT64/GHDL C:\
+  ````bash
+  cd Downloads
+  Move-Item -Path ghdl-UCRT64/GHDL -Destination C:\
   ````
-### El ejecutable quedará en:
-- ````bash
+
+#### El ejecutable quedará en:
+  ````bash
   C:\GHDL\bin\
   ````
   Usaremos esto después.
@@ -172,6 +176,7 @@ source .bashrc
   ````bash
   winget install "Java 8"
   ````
+  
 ### Descargando manualmente el zip o desde PowerShell:
 
 - [Descarga ZIP](https://github.com/hneemann/Digital/releases/download/v0.30/Digital.zip)
@@ -192,7 +197,7 @@ source .bashrc
   ````
 
  ### El ejecutable quedará en:
-- ````bash
+  ````bash
   C:\Digital\
   ````
   Usaremos esto después.
@@ -224,30 +229,27 @@ source .bashrc
     Rename-Item -Path "c:\gtkwave64" -NewName "gtkwave"
     ````
 
-### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta Digital:
-- 32 bit
-  ````bash
-  cd Downloads
-  Move-Item -Path gtkwave -Destination C:\
-  ````
-- 64bit
-  ````bash
-  cd Downloads
-  Rename-Item -Path "c:\gtkwave64" -NewName "gtkwave"
-  Move-Item -Path gtkwave -Destination C:\
-  ````
+### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta gtkwave:
+  - 32 bit
+    ````bash
+    cd Downloads
+    Move-Item -Path gtkwave -Destination C:\
+    ````
+  - 64bit
+    ````bash
+    cd Downloads
+    Rename-Item -Path "c:\gtkwave64" -NewName "gtkwave"
+    Move-Item -Path gtkwave -Destination C:\
+    ````
 
-El ejecutable quedará en:
+### El ejecutable quedará en:
   - ````bash
     C:\gtkwave\bin\
     ````
     Usaremos esto después.
 
 ### Agregamos las carpetas a las variable de entorno del Sitema para poder ejecutar desde la Terminal al solo escribir `` ghdl ``, `` Digital ``, `` gtkwave ``.
-  - 32 bit:
-    ````bash
-    setx PATH "%PATH%;C:\GHDL\bin\;C:\Digital\;C:\gtkwave\bin\"
-    ````
+
   - 64 bit:
     ````bash
     setx PATH "%PATH%;C:\GHDL\bin\;C:\Digital\;C:\gtkwave64\bin\"
