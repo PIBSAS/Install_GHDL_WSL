@@ -153,6 +153,7 @@ source .bashrc
     rm ghdl-UCRT64.zip
     cd ..
     ````
+    Al ver `` cd ..`` presionamos Enter.
 
 ### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta GHDL:
 - 32 bit
@@ -193,7 +194,8 @@ source .bashrc
   rm Di*zip
   cd ..
   ````
-
+  Al ver `` cd ..`` presionamos Enter.
+  
 ### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta Digital:
 
   ````bash
@@ -236,6 +238,7 @@ source .bashrc
     Rename-Item -Path "C:\gtkwave64" -NewName "gtkwave"
     cd ..
     ````
+    Al ver `` cd ..`` presionamos Enter.
 
 ### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta gtkwave:
   - 32 bit
@@ -251,7 +254,8 @@ source .bashrc
     Move-Item -Path gtkwave -Destination C:\
     cd ..
     ````
-
+    Al ver `` cd ..`` presionamos Enter.
+    
 ### El ejecutable quedará en:
   - ````bash
     C:\gtkwave\bin\
