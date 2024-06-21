@@ -16,6 +16,7 @@
   ````
 
 ### Obtenemos GHDL:
+
 - ````bash
   mkdir ghdl
   wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-gha-ubuntu-22.04-gcc.tgz -P ghdl/
