@@ -1,8 +1,6 @@
-
-
 library IEEE;
 use IEEE.Std_logic_1164.all;
-use IEEE.Numeric_Std.all;
+--use IEEE.Numeric_Std.all;
 
 entity Funcion_Simplificada_tb is
 end;
@@ -28,7 +26,16 @@ begin
   begin
   
     -- Put initialisation code here
-
+		
+		C <= '0'; B <= '0'; A <='0'; wait for 100 ns;
+		C <= '0'; B <= '0'; A <='1'; wait for 100 ns;
+		C <= '0'; B <= '1'; A <='0'; wait for 100 ns;
+		C <= '0'; B <= '1'; A <='1'; wait for 100 ns;
+		C <= '1'; B <= '0'; A <='0'; wait for 100 ns;
+		C <= '1'; B <= '0'; A <='1'; wait for 100 ns;
+		C <= '1'; B <= '1'; A <='0'; wait for 100 ns;
+		C <= '1'; B <= '1'; A <='1'; wait for 100 ns;
+		wait;
 
     -- Put test bench stimulus code here
 
