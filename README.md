@@ -448,7 +448,13 @@ Aparecerán 2 iconos de sistemas.
   ``-a`` analiza la descripción.
   ``-e`` elabora la unidad.
   ``-r`` corre/simula el diseño.
-
+  
+  - ``TEMPLATE.vhd`` y ``TEMPLATE_TB.vhd`` usan ``STD_LOGIC_ARITH`` y ``STD_LOGIC_UNSIGNED``
+  - Por lo tanto deben comentarse ambas lineas o agregrar lo siguiente a los comandos de ghdl:
+  - ````bash
+    ghdl -s --std=08 --ieee=synopsys TEMPLATE.vhd
+    ````
+    En sus diversas variantes.
 ### En Digital el ``archivo_tb`` no se necesita y tiene herramientas para ver en tiempo real(no muy preciso) el diagrama temporal.
 
 <br>
