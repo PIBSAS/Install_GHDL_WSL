@@ -17,7 +17,7 @@ end RTL;
 
 Colocamos las entradas según nuestra teoría B es el MSB. Guardado con el nombre de la entidad : ``or_gate.vhd``
 
-### Creación del testbench:
+### Creación del Testbench:
 ````bash
 library ieee;
 use ieee.std_logic_1164.all;
@@ -63,9 +63,8 @@ Se guarda con el nombre de la entidad : ``tb_or_gate.vhd``
 
 ### El código que genera VHDL Testbench Creation online para comparar:
 ````bash
-/*
-Creaado por la web VHDL Testbench Creation
-https://www.doulos.com/knowhow/perl/vhdl-testbench-creation-using-perl/
+-- Creaado por la web VHDL Testbench Creation
+-- https://www.doulos.com/knowhow/perl/vhdl-testbench-creation-using-perl/
 library IEEE;
 use IEEE.Std_logic_1164.all;
 use IEEE.Numeric_Std.all;
@@ -99,7 +98,7 @@ begin
     wait;
   end process;
 
-end;*/
+end;
 ````
 
 ### Generamos el ``.vcd`` para verlo con GTKWave abriendo una Terminal donde se encuentran nuestro Testbench:
