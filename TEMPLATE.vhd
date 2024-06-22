@@ -6,7 +6,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity TEMPLATE is
 	port (B : in STD_LOGIC;
 		  A	: in STD_LOGIC;
-		  Z : out STD_LOGIG);
+		  Z : out STD_LOGIC);
 end TEMPLATE;
 
 architecture RTL of TEMPLATE is
