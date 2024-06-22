@@ -1,6 +1,6 @@
-[Writing a simple Testbench in VHDL](https://youtu.be/kfaHtXxtQmI)
-[Otro Video en Español explicado](https://youtu.be/XUfL_YKiWAk?si=xzLwqd2A84VkUxtW)
-[Testbench con Vivado](https://www.youtube.com/watch?v=RKXUeYl-cvI)
+- [Writing a simple Testbench in VHDL](https://youtu.be/kfaHtXxtQmI)
+- [Otro Video en Español explicado](https://youtu.be/XUfL_YKiWAk?si=xzLwqd2A84VkUxtW)
+- [Testbench con Vivado](https://www.youtube.com/watch?v=RKXUeYl-cvI)
 
 ### Descripción compuerta OR:
 ````bash
