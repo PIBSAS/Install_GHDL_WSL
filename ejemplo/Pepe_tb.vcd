@@ -1,0 +1,127 @@
+$date
+  Sat Jun 22 14:47:12 2024
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module pepe_tb $end
+$var reg 1 ! d $end
+$var reg 1 " c $end
+$var reg 1 # b $end
+$var reg 1 $ a $end
+$var reg 1 % q $end
+$var reg 1 & s $end
+$scope module dut $end
+$var reg 1 ' d $end
+$var reg 1 ( c $end
+$var reg 1 ) b $end
+$var reg 1 * a $end
+$var reg 1 + q $end
+$var reg 1 , s $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+#100000000
+1$
+1*
+#200000000
+1#
+0$
+1)
+0*
+#300000000
+1$
+1&
+1*
+1,
+#400000000
+1"
+0#
+0$
+1%
+0&
+1(
+0)
+0*
+1+
+0,
+#500000000
+1$
+1*
+#600000000
+1#
+0$
+1)
+0*
+#700000000
+1$
+1&
+1*
+1,
+#800000000
+1!
+0"
+0#
+0$
+0&
+1'
+0(
+0)
+0*
+0,
+#900000000
+1$
+1*
+#1000000000
+1#
+0$
+1)
+0*
+#1100000000
+1$
+1&
+1*
+1,
+#1200000000
+1"
+0#
+0$
+0&
+1(
+0)
+0*
+0,
+#1300000000
+1$
+1*
+#1400000000
+1#
+0$
+1)
+0*
+#1500000000
+1$
+1&
+1*
+1,
+#1600000000
