@@ -51,11 +51,10 @@
   echo 'alias digital=Digital.sh' >> $HOME/.bashrc
   source .bashrc
   ````
-<!---
+
 <br>
-<h2 align="center">$$\texttt{{\color{red} \large{Desinstalar\ todo}}}$$</h2>
-{:/comment}
---->
+<h1 align="center">Desinstalar todo</h1>
+
 - ````bash
   wsl --unregister Ubuntu
   ````
@@ -162,12 +161,10 @@ Creamos usuario y contraseña.
   echo 'alias digital=Digital.sh' >> $HOME/.bashrc
   source .bashrc
   ````
-<!---  
-{::comment}
+
 <br>
-<h2 align="center">$$\texttt{{\color{red} \large{Desinstalar\ todo}}}$$</h2>
-{:/comment}
---->
+<h1 align="center">Desinstalar todo</h1>
+
 - ````bash
   wsl --unregister Debian
   ````
