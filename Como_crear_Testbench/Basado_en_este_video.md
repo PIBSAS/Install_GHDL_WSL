@@ -44,7 +44,7 @@ ORGATE : or_gate port map(
 			Z => Z);
 
 -- Creamos el proceso llamado Stimulus
-Stimulus_process: process:
+Stimulus_process: process
 begin
 	-- Se asigna valores a las signals con un retardo de 100 nano segundos
 	-- Es pasar la TV al parecer, y se indica un wait final
@@ -59,7 +59,7 @@ end Behavioral;
 -- Final del Testbench
 ````
 
-Se guarda con el nombre de la entidad : ```tb_or_gate.vhd``
+Se guarda con el nombre de la entidad : ``tb_or_gate.vhd``
 
 ### El código que genera VHDL Testbench Creation online para comparar:
 ````bash
