@@ -1,0 +1,84 @@
+$date
+  Sat Jun 22 15:42:12 2024
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module mux_senales_tb $end
+$var reg 1 ! c $end
+$var reg 1 " b $end
+$var reg 1 # a $end
+$var reg 1 $ y $end
+$scope module dut $end
+$var reg 1 % b $end
+$var reg 1 & a $end
+$var reg 1 ' c $end
+$var reg 1 ( y $end
+$var reg 1 ) y1 $end
+$var reg 1 * y2 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+#100000000
+1#
+1$
+1&
+1(
+1)
+#200000000
+1"
+0#
+0$
+1%
+0&
+0(
+0)
+#300000000
+1#
+1$
+1&
+1(
+1)
+#400000000
+1!
+0"
+0#
+0$
+0%
+0&
+1'
+0(
+0)
+#500000000
+1#
+1&
+#600000000
+1"
+0#
+1$
+1%
+0&
+1(
+1*
+#700000000
+1#
+1&
+#800000000
