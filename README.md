@@ -509,3 +509,5 @@ Aparecerán 2 iconos de sistemas.
 - [VHDL online Workshop](https://www.vhdl-online.de/vhdl_workshop/start)
 - [Wkilibros Programación VHDL y Ejemplos](https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_VHDL)
 
+### GTKWave:
+![](/ejemplo/GeneradordeParidad_4Ent_vcd.png)
