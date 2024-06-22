@@ -112,4 +112,4 @@ ghdl -r tb_or_gate
 ghdl -r tb_or_gate --vcd=or_gate.vcd
 ````
 
-![Resultado](media/24.png)
+![Resultado](/media/24.png)
