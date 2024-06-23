@@ -1,7 +1,9 @@
 library ieee;
 use ieee.std_logic_1164.all;
---use ieee.std_logic_arith.all;
-use ieee.std_logic_unsigned.all;
+--use ieee.std_logic_arith.all; --Es propietaria de Xilinx
+--use ieee.std_logic_unsigned.all; --Es propietaria de Xilinx
+--use ieee.numeric_std.all; --Ambas se reemplazan con se reemplaza con: use ieee.numeric_std.all
+-- compilar con ghdl -s --std=08 --ieee=synopsys archivo.vhd si usamos las bibliotecas de Xilnx
 
 entity Sindrome_error_Hamming is
 	port ( A: in std_logic_vector (6 downto 0);
@@ -21,12 +23,13 @@ begin
 	S <= V1 & V2 & V3; --Concatenamos la señal S para manejar el CASE
 
 process (S, A) --Correjimos las combinaciones donde S tiene 2 unos o mas
+
 begin
 	case S is
 		when "000" => Y <= A (6 downto 3);
 		when "001" => Y <= A (6 downto 3);
 		when "010" => Y <= A (6 downto 3);
-		when "011" => Y <=(A (6 downto 3) xor "0100)"; --Usamos una mascara en cada caso
+		when "011" => Y <=(A (6 downto 3) xor "0100"); --Usamos una mascara en cada caso
 		when "100" => Y <= A (6 downto 3);
 		when "101" => Y <=(A (6 downto 3) xor "0001"); --Usamos una mascara en cada caso
 		when "110" => Y <=(A (6 downto 3) xor "1000"); --Usamos una mascara en cada caso
