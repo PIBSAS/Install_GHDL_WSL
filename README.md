@@ -449,8 +449,8 @@ Aparecerán 2 iconos de sistemas.
   ``-e`` elabora la unidad.
   ``-r`` corre/simula el diseño.
   
-  - ``TEMPLATE.vhd`` y ``TEMPLATE_TB.vhd`` usan ``STD_LOGIC_ARITH`` y ``STD_LOGIC_UNSIGNED``
-  - Por lo tanto deben comentarse ambas lineas o agregrar lo siguiente a los comandos de ghdl:
+  - ``TEMPLATE.vhd`` y ``TEMPLATE_TB.vhd`` usaban ``STD_LOGIC_ARITH`` y ``STD_LOGIC_UNSIGNED``, se las actualizo al Standard IEEE, ambas bibliotecas son propietarias de [Xilinx](https://support.xilinx.com/s/article/45213?language=en_US), el Standard las reemplazó con ``numeric_std.all``.
+  - Por lo tanto deben comentarse ambas lineas o agregrar lo siguiente a los comandos de ghdl(Esto ya no es necesario, pero queda por las dudas):
   - ````bash
     ghdl -s --std=08 --ieee=synopsys TEMPLATE.vhd
     ````
@@ -509,6 +509,9 @@ Aparecerán 2 iconos de sistemas.
 - [VHDL online Workshop](https://www.vhdl-online.de/vhdl_workshop/start)
 - [Wikilibros Programación VHDL y Ejemplos](https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_VHDL)
 - [Como generar Testbench Explicación](/Como_crear_Testbench/Basado_en_este_video.md)
+- [ieee.nummeric_std.all](https://opensource.ieee.org/vasg/Packages/-/blob/586ebeb9c3fcefd1ac9a07ce749d0e01e678503e/ieee/numeric_std.vhdl)
+- [IEEE Standard VHDL Language Reference Manual PDF](https://edg.uchicago.edu/~tang/VHDLref.pdf)
+- [IEEE Standard VHDL Language Reference Manual Online Actual](https://ieeexplore.ieee.org/document/10287898)
 
 ### GTKWave:
 ![](/ejemplo/GeneradordeParidad_4Ent_vcd.png)
