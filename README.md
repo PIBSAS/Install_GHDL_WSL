@@ -450,7 +450,7 @@ Aparecerán 2 iconos de sistemas.
   ``-r`` corre/simula el diseño.
   
   - ``TEMPLATE.vhd`` y ``TEMPLATE_TB.vhd`` usaban ``STD_LOGIC_ARITH`` y ``STD_LOGIC_UNSIGNED``, se las actualizo al Standard IEEE, ambas bibliotecas son propietarias de [Xilinx](https://support.xilinx.com/s/article/45213?language=en_US), el Standard las reemplazó con ``numeric_std.all``.
-  - Por lo tanto deben comentarse ambas lineas o agregrar lo siguiente a los comandos de ghdl(Esto ya no es necesario, pero queda por las dudas):
+  - Por lo tanto deben comentarse ambas lineas o agregar lo siguiente a los comandos de ghdl(Esto ya no es necesario, pero queda por las dudas):
   - ````bash
     ghdl -s --std=08 --ieee=synopsys TEMPLATE.vhd
     ````
