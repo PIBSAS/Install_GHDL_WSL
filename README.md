@@ -52,7 +52,7 @@
   source .bashrc
   ````
 
-## Script para ejecutar todos los pasos automaticamente:
+## Script para ejecutar todos los pasos de instalación automaticamente:
 
 - ````bash
   sudo apt update && sudo apt install -y curl
@@ -173,6 +173,31 @@ Creamos usuario y contraseña.
   echo 'alias digital=Digital.sh' >> $HOME/.bashrc
   source .bashrc
   ````
+
+## Script para ejecutar todos los pasos de instalación automaticamente:
+
+### Debian Bullseye:
+- ````bash
+  sudo apt update && sudo apt install -y curl
+  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_bullseye.sh | bash
+  ````
+### En PC con Debian Bullseye solo:
+
+- ````bash
+  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_bullseye.sh | bash
+  ````
+
+### Debian Bookworm:
+- ````bash
+  sudo apt update && sudo apt install -y curl
+  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_bookworm.sh | bash
+  ````
+### En PC con Debian Bookworm solo:
+
+- ````bash
+  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_bookworm.sh | bash
+  ````
+
 
 <br>
 <h1 align="center">Desinstalar todo</h1>
