@@ -58,6 +58,17 @@
 - ````bash
   wsl --unregister Ubuntu
   ````
+
+## Script para ejecutar todos los pasos automaticamente:
+
+- ````bash
+  sudo apt update && sudo apt install -y curl
+  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/ubuntu.sh | bash
+  ````
+### En PC con Ubuntu solo:
+
+- ````bash
+  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/ubuntu_24_04.sh | bash
   
 <br>
 <h1 align="center">Instalar GHDL en Debian con WSL o Linux</h1>
