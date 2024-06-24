@@ -52,13 +52,6 @@
   source .bashrc
   ````
 
-<br>
-<h1 align="center">Desinstalar todo</h1>
-
-- ````bash
-  wsl --unregister Ubuntu
-  ````
-
 ## Script para ejecutar todos los pasos automaticamente:
 
 - ````bash
@@ -69,6 +62,14 @@
 
 - ````bash
   curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/ubuntu_24_04.sh | bash
+  ````
+
+<br>
+<h1 align="center">Desinstalar todo</h1>
+
+- ````bash
+  wsl --unregister Ubuntu
+  ````
   
 <br>
 <h1 align="center">Instalar GHDL en Debian con WSL o Linux</h1>
