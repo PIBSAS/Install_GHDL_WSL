@@ -557,6 +557,5 @@ Aparecerán 2 iconos de sistemas.
 ## Script para ejecutar todos los pasos de instalación automaticamente:
 
 - ````bash
-  sudo apt update && sudo apt install -y curl
   curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/raspberry.sh | bash
   ````
