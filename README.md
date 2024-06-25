@@ -552,3 +552,11 @@ Aparecerán 2 iconos de sistemas.
 
 ### GTKWave:
 ![](/ejemplo/GeneradordeParidad_4Ent_vcd.png)
+
+# Para la Raspberry Pi
+## Script para ejecutar todos los pasos de instalación automaticamente:
+
+- ````bash
+  sudo apt update && sudo apt install -y curl
+  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/raspberry.sh | bash
+  ````
