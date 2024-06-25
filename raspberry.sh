@@ -7,3 +7,15 @@ cd ghdl
 make
 sudo make install
 ghdl --version
+echo "Obtenemos Digital"
+cd
+wget -c https://github.com/hneemann/Digital/releases/latest/download/Digital.zip
+echo "Descomprimimos Digital"
+unzip Di*zip
+echo "Eliminamos el comprimido"
+rm Di*zip
+echo "Agregamos Digital al PATH y creamos un alias para ejecutarlo"
+cd
+echo 'export PATH="$HOME/Digital:$PATH"' >> $HOME/.bashrc
+echo 'alias digital=Digital.sh' >> $HOME/.bashrc
+echo "Instalacion finalizada, reiniciar sistema"
