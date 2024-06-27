@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann -->
+<!-- created: Thu Jun 27 13:31:47 ART 2024 -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="107.55mm"
+   height="69.6mm"
+   viewBox="-182 -282 717 464">
+<g stroke-linecap="square">
+<path d="M -40,-60 L -40,0 L 20,0" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M 140,-100 L 160,-100" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M 380,100 L 400,100" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M -160,-100 L -160,-80 L 80,-80" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M 100,20 L 120,20 L 120,40 L 140,40" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M -40,-100 L -40,-60 L 0,-60 L 0,-120 L 80,-120" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M -40,0 L -40,180" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M 20,160 L -160,160 L -160,80 L 140,80" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M -160,-80 L -160,80" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M -160,160 L -160,180" stroke="#008e00" stroke-width="4.0" fill="none"/>
+<path d="M 140,40 L 144,40" stroke="#0000b2" stroke-width="4.0" fill="none"/>
+<path d="M 140,80 L 144,80" stroke="#0000b2" stroke-width="4.0" fill="none"/>
+<path d="M 20,120 L 24,120" stroke="#0000b2" stroke-width="4.0" fill="none"/>
+<path d="M 20,160 L 24,160" stroke="#0000b2" stroke-width="4.0" fill="none"/>
+<path d="M -100,-100 L -100,-40 L 20,-40 L 20,-100 L 80,-100" stroke="#66ff66" stroke-width="4.0" fill="none"/>
+<path d="M -100,-40 L -100,40 L 20,40" stroke="#66ff66" stroke-width="4.0" fill="none"/>
+<path d="M 100,140 L 260,140 L 260,120 L 280,120" stroke="#66ff66" stroke-width="4.0" fill="none"/>
+<path d="M -100,180 L -100,120 L 20,120" stroke="#66ff66" stroke-width="4.0" fill="none"/>
+<path d="M 240,60 L 260,60 L 260,80 L 280,80" stroke="#66ff66" stroke-width="4.0" fill="none"/>
+<path d="M -100,40 L -100,120" stroke="#66ff66" stroke-width="4.0" fill="none"/>
+<g>
+<circle cx="-40.0" cy="0.0" r="4.0" stroke="#008e00" stroke-width="4.0" fill="#008e00" />
+<circle cx="-160.0" cy="160.0" r="4.0" stroke="#008e00" stroke-width="4.0" fill="#008e00" />
+<circle cx="-100.0" cy="-40.0" r="4.0" stroke="#66ff66" stroke-width="4.0" fill="#66ff66" />
+<circle cx="-100.0" cy="40.0" r="4.0" stroke="#66ff66" stroke-width="4.0" fill="#66ff66" />
+<circle cx="-160.0" cy="-80.0" r="4.0" stroke="#008e00" stroke-width="4.0" fill="#008e00" />
+<circle cx="-160.0" cy="80.0" r="4.0" stroke="#008e00" stroke-width="4.0" fill="#008e00" />
+<circle cx="-100.0" cy="120.0" r="4.0" stroke="#66ff66" stroke-width="4.0" fill="#66ff66" />
+<circle cx="-40.0" cy="-60.0" r="4.0" stroke="#008e00" stroke-width="4.0" fill="#008e00" />
+</g>
+<g>
+<circle cx="416.0" cy="100.0" r="9.0" stroke="#008e00" stroke-width="4.0" fill="#008e00" />
+<circle cx="416.0" cy="100.0" r="15.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="start" x="445.0" y="109.0" fill="#000000" style="font-size:24px"><tspan style="font-style:italic;">Y</tspan></text>
+<circle cx="400.0" cy="100.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+</g>
+<g>
+<path d="M 330,130 L 281,130 L 281,70 L 330,70 C 340,70 360,80 359,100 C 359,120 340,130 330,130 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
+<circle cx="370.0" cy="100.0" r="9.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<circle cx="280.0" cy="80.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="280.0" cy="120.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="380.0" cy="100.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+</g>
+<g>
+<path d="M 170,90 L 140,90 C 150,74 150,46 140,30 L 160,30 C 190,30 210,40 220,60 C 210,80 190,90 170,90 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
+<circle cx="230.0" cy="60.0" r="9.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<circle cx="140.0" cy="40.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="140.0" cy="80.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="240.0" cy="60.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+</g>
+<g>
+<path d="M 70,50 L 21,50 L 21,-10 L 70,-10 C 80,-10 100,0 99,20 C 99,40 80,50 70,50 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
+<circle cx="20.0" cy="0.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="20.0" cy="40.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="100.0" cy="20.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+</g>
+<g>
+<path d="M 50,170 L 20,170 C 30,154 30,126 20,110 L 40,110 C 70,110 90,120 100,140 C 90,160 70,170 50,170 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
+<circle cx="20.0" cy="120.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="20.0" cy="160.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="100.0" cy="140.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+</g>
+<g>
+<path d="M -145,-131 L -145,-101 L -175,-101 L -175,-131 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
+<circle cx="-160.0" cy="-116.0" r="9.0" stroke="#008e00" stroke-width="4.0" fill="#008e00" />
+<text text-anchor="start" x="-160.0" y="-136.0" fill="#000000" style="font-size:24px" transform="rotate(-90,-160.0,-145.0)" ><tspan style="font-style:italic;">C</tspan></text>
+<circle cx="-160.0" cy="-100.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+</g>
+<g>
+<path d="M -85,-131 L -85,-101 L -115,-101 L -115,-131 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
+<circle cx="-100.0" cy="-116.0" r="9.0" stroke="#66ff66" stroke-width="4.0" fill="#66ff66" />
+<text text-anchor="start" x="-100.0" y="-136.0" fill="#000000" style="font-size:24px" transform="rotate(-90,-100.0,-145.0)" ><tspan style="font-style:italic;">B</tspan></text>
+<circle cx="-100.0" cy="-100.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+</g>
+<g>
+<path d="M -25,-131 L -25,-101 L -55,-101 L -55,-131 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
+<circle cx="-40.0" cy="-116.0" r="9.0" stroke="#008e00" stroke-width="4.0" fill="#008e00" />
+<text text-anchor="start" x="-40.0" y="-136.0" fill="#000000" style="font-size:24px" transform="rotate(-90,-40.0,-145.0)" ><tspan style="font-style:italic;">A</tspan></text>
+<circle cx="-40.0" cy="-100.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+</g>
+<g>
+<path d="M -70,-210 L 10,-210 L 10,-170 L -70,-170 Z" stroke="#b4ffb4" stroke-width="0.0" fill="#b4ffb4" fill-opacity="0.7843137254901961"/>
+<path d="M -70,-210 L 10,-210 L 10,-170 L -70,-170 Z" stroke="#000000" stroke-width="2.0" fill="none"/>
+<text text-anchor="middle" x="-30.0" y="-181.0" fill="#000000" style="font-size:24px">Test</text>
+<text text-anchor="middle" x="-30.0" y="-220.0" fill="#000000" style="font-size:24px">Y</text>
+</g>
+<g>
+<path d="M 81,-130 L 139,-130 L 139,-70 L 81,-70 Z" stroke="#000000" stroke-width="4.0" fill="none"/>
+<text text-anchor="middle" x="110.0" y="-138.0" fill="#000000" style="font-size:24px">main</text>
+<text text-anchor="start" x="84.0" y="-113.25" fill="#808080" style="font-size:18px">A</text>
+<text text-anchor="start" x="84.0" y="-93.25" fill="#808080" style="font-size:18px">B</text>
+<text text-anchor="start" x="84.0" y="-73.25" fill="#808080" style="font-size:18px">C</text>
+<text text-anchor="end" x="136.0" y="-93.25" fill="#808080" style="font-size:18px">Y</text>
+<text text-anchor="middle" x="110.0" y="-52.5" fill="#808080" style="font-size:18px">External File</text>
+<circle cx="80.0" cy="-120.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="80.0" cy="-100.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="80.0" cy="-80.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+<circle cx="140.0" cy="-100.0" r="2.0" stroke="#b20000" stroke-width="4.0" fill="#b20000" />
+</g>
+<g>
+<circle cx="176.0" cy="-100.0" r="15.0" stroke="#000000" stroke-width="4.0" fill="#000000" />
+<text text-anchor="start" x="205.0" y="-91.0" fill="#000000" style="font-size:24px">Y</text>
+<circle cx="160.0" cy="-100.0" r="2.0" stroke="#0000b2" stroke-width="4.0" fill="#0000b2" />
+</g>
+<g>
+<text text-anchor="start" x="240.0" y="-209.5" fill="#000000" style="font-size:14px">Este VHDL y su Testbench</text>
+<text text-anchor="start" x="240.0" y="-192.5" fill="#000000" style="font-size:14px">fueron creados por Digital,</text>
+<text text-anchor="start" x="240.0" y="-175.5" fill="#000000" style="font-size:14px">realizando el circuito desde la</text>
+<text text-anchor="start" x="240.0" y="-158.5" fill="#000000" style="font-size:14px">expresión(Analisis-&gt;Expresión),</text>
+<text text-anchor="start" x="240.0" y="-141.5" fill="#000000" style="font-size:14px">luego (Archivo -&gt; Exportar VHDL)</text>
+<text text-anchor="start" x="240.0" y="-124.5" fill="#000000" style="font-size:14px">Tras ello, guarda los 2 archivos.</text>
+<text text-anchor="start" x="240.0" y="-107.5" fill="#000000" style="font-size:14px">Para verlo se agrega VHDL -&gt; External File</text>
+<text text-anchor="start" x="240.0" y="-90.5" fill="#000000" style="font-size:14px">en el árbol de componentes,</text>
+<text text-anchor="start" x="240.0" y="-73.5" fill="#000000" style="font-size:14px">se selecciona el .vhdl como program</text>
+<text text-anchor="start" x="240.0" y="-56.5" fill="#000000" style="font-size:14px">se selecciona GHDL y se pulsa check.</text>
+<text text-anchor="start" x="240.0" y="-39.5" fill="#000000" style="font-size:14px">se realizan las conexiones y se simula.</text>
+<text text-anchor="start" x="240.0" y="-22.5" fill="#000000" style="font-size:14px">NOTA: Si se quiere usar Analisis</text>
+<text text-anchor="start" x="240.0" y="-5.5" fill="#000000" style="font-size:14px">para ver TV, Mapa de Karnaugh,</text>
+<text text-anchor="start" x="240.0" y="11.5" fill="#000000" style="font-size:14px">circuito con compuertas universales,</text>
+<text text-anchor="start" x="240.0" y="28.5" fill="#000000" style="font-size:14px">TV reducida. se debe copiar y pegar</text>
+<text text-anchor="start" x="240.0" y="45.5" fill="#000000" style="font-size:14px">el FPGA a otro archivo.</text>
+</g>
+<g>
+<text text-anchor="start" x="-180.0" y="-262.0" fill="#000000" style="font-size:24px">Z=not ( (B or C) and not ( (A and B) or C ) )</text>
+</g>
+</g>
+</svg>

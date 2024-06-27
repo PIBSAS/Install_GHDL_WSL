@@ -128,12 +128,12 @@
       <elementName>ExternalFile</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>c4_ej7</string>
-        </entry>
-        <entry>
           <string>applicationType</string>
           <appType>GHDL</appType>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>main</string>
         </entry>
         <entry>
           <string>externalInputs</string>
@@ -152,7 +152,12 @@
     </visualElement>
     <visualElement>
       <elementName>LED</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Y</string>
+        </entry>
+      </elementAttributes>
       <pos x="160" y="-100"/>
     </visualElement>
     <visualElement>
