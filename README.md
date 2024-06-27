@@ -670,7 +670,9 @@ Aparecerán 2 iconos de sistemas.
   end behav;
   ````
 ### Captura el único caso donde ``Z = 0``:  
-  ![](/ejemplo/c4_ej7.svg)
+<p style="background-color: white; display: inline-block; padding: 10px;">
+  <img src="/ejemplo/c4_ej7.svg" alt="Simulación">
+</p>
   
 # Para la Raspberry Pi
 ## Script para ejecutar todos los pasos de instalación automaticamente:
