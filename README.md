@@ -678,7 +678,8 @@ Aparecerán 2 iconos de sistemas.
 [<img src="https://img.youtube.com/vi/odJ0-ChNOQc/maxresdefault.jpg" width="600" height="300"
 />](https://www.youtube.com/embed/odJ0-ChNOQc?si=Oane7fiXmgdJasLQ)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/odJ0-ChNOQc" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/odJ0-ChNOQc?si=Oane7fiXmgdJasLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # Para la Raspberry Pi
 ## Script para ejecutar todos los pasos de instalación automaticamente:
