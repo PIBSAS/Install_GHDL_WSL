@@ -559,7 +559,7 @@ Aparecerán 2 iconos de sistemas.
    archivo.vhdl
    archivo_Y_tb.vhdl
    ````
-- El cual si lo abrimos con notepad++ indica que no puede modificarse, obviamente para su simulación en Digital. El Testbench no pasa un ``ghdl archivo_Y_tb.vhdl``
+- El cual si lo abrimos con notepad++ indica que no puede modificarse(Tranquilamente se puede), obviamente para su simulación en Digital. El Testbench no pasa un ``ghdl archivo_Y_tb.vhdl``
 - indicandonos un warning:
 -  ````bash
    PS C:\Users\black\Documents> ghdl -s .\c4_ej7.vhdl
