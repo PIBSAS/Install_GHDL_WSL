@@ -570,7 +570,10 @@ Aparecerán 2 iconos de sistemas.
    .\c4_ej7_Y_tb.vhdl:23:16:warning: declaration of "b" hides signal "B" [-Whide]
    variable b : string (1 to a'length) := (others => NUL);
    ````
-- Pero en Digital se simula tranquilamente.
+- Pero en Digital se simula tranquilamente. Entonces podemos pasar el warning con:
+-  ````bash
+   ghdl -s -Wno-hide .\c4_ej7_Y_tb.vhdl
+   ````
 
 ## Descripciones generadas por Digital:
 
