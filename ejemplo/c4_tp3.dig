@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Z</string>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>1</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-320" y="40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-420" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Or</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="-540" y="-40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="-660" y="-80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>A</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-840" y="-180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Not</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+      </elementAttributes>
+      <pos x="-820" y="-140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>B</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-900" y="-180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>C</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-960" y="-180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Data</elementName>
+      <elementAttributes>
+        <entry>
+          <string>microStep</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="-980" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>TP 3 CLASE 4
+Z = (B !A + C) C !A</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-980" y="-320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Z&apos;</string>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>1</int>
+        </entry>
+      </elementAttributes>
+      <pos x="60" y="-60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="-40" y="-80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>C&apos;</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-160" y="-180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>A&apos;</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-100" y="-180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Not</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+      </elementAttributes>
+      <pos x="-80" y="-140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Z&apos;&apos;</string>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>1</int>
+        </entry>
+      </elementAttributes>
+      <pos x="500" y="-60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Not</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Inputs</string>
+          <int>1</int>
+        </entry>
+      </elementAttributes>
+      <pos x="440" y="-60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>NAnd</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="-80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>C&apos;&apos;</string>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="-180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>A&apos;&apos;</string>
+        </entry>
+      </elementAttributes>
+      <pos x="260" y="-180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Not</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+      </elementAttributes>
+      <pos x="280" y="-140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>Expresión Simplificada:
+Z = C !A</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-180" y="-320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>Circuito con compuerta Universal:
+Z = C !A</string>
+        </entry>
+      </elementAttributes>
+      <pos x="180" y="-320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>c4_tp3</string>
+        </entry>
+        <entry>
+          <string>applicationType</string>
+          <appType>GHDL</appType>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>C,B,A</string>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>library ieee;
+use ieee.std_logic_1164.all;
+--use ieee.std_logic_arith.all; --Es propietaria de Xilinx
+--use ieee.std_logic_unsigned.all; --Es propietaria de Xilinx
+--use ieee.numeric_std.all; --Ambas se reemplazan con se reemplaza con: use ieee.numeric_std.all
+-- compilar con ghdl -s --std=08 --ieee=synopsys archivo.vhd si usamos las bibliotecas de Xilnx
+
+entity c4_tp3 is
+	port (C, B, A : in std_logic;
+	      Z : out std_logic);
+end c4_tp3;
+
+architecture RTL of c4_tp3 is
+
+begin
+	Z &lt;= ((B and not A) or C) and C and not A;
+end RTL;</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>Z</string>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Z</string>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>C</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-100" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>B</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-100" y="120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>A</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-100" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>VHDL</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-140" y="20"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="-960" y="0"/>
+      <p2 x="-540" y="0"/>
+    </wire>
+    <wire>
+      <p1 x="-100" y="160"/>
+      <p2 x="-40" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="100"/>
+      <p2 x="80" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="-60" y="100"/>
+      <p2 x="0" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="-160" y="-40"/>
+      <p2 x="-40" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="-900" y="-40"/>
+      <p2 x="-660" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="-560" y="-40"/>
+      <p2 x="-540" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="-40"/>
+      <p2 x="320" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="40"/>
+      <p2 x="-420" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="40"/>
+      <p2 x="-320" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="-80"/>
+      <p2 x="320" y="-80"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-80"/>
+      <p2 x="-660" y="-80"/>
+    </wire>
+    <wire>
+      <p1 x="-80" y="-80"/>
+      <p2 x="-40" y="-80"/>
+    </wire>
+    <wire>
+      <p1 x="-100" y="80"/>
+      <p2 x="0" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="80"/>
+      <p2 x="-440" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="-460" y="-20"/>
+      <p2 x="-440" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="-440" y="20"/>
+      <p2 x="-420" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="-100" y="120"/>
+      <p2 x="-60" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="-40" y="120"/>
+      <p2 x="0" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="420" y="-60"/>
+      <p2 x="440" y="-60"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="-60"/>
+      <p2 x="500" y="-60"/>
+    </wire>
+    <wire>
+      <p1 x="40" y="-60"/>
+      <p2 x="60" y="-60"/>
+    </wire>
+    <wire>
+      <p1 x="-580" y="-60"/>
+      <p2 x="-560" y="-60"/>
+    </wire>
+    <wire>
+      <p1 x="-440" y="60"/>
+      <p2 x="-420" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="-160"/>
+      <p2 x="280" y="-160"/>
+    </wire>
+    <wire>
+      <p1 x="-100" y="-160"/>
+      <p2 x="-80" y="-160"/>
+    </wire>
+    <wire>
+      <p1 x="-840" y="-160"/>
+      <p2 x="-820" y="-160"/>
+    </wire>
+    <wire>
+      <p1 x="-900" y="-180"/>
+      <p2 x="-900" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="-900" y="-40"/>
+      <p2 x="-900" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="-100" y="-180"/>
+      <p2 x="-100" y="-160"/>
+    </wire>
+    <wire>
+      <p1 x="-100" y="-160"/>
+      <p2 x="-100" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="-180"/>
+      <p2 x="260" y="-160"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="-160"/>
+      <p2 x="260" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="-840" y="-180"/>
+      <p2 x="-840" y="-160"/>
+    </wire>
+    <wire>
+      <p1 x="-840" y="-160"/>
+      <p2 x="-840" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="-40" y="120"/>
+      <p2 x="-40" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="-180"/>
+      <p2 x="200" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="-40"/>
+      <p2 x="200" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="-80" y="-160"/>
+      <p2 x="-80" y="-140"/>
+    </wire>
+    <wire>
+      <p1 x="-80" y="-100"/>
+      <p2 x="-80" y="-80"/>
+    </wire>
+    <wire>
+      <p1 x="-80" y="-80"/>
+      <p2 x="-80" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="-560" y="-60"/>
+      <p2 x="-560" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-160"/>
+      <p2 x="-820" y="-140"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-100"/>
+      <p2 x="-820" y="-80"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-80"/>
+      <p2 x="-820" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="40"/>
+      <p2 x="-820" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="-440" y="-20"/>
+      <p2 x="-440" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="-440" y="60"/>
+      <p2 x="-440" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="-160"/>
+      <p2 x="280" y="-140"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="-100"/>
+      <p2 x="280" y="-80"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="-80"/>
+      <p2 x="280" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="-60" y="100"/>
+      <p2 x="-60" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="-160" y="-180"/>
+      <p2 x="-160" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="-160" y="-40"/>
+      <p2 x="-160" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-180"/>
+      <p2 x="-960" y="0"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="0"/>
+      <p2 x="-960" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="80"/>
+      <p2 x="-960" y="120"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
