@@ -8,6 +8,7 @@
    width="107.55mm"
    height="69.6mm"
    viewBox="-182 -282 717 464">
+  <rect x="-182" y="-282" width="717" height="464" fill="white"/>
 <g stroke-linecap="square">
 <path d="M -40,-60 L -40,0 L 20,0" stroke="#008e00" stroke-width="4.0" fill="none"/>
 <path d="M 140,-100 L 160,-100" stroke="#008e00" stroke-width="4.0" fill="none"/>
