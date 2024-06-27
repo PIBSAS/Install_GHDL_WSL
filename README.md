@@ -553,8 +553,8 @@ Aparecerán 2 iconos de sistemas.
 ### GTKWave:
 ![](/ejemplo/GeneradordeParidad_4Ent_vcd.png)
 
-# Digital crea Testbench automáticamente desde Circuito:
-- Si, por ejemplo realizamos un circuito desde su expresión, tras ser creado podemos esportarlo a VHDL, al reaalizar esto, se guardan 2 archivos:
+# Digital crea Testbench automáticamente desde el Circuito si se usa la herramienta Test:
+- Si, por ejemplo realizamos un circuito desde su expresión o realizando las conexiones, luego usamos la opción ``Análisis -> Archivo -> Exportar el caso de prueba``, copiamos su contenido, vamos al árbol de componentes, elegimos en ``Varios -> Caso de Prueba`` lo editamos por separado, pegamos la TV generada y le damos al boton ``OK``, vamos a ``Archivo -> Exportar -> Exportar VHDL`` Guardamos con algún nombre, se guardan 2 archivos:
 -  ````bash
    archivo.vhdl
    archivo_Y_tb.vhdl
@@ -673,7 +673,13 @@ Aparecerán 2 iconos de sistemas.
 <p style="background-color: white; display: inline-block; padding: 10px;">
   <img src="/ejemplo/c4_ej7.svg" alt="Simulación">
 </p>
-  
+
+# Video Crear VHDL y Testbench:
+[<img src="https://img.youtube.com/vi/odJ0-ChNOQc/maxresdefault.jpg" width="600" height="300"
+/>](https://www.youtube.com/embed/odJ0-ChNOQc?si=Oane7fiXmgdJasLQ)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/odJ0-ChNOQc" frameborder="0" allowfullscreen></iframe>
+
 # Para la Raspberry Pi
 ## Script para ejecutar todos los pasos de instalación automaticamente:
 
