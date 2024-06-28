@@ -1,17 +1,3 @@
-# Function to check for administrative privileges and restart as admin if necessary
-function Ensure-Admin {
-    $currentUser = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
-    if (-not $currentUser.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
-        Write-Host "El script no tiene privilegios de administrador. Reiniciando como administrador..."
-        $newProcess = Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$($MyInvocation.MyCommand.Path)`"" -Verb RunAs -PassThru
-        $newProcess.WaitForExit()
-        exit
-    }
-}
-
-# Ensure the script is running with administrative privileges
-Ensure-Admin
-
 Write-Host "Script de instalacion para VHDL aun debemos agregar las variables de entorno!!!"
 
 Write-Host "Cambiar al directorio de descargas"
