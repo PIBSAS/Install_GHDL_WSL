@@ -207,20 +207,12 @@ Creamos usuario y contraseña.
   ````
 
 <br>
-<h1 align="center">Instalar GHDL en Windows</h1>
+<h1 align="center">Instalar GHDL en Windows(Cualquiera la imagen de win 11 es solo ilustrativa)</h1>
 
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Windows_11_logo.svg/1280px-Windows_11_logo.svg.png" style="width:50%" />
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
 </p>
-
-## Script PowerShell de instalación autommática:
-Aun deberemos agregar las variables de entorno, pero el resto se hará solo.
-
-- ````bash
-  Invoke-WebRequest -Uri "https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/VHDL_win_64bit.ps1" -OutFile "$env:TEMP\VHDL_win_64bit.ps1"
-  powershell -ExecutionPolicy Bypass -File "$env:TEMP\VHDL_win_64bit.ps1"
-  ````
 
 - [Verificamos cual es la última versión de GHDL](https://github.com/ghdl/ghdl/releases/latest/)
 - [Descarga 32 bit Última version hoy. ghdl-MINGW32 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip)
@@ -402,6 +394,23 @@ Usaremos esto después.
     Abrimos una Terminal y comprobamos(no es necesario) que obtenemos respuesta al preguntar por las versiones de los ejecutables, excepto en Digital que solo se ejecutará.
 
     ![Version](media/23.png)
+
+## Script PowerShell para ejecutar todos los pasos de instalación automáticamente:
+Aun deberemos agregar las variables de entorno, pero el resto se hará solo.
+
+### Abrimos una Terminal(Administrador) como admin, copiamos y pegamos estas 2 líneas, pulsa ``Enter``. Agregar las variables de entorno y listo.
+
+### 32bit:
+- ````bash
+  Invoke-WebRequest -Uri "https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/VHDL_win_32bit.ps1" -OutFile "$env:TEMP\VHDL_win_32bit.ps1"
+  powershell -ExecutionPolicy Bypass -File "$env:TEMP\VHDL_win_32bit.ps1"
+  ````
+  
+### 64bit:
+- ````bash
+  Invoke-WebRequest -Uri "https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/VHDL_win_64bit.ps1" -OutFile "$env:TEMP\VHDL_win_64bit.ps1"
+  powershell -ExecutionPolicy Bypass -File "$env:TEMP\VHDL_win_64bit.ps1"
+  ````
 
 ### Opción no tan fácil, bajamos el código fuente para compilar una versión más actual(últimos cambios hace 2 días):
 #### Cygwin necesario para Compilar GTKWave:
