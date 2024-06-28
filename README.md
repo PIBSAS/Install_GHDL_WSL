@@ -214,7 +214,7 @@ Creamos usuario y contraseña.
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
 </p>
 
-- [Verificamos cual es la última versión de GHDL](https://github.com/ghdl/ghdl/latest/releases/)
+- [Verificamos cual es la última versión de GHDL](https://github.com/ghdl/ghdl/releases/latest/)
 - [Descarga 32 bit Última version hoy. ghdl-MINGW32 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip)
 - [Descarga 64 bit Última version hoy. ghdl-UCRT64 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip)
 
