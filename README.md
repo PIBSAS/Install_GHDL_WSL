@@ -413,6 +413,10 @@ Aun deberemos agregar las variables de entorno, pero el resto se hará solo.
   powershell -ExecutionPolicy Bypass -File "$env:TEMP\VHDL_win_64bit.ps1"
   ````
 
+# Video Script PowerShell Windows:
+[<img src="https://img.youtube.com/vi/mRiR3jPgsS0/maxresdefault.jpg" width="600" height="300"
+/>](https://www.youtube.com/embed/mRiR3jPgsS0)
+
 ### Opción no tan fácil, bajamos el código fuente para compilar una versión más actual(últimos cambios hace 2 días):
 #### Cygwin necesario para Compilar GTKWave:
 
