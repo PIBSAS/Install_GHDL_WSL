@@ -574,6 +574,7 @@ Aparecerán 2 iconos de sistemas.
 -  ````bash
    ghdl -s -Wno-hide .\c4_ej7_Y_tb.vhdl
    ````
+   Este warning no sucede si a las entradas no las nombramos D,C,B,A en otro ejemplo se usa B3,B2,B1,B0 y no hubo ningún warning.
 
 ## Descripciones generadas por Digital:
 
