@@ -207,11 +207,12 @@ Creamos usuario y contraseña.
   ````
 
 <br>
-<h1 align="center">Instalar GHDL en Windows(Cualquiera la imagen de win 11 es solo ilustrativa)</h1>
+<h1 align="center">Instalar GHDL en Windows</h1>
 
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Windows_11_logo.svg/1280px-Windows_11_logo.svg.png" style="width:50%" />
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
+Imagen de Windows 11 solo ilustrtiva, funciona en cualquier Windows.
 </p>
 
 - [Verificamos cual es la última versión de GHDL](https://github.com/ghdl/ghdl/releases/latest/)
