@@ -1,8 +1,10 @@
 # Function to check for administrative privileges and restart as admin if necessary
 function Ensure-Admin {
-    if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+    $currentUser = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
+    if (-not $currentUser.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
         Write-Host "El script no tiene privilegios de administrador. Reiniciando como administrador..."
-        Start-Process powershell "-File `"$($MyInvocation.MyCommand.Path)`"" -Verb RunAs
+        $newProcess = Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$($MyInvocation.MyCommand.Path)`"" -Verb RunAs -PassThru
+        $newProcess.WaitForExit()
         exit
     }
 }
@@ -37,5 +39,5 @@ Rename-Item -Path "C:\gtkwave64" -NewName "gtkwave"
 cd ..
 
 Write-Host "Instalar Java 8 y Notepad++ usando winget"
-winget install "Java 8" --silent
-winget install "notepad++" --silent
+winget install "Java 8" --accept-package-agreements --silent
+winget install "notepad++" --accept-package-agreements --silent
