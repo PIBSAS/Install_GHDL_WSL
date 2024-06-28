@@ -217,7 +217,7 @@ Creamos usuario y contraseña.
 ## Script PowerShell de instalación autommática:
 Aun deberemos agregar las variables de entorno, pero el resto se hará solo.
 
-- `````bash
+- ````bash
   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/VHDL_win_64bit.ps1" -OutFile "$env:TEMP\VHDL_win_64bit.ps1"
   powershell -ExecutionPolicy Bypass -File "$env:TEMP\VHDL_win_64bit.ps1"
   ````
