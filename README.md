@@ -414,7 +414,7 @@ Aun deberemos agregar las variables de entorno, pero el resto se hará solo.
   ````
 
 # Video Script PowerShell Windows:
-[<img src="https://img.youtube.com/vi/mRiR3jPgsS0/maxresdefault.jpg" width="600" height="300"
+[<img src="/media/almacenamiento.png" width="600" height="300"
 />](https://www.youtube.com/embed/mRiR3jPgsS0)
 
 ### Opción no tan fácil, bajamos el código fuente para compilar una versión más actual(últimos cambios hace 2 días):
