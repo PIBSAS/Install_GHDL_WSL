@@ -5,9 +5,13 @@
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
 </p>
 
+#
+
 - ````bash
   wsl --install
   ````
+
+#
 
 ### Actualizamos e instalamos dependencias:
 
@@ -15,6 +19,8 @@
   sudo apt update
   sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-19-jdk gtkwave
   ````
+
+#
 
 ### Obtenemos GHDL:
 
@@ -34,6 +40,8 @@
   source .bashrc
   ````
 
+#
+
 ### Obtenemos Digital un fork de LogiSim:
 
 - ````bash
@@ -52,6 +60,10 @@
   source .bashrc
   ````
 
+#
+
+<br>
+
 ## Script para ejecutar todos los pasos de instalación automaticamente:
 
 - ````bash
@@ -64,13 +76,16 @@
   curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/ubuntu_24_04.sh | bash
   ````
 
+#
 <br>
 <h1 align="center">Desinstalar todo</h1>
 
 - ````bash
   wsl --unregister Ubuntu
   ````
-  
+ 
+ #
+ 
 <br>
 <h1 align="center">Instalar GHDL en Debian con WSL o Linux</h1>
 
@@ -79,10 +94,13 @@
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
 </p>
 
+#
+
 GHDL Requiere GLIBC 2.34 y Debian Bullseye tiene 2.31 , si instalamos desde Microsoft Store obtendremos Debian Bookworm que viene con GLIBC 2.36.
 
-### Bullseye:
 
+### Bullseye:
+#
 - ````bash
   wsl --install Debian
   ````
@@ -94,6 +112,7 @@ GHDL Requiere GLIBC 2.34 y Debian Bullseye tiene 2.31 , si instalamos desde Micr
     sudo apt update
     sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-17-jdk gtkwave
     ````
+#
 
 #### Bookworm:
 
@@ -137,7 +156,7 @@ Creamos usuario y contraseña.
   sudo sed -i '$ d' /etc/apt/sources.list
   sudo apt update
   ````
-
+#
 ## Obtenemos GHDL:
 
 - ````bash
@@ -155,7 +174,7 @@ Creamos usuario y contraseña.
   echo 'export PATH="$HOME/ghdl/bin:$PATH"' >> $HOME/.bashrc
   source .bashrc
   ````
-
+#
 ### Obtenemos Digital un fork de LogiSim:
 
 - ````bash
@@ -173,6 +192,9 @@ Creamos usuario y contraseña.
   echo 'alias digital=Digital.sh' >> $HOME/.bashrc
   source .bashrc
   ````
+#
+
+<br>
 
 ## Script para ejecutar todos los pasos de instalación automaticamente:
 
@@ -186,6 +208,7 @@ Creamos usuario y contraseña.
 - ````bash
   curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_bullseye.sh | bash
   ````
+#
 
 ### Debian Bookworm:
 - ````bash
@@ -206,6 +229,8 @@ Creamos usuario y contraseña.
   wsl --unregister Debian
   ````
 
+#
+
 <br>
 <h1 align="center">Instalar GHDL en Windows</h1>
 
@@ -214,6 +239,8 @@ Creamos usuario y contraseña.
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
 Imagen de Windows 11 solo ilustrtiva, funciona en cualquier Windows.
 </p>
+
+#
 
 - [Verificamos cual es la última versión de GHDL](https://github.com/ghdl/ghdl/releases/latest/)
 - [Descarga 32 bit Última version hoy. ghdl-MINGW32 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip)
@@ -262,6 +289,8 @@ Al ver `` cd ..`` presionamos Enter.
   ````
   Usaremos esto después.
 
+#
+
 ## Obtenemos Digital un fork de LogiSim(Al final hay un enlace a un servidor para obtener pre-release version):
 
 - Dependencia [Descarga Java Runtime Environment >= 1.8.0](https://javadl.oracle.com/webapps/download/AutoDL?BundleId=249851_43d62d619be4e416215729597d70b8ac)
@@ -300,6 +329,8 @@ Al ver `` cd ..`` presionamos Enter.
 
 Usaremos esto después.
 
+#
+
 ### Como editor de texto además de Digital, podemos utilizar Notepad++ que nos permite guardar con la extensión `` .vhdl `` al igual que el bloc de notas, pero detecta la sintaxis:
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
 
@@ -307,6 +338,8 @@ Usaremos esto después.
   - ````bash
     winget install "notepad++"
     ````
+
+#
 
 ## GTKWave
   Visor de diagrama temporal archivo `` .vcd `` generado con GHDL.
@@ -358,8 +391,10 @@ Al ver `` cd ..`` presionamos Enter.
     C:\gtkwave\bin\
     ````
 Usaremos esto después.
+#
 
 ### Agregamos las carpetas a las variable de entorno del Sitema para poder ejecutar desde la Terminal al solo escribir `` ghdl ``, `` Digital ``, `` gtkwave ``.
+#
   - Buscamos Variables y nos saldrá el acceso a ``Editar las variables de entorno del sistema``
     
     ![Variables de Entorno del Sistema](media/18.png)
@@ -396,6 +431,10 @@ Usaremos esto después.
 
     ![Version](media/23.png)
 
+#
+
+<br>
+
 ## Script PowerShell para ejecutar todos los pasos de instalación automáticamente:
 Aun deberemos agregar las variables de entorno, pero el resto se hará solo.
 
@@ -412,10 +451,14 @@ Aun deberemos agregar las variables de entorno, pero el resto se hará solo.
   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/VHDL_win_64bit.ps1" -OutFile "$env:TEMP\VHDL_win_64bit.ps1"
   powershell -ExecutionPolicy Bypass -File "$env:TEMP\VHDL_win_64bit.ps1"
   ````
+#
 
 # Video Script PowerShell Windows:
-[<img src="/media/almacenamiento.png" width="600" height="300"
-/>](https://www.youtube.com/embed/mRiR3jPgsS0)
+<p>Click en imagen para abrir video en Youtube</p>
+
+[<img src="/media/almacenamiento.png" width="600" height="300"/>](https://www.youtube.com/embed/mRiR3jPgsS0)
+
+#
 
 ### Opción no tan fácil, bajamos el código fuente para compilar una versión más actual(últimos cambios hace 2 días):
 #### Cygwin necesario para Compilar GTKWave:
@@ -479,6 +522,7 @@ Aparecerán 2 iconos de sistemas.
   
   16.  ![](media/16.png)
 
+#
 ### Uso de GHDL para crear archivo ``.vcd`` para GTKWave:
 
 - Creamos nuestro archivo ``.vhdl`` con Notepad++ o cualquier editor de texto.
@@ -545,35 +589,7 @@ Aparecerán 2 iconos de sistemas.
 - Eliminar carpetas y las variables de entorno.
 - Java Runtime Environment desde Panel de Control como cualquier app.
 
-<br>
-<h1 align="center">Documentación</h1>
-
-- [GHDL](https://ghdl-rad.readthedocs.io/en/latest/examples/quick_start/README.html)
-- [Digital](https://github.com/hneemann/Digital/releases/)
-- [Digital Pre-Release Server](https://infdigital.dhbw-mosbach.de/)
-- [Manual GTKWave](https://gtkwave.sourceforge.net/gtkwave.pdf)
-- [GitHub GTKWave](https://github.com/gtkwave/gtkwave)
-- [SourceForge GTKWave](https://sourceforge.net/projects/gtkwave/)
-- [Teoría CIS221](https://github.com/grself/CIS221_Text/raw/master/dl.pdf)
-- [GitHub Repo CIS221](https://github.com/grself/CIS221_Text)
-- [Lab Manual CIS221](https://github.com/grself/CIS221_Lab_Manual/raw/master/dl_lab.pdf)
-- [GitHub Repo CIS221_Lab_Manual](https://github.com/grself/CIS221_Lab_Manual)
-- [YouTube CIS221 LogiSim Evolution Sirve para Digital](https://www.youtube.com/playlist?list=PLvjlcTfwDj4spSN4g3S8IHbqY4Qkb5LxP)
-- [VHDL Tutorial Universidad de California](http://esd.cs.ucr.edu/labs/tutorial/)
-- [Como escribir VHDL Testbench](https://fpgatutorial.com/how-to-write-a-basic-testbench-using-vhdl/)
-- [Video utilizado de base](https://youtu.be/5shVE94I3io)
-- [Introducción a VHDL](https://docta.ucm.es/rest/api/core/bitstreams/4ded6d60-6b62-4f59-a7cd-2511b9a73861/content)
-- [Web VHDL](https://www.vhdl.org/)
-- [Testbench Creator Online](https://www.doulos.com/knowhow/perl/vhdl-testbench-creation-using-perl/)
-- [VHDL online Workshop](https://www.vhdl-online.de/vhdl_workshop/start)
-- [Wikilibros Programación VHDL y Ejemplos](https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_VHDL)
-- [Como generar Testbench Explicación](/Como_crear_Testbench/Basado_en_este_video.md)
-- [ieee.numeric_std.all](https://opensource.ieee.org/vasg/Packages/-/blob/586ebeb9c3fcefd1ac9a07ce749d0e01e678503e/ieee/numeric_std.vhdl)
-- [IEEE Standard VHDL Language Reference Manual PDF](https://edg.uchicago.edu/~tang/VHDLref.pdf)
-- [IEEE Standard VHDL Language Reference Manual Online Actual](https://ieeexplore.ieee.org/document/10287898)
-
-### GTKWave:
-![](/ejemplo/GeneradordeParidad_4Ent_vcd.png)
+#
 
 # Digital crea Testbench automáticamente desde el Circuito si se usa la herramienta Test:
 - Si, por ejemplo realizamos un circuito desde su expresión o realizando las conexiones, luego usamos la opción ``Análisis -> Archivo -> Exportar el caso de prueba``, copiamos su contenido, vamos al árbol de componentes, elegimos en ``Varios -> Caso de Prueba`` lo editamos por separado, pegamos la TV generada y le damos al boton ``OK``, vamos a ``Archivo -> Exportar -> Exportar VHDL`` Guardamos con algún nombre, se guardan 2 archivos:
@@ -698,8 +714,10 @@ Aparecerán 2 iconos de sistemas.
 </p>
 
 # Video Crear VHDL y Testbench:
-[<img src="https://img.youtube.com/vi/odJ0-ChNOQc/maxresdefault.jpg" width="600" height="300"
-/>](https://www.youtube.com/embed/odJ0-ChNOQc?si=Oane7fiXmgdJasLQ)
+<p>Click en imagen para abrir video en Youtube</p>
+
+[<img src="https://img.youtube.com/vi/odJ0-ChNOQc/maxresdefault.jpg" width="600" height="300"/>](https://www.youtube.com/embed/odJ0-ChNOQc?si=Oane7fiXmgdJasLQ)
+
 
 # Para la Raspberry Pi
 ## Script para ejecutar todos los pasos de instalación automaticamente:
@@ -707,3 +725,35 @@ Aparecerán 2 iconos de sistemas.
 - ````bash
   curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/raspberry.sh | bash
   ````
+
+#
+
+<br>
+<h1 align="center">Documentación</h1>
+
+- [GHDL](https://ghdl-rad.readthedocs.io/en/latest/examples/quick_start/README.html)
+- [Digital](https://github.com/hneemann/Digital/releases/)
+- [Digital Pre-Release Server](https://infdigital.dhbw-mosbach.de/)
+- [Manual GTKWave](https://gtkwave.sourceforge.net/gtkwave.pdf)
+- [GitHub GTKWave](https://github.com/gtkwave/gtkwave)
+- [SourceForge GTKWave](https://sourceforge.net/projects/gtkwave/)
+- [Teoría CIS221](https://github.com/grself/CIS221_Text/raw/master/dl.pdf)
+- [GitHub Repo CIS221](https://github.com/grself/CIS221_Text)
+- [Lab Manual CIS221](https://github.com/grself/CIS221_Lab_Manual/raw/master/dl_lab.pdf)
+- [GitHub Repo CIS221_Lab_Manual](https://github.com/grself/CIS221_Lab_Manual)
+- [YouTube CIS221 LogiSim Evolution Sirve para Digital](https://www.youtube.com/playlist?list=PLvjlcTfwDj4spSN4g3S8IHbqY4Qkb5LxP)
+- [VHDL Tutorial Universidad de California](http://esd.cs.ucr.edu/labs/tutorial/)
+- [Como escribir VHDL Testbench](https://fpgatutorial.com/how-to-write-a-basic-testbench-using-vhdl/)
+- [Video utilizado de base](https://youtu.be/5shVE94I3io)
+- [Introducción a VHDL](https://docta.ucm.es/rest/api/core/bitstreams/4ded6d60-6b62-4f59-a7cd-2511b9a73861/content)
+- [Web VHDL](https://www.vhdl.org/)
+- [Testbench Creator Online](https://www.doulos.com/knowhow/perl/vhdl-testbench-creation-using-perl/)
+- [VHDL online Workshop](https://www.vhdl-online.de/vhdl_workshop/start)
+- [Wikilibros Programación VHDL y Ejemplos](https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_VHDL)
+- [Como generar Testbench Explicación](/Como_crear_Testbench/Basado_en_este_video.md)
+- [ieee.numeric_std.all](https://opensource.ieee.org/vasg/Packages/-/blob/586ebeb9c3fcefd1ac9a07ce749d0e01e678503e/ieee/numeric_std.vhdl)
+- [IEEE Standard VHDL Language Reference Manual PDF](https://edg.uchicago.edu/~tang/VHDLref.pdf)
+- [IEEE Standard VHDL Language Reference Manual Online Actual](https://ieeexplore.ieee.org/document/10287898)
+
+### GTKWave:
+![](/ejemplo/GeneradordeParidad_4Ent_vcd.png)
