@@ -757,3 +757,8 @@ Aparecerán 2 iconos de sistemas.
 
 ### GTKWave:
 ![](/ejemplo/GeneradordeParidad_4Ent_vcd.png)
+
+### Extra:
+- [Compuertas lógicas con Transistor NPN 2N2222](https://pibsas.github.io/Compuertas/)
+  
+
