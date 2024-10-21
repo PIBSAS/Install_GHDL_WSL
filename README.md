@@ -462,7 +462,7 @@ Aun deberemos agregar las variables de entorno, pero el resto se hará solo.
 # Video Script PowerShell Windows:
 <p>Click en imagen para abrir video en Youtube</p>
 
-[<img src="/media/almacenamiento.png" width="600" height="300"/>](https://www.youtube.com/embed/mRiR3jPgsS0)
+[<img src="media/almacenamiento.png" width="600" height="300"/>](https://www.youtube.com/embed/mRiR3jPgsS0)
 
 #
 
