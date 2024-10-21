@@ -69,11 +69,13 @@
 - ````bash
   sudo apt update && sudo apt install -y curl
   curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/ubuntu.sh | bash
+  source .bashrc
   ````
 ### En PC con Ubuntu solo:
 
 - ````bash
   curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/ubuntu_24_04.sh | bash
+  source .bashrc
   ````
 
 #
@@ -202,11 +204,13 @@ Creamos usuario y contraseña.
 - ````bash
   sudo apt update && sudo apt install -y curl
   curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_bullseye.sh | bash
+  source .bashrc
   ````
 ### En PC con Debian Bullseye solo:
 
 - ````bash
   curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_bullseye.sh | bash
+  source .bashrc
   ````
 #
 
@@ -214,11 +218,13 @@ Creamos usuario y contraseña.
 - ````bash
   sudo apt update && sudo apt install -y curl
   curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_bookworm.sh | bash
+  source .bashrc
   ````
 ### En PC con Debian Bookworm solo:
 
 - ````bash
   curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_bookworm.sh | bash
+  source .bashrc
   ````
 
 
