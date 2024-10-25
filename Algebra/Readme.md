@@ -1,29 +1,103 @@
-
 Dadas las siguientes funciones lógicas:
 
-1. \( Z = A + B \oplus C \)
-2. \( Z = (A + B) . C \)
-3. \( Z = A . B . C \)
-4. \( Z = A \oplus B . C + A . C \)
-5. \( Z = A \oplus B . C + A + B + D \)
-6. \( Z = A + B \oplus C \)
-7. \( Z = (A + B . C) + (B + C) \)
-8. \( Z = ((A + B) . C) + (A + D . C) \)
-9. \( Z = (A \oplus C) . (A + B) . (C + D) \)
-10. \( Z = (A + B + C) \oplus C \)
-11. \( Z = (A . B) + (C \oplus D) \)
-12. \( Z = (A + B . C) . (B + C . D) \)
-13. \( Z = (A + B . C) . (A + B) \)
-14. \( Z = A + B + C + D \)
-15. \( Z = (A + B) \oplus (B . C) + D \)
-16. \( Z = (A + B \oplus C) + D \)
-17. \( Z = A + B . (C + D) \)
-18. \( Z = A \oplus B . C + D \)
-19. \( Z = A . B . C + D \)
-20. \( Z = A + B + C + D \)
-21. \( Z = A \oplus (B \oplus C) \)
-22. \( Z = (A + C) \oplus (B . D) \)
-23. \( Z = A \oplus B . C + A . B + D \)
-24. \( Z = (A + B) . (C + D) \)
-25. \( Z = A \oplus B + C . (A + D) \)
-26. \( Z = (A + B) . (C + B) \)
+
+1. $\overline{Z = A + B.\overline{C} \oplus \overline{B}}$
+
+```math
+2. Z = (A + B) \cdot C
+```
+
+```math
+3. Z = A \cdot B \cdot C
+```
+
+```math
+4. Z = A \oplus B \cdot C + A \cdot C
+```
+
+```math
+5. Z = A \oplus B \cdot C + A + B + D
+```
+
+```math
+6. Z = A + B \oplus C
+```
+
+```math
+7. Z = (A + B \cdot C) + (B + C)
+```
+
+```math
+8. Z = ((A + B) \cdot C) + (A + D \cdot C)
+```
+
+```math
+9. Z = (A \oplus C) \cdot (A + B) \cdot (C + D)
+```
+
+```math
+10. Z = (A + B + C) \oplus C
+```
+
+```math
+11. Z = (A \cdot B) + (C \oplus D)
+```
+
+```math
+12. Z = (A + B \cdot C) \cdot (B + C \cdot D)
+```
+
+```math
+13. Z = (A + B \cdot C) \cdot (A + B)
+```
+
+```math
+14. Z = A + B + C + D
+```
+
+```math
+15. Z = (A + B) \oplus (B \cdot C) + D
+```
+
+```math
+16. Z = (A + B \oplus C) + D
+```
+
+```math
+17. Z = A + B \cdot (C + D)
+```
+
+```math
+18. Z = A \oplus B \cdot C + D
+```
+
+```math
+19. Z = A \cdot B \cdot C + D
+```
+
+```math
+20. Z = \bar{A + B + C} + D
+```
+
+
+21. $ Z = (A \oplus B) \oplus C $
+
+```math
+22. Z = (A + C) \oplus (B \cdot D)
+```
+
+```math
+23. Z = A \oplus B \cdot C + A \cdot B + D
+```
+
+```math
+24. Z = (A + B) \cdot (C + D)
+```
+
+```math
+25. Z = A \oplus B + C \cdot (A + D)
+```
+
+```math
+26. Z = (A + B) \cdot (C + B)
+```
