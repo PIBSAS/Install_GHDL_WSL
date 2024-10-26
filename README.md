@@ -766,6 +766,3 @@ Aparecerán 2 iconos de sistemas.
 
 ### Extra:
 - [Compuertas lógicas con Transistor NPN 2N2222](https://pibsas.github.io/Compuertas/)
-  
-<h1>Algebra de Boole</h1>
-    <iframe src="https://nbviewer.jupyter.org/github/PIBSAS/Install_GHDL_WSL/main/Algebra/Readme.ipynb" width="100%" height="800px"></iframe>
