@@ -1,5 +1,5 @@
 <h1 align="center">Instalar GHDL en Ubuntu con WSL o Linux</h1>
-
+HOLA
 <p align="center">
 <img src="https://assets.ubuntu.com/v1/a7e3c509-Canonical%20Ubuntu.svg" style="width:50%" />
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
