@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>XOr</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="120" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>LED</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>TECNICAS APROBADA</string>
+        </entry>
+        <entry>
+          <string>Color</string>
+          <awt-color>
+            <red>51</red>
+            <green>204</green>
+            <blue>0</blue>
+            <alpha>255</alpha>
+          </awt-color>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>P1</string>
+        </entry>
+      </elementAttributes>
+      <pos x="60" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>P2</string>
+        </entry>
+      </elementAttributes>
+      <pos x="60" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>R1</string>
+        </entry>
+      </elementAttributes>
+      <pos x="60" y="100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="260" y="120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Data</elementName>
+      <elementAttributes>
+        <entry>
+          <string>microStep</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="280"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="200" y="160"/>
+      <p2 x="260" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="180"/>
+      <p2 x="120" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="100"/>
+      <p2 x="220" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="120"/>
+      <p2 x="260" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="140"/>
+      <p2 x="120" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="340" y="140"/>
+      <p2 x="400" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="100"/>
+      <p2 x="220" y="120"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
