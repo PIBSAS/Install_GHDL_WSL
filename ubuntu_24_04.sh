@@ -7,12 +7,13 @@ sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-21-jdk gtkwave
 echo "Crear carpeta para guardar GHDL"
 mkdir ghdl
 echo "Obtener GHDL"
-wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-gha-ubuntu-22.04-gcc.tgz -P ghdl/
+#wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-gha-ubuntu-22.04-gcc.tgz -P ghdl/
+wget "https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-gcc-5.1.1-ubuntu24.04-x86_64.tar.gz" -P ghdl/
 echo "Entrar al directorio y descomprimir GHDL"
 cd ghdl
-tar -xzvf ghdl*.tgz
+tar -xzvf ghdl*.gz
 echo "Eliminar GHDL comprimido"
-rm g*tgz
+rm g*.gz
 echo "Agregar GHDL al PATH"
 cd
 echo 'export PATH="$HOME/ghdl/bin:$PATH"' >> $HOME/.bashrc
