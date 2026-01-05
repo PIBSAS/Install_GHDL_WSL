@@ -277,8 +277,8 @@ Imagen de Windows 11 solo ilustrtiva, funciona en cualquier Windows.
 #
 
 - [Verificamos cual es la última versión de GHDL](https://github.com/ghdl/ghdl/releases/latest/)
-- [Descarga 32 bit Última version hoy. ghdl-MINGW32 ](https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-mcode-5.1.1-mingw64.zip)
-- [Descarga 64 bit Última version hoy. ghdl-UCRT64 ](https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-mcode-5.1.1-ucrt64.zip)
+- [Descarga 32 bit Última version 2023. ghdl-MINGW32 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip)
+- [Descarga 64 bit Última version 2026. ghdl-UCRT64 ](https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-mcode-5.1.1-ucrt64.zip)
 
 - Descomprimimos con el Explorador de Windows.
 - O Desde PowerShell se puede descargar y descomprimir con:
