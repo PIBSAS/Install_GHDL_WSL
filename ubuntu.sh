@@ -3,7 +3,7 @@
 echo "Actualizar repo"
 sudo apt update
 echo "Instalar dependencias"
-sudo apt install -y wget zlib1g-dev gnat-14 unzip openjdk-25-jdk gtkwave
+sudo apt install -y wget zlib1g-dev gnat-13 unzip openjdk-25-jdk gtkwave
 echo "Crear carpeta para guardar GHDL"
 mkdir ghdl
 echo "Obtener GHDL"
@@ -12,7 +12,7 @@ wget "https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-gcc-5.1.1-ubunt
 echo "Entrar al directorio y descomprimir GHDL"
 cd ghdl
 #tar -xzvf ghdl*.tgz
-tar -xzvf ghdl*.gz
+tar -xzvf ghdl*.gz --strip-components=1
 echo "Eliminar GHDL comprimido"
 rm g*.gz
 echo "Agregar GHDL al PATH"
