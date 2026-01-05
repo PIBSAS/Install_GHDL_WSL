@@ -3,7 +3,7 @@
 echo "Actualizar repo"
 sudo apt update
 echo "Instalar dependencias"
-sudo apt install -y wget zlib1g-dev gnat-13 unzip openjdk-25-jdk gtkwave
+sudo apt install -y wget zlib1g-dev gnat-13 unzip openjdk-25-jdk gtkwave build-essential
 echo "Crear carpeta para guardar GHDL"
 mkdir ghdl
 echo "Obtener GHDL"
