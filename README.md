@@ -101,6 +101,20 @@
 GHDL Requiere GLIBC 2.34 y Debian Bullseye tiene 2.31 , si instalamos desde Microsoft Store obtendremos Debian Bookworm que viene con GLIBC 2.36.
 
 
+### Trixie:
+#
+- ````bash
+  wsl --install Debian
+  ````
+
+## Actualizamos e instalamos dependencias:
+  #### Bullseye:
+
+  - ````bash
+    sudo apt update
+    sudo apt install -y wget zlib1g-dev gnat-13 unzip openjdk-25-jdk gtkwave build-essential
+    ````
+
 ### Bullseye:
 #
 - ````bash
@@ -199,6 +213,20 @@ Creamos usuario y contraseña.
 <br>
 
 ## Script para ejecutar todos los pasos de instalación automaticamente:
+
+### Debian Trixie:
+- ````bash
+  sudo apt update && sudo apt install -y curl
+  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_trixie.sh | bash
+  source .bashrc
+  ````
+### En PC con Debian Trixie solo:
+
+- ````bash
+  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_trixie.sh | bash
+  source .bashrc
+  ````
+#
 
 ### Debian Bullseye:
 - ````bash

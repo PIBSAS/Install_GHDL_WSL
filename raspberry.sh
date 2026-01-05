@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt update
 git clone https://github.com/ghdl/ghdl.git
-sudo apt install -y zlib1g-dev gcc make clang llvm gnat wget unzip openjdk-17-jdk gtkwave
+sudo apt install -y zlib1g-dev gcc make clang llvm gnat wget unzip openjdk-25-jdk gtkwave
 cd ghdl
 ./configure --with-llvm-config
 make
