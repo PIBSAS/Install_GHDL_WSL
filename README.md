@@ -17,7 +17,7 @@
 
 - ````bash
   sudo apt update
-  sudo apt install -y wget zlib1g-dev gnat-13 unzip openjdk-25-jdk gtkwave
+  sudo apt install -y wget zlib1g-dev gnat-13 unzip openjdk-25-jdk gtkwave build-essential
   ````
 
 #
@@ -112,7 +112,7 @@ GHDL Requiere GLIBC 2.34 y Debian Bullseye tiene 2.31 , si instalamos desde Micr
 
   - ````bash
     sudo apt update
-    sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-17-jdk gtkwave
+    sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-17-jdk gtkwave build-essential
     ````
 #
 
@@ -149,7 +149,7 @@ Creamos usuario y contraseña.
 - ````bash
   sudo apt update
   sudo apt install -y gnat-10
-  sudo apt install -y wget zlib1g-dev unzip openjdk-17-jdk gtkwave
+  sudo apt install -y wget zlib1g-dev unzip openjdk-17-jdk gtkwave build-essential
   ````
 
 ### Eliminamos el repo de bullseye(Opcional, podemos dejarlo):
