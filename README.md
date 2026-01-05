@@ -108,7 +108,7 @@ GHDL Requiere GLIBC 2.34 y Debian Bullseye tiene 2.31 , si instalamos desde Micr
   ````
 
 ## Actualizamos e instalamos dependencias:
-  #### Bullseye:
+  #### Trixie:
 
   - ````bash
     sudo apt update
@@ -277,8 +277,8 @@ Imagen de Windows 11 solo ilustrtiva, funciona en cualquier Windows.
 #
 
 - [Verificamos cual es la última versión de GHDL](https://github.com/ghdl/ghdl/releases/latest/)
-- [Descarga 32 bit Última version hoy. ghdl-MINGW32 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip)
-- [Descarga 64 bit Última version hoy. ghdl-UCRT64 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip)
+- [Descarga 32 bit Última version hoy. ghdl-MINGW32 ](https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-mcode-5.1.1-mingw64.zip)
+- [Descarga 64 bit Última version hoy. ghdl-UCRT64 ](https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-mcode-5.1.1-ucrt64.zip)
 
 - Descomprimimos con el Explorador de Windows.
 - O Desde PowerShell se puede descargar y descomprimir con:
@@ -294,7 +294,7 @@ Imagen de Windows 11 solo ilustrtiva, funciona en cualquier Windows.
   - 64 bit:
     - ````bash
       cd $HOME\Downloads\
-      wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-UCRT64.zip -OutFile ghdl-UCRT64.zip
+      wget "https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-mcode-5.1.1-ucrt64.zip" -OutFile ghdl-UCRT64.zip
       Expand-Archive ghdl*.zip -DestinationPath C:\
       rm ghdl-UCRT64.zip
       cd ..
@@ -327,7 +327,7 @@ Al ver `` cd ..`` presionamos Enter.
 
 ## Obtenemos Digital un fork de LogiSim(Al final hay un enlace a un servidor para obtener pre-release version):
 
-- Dependencia [Descarga Java Runtime Environment >= 1.8.0](https://javadl.oracle.com/webapps/download/AutoDL?BundleId=249851_43d62d619be4e416215729597d70b8ac)
+- Dependencia [Descarga Java Runtime Environment >= 1.8.0](https://javadl.oracle.com/webapps/download/AutoDL?BundleId=252627_99a6cb9582554a09bd4ac60f73f9b8e6)
 - O con Winget:
   - ````bash
     winget install "Java 8"
@@ -335,7 +335,7 @@ Al ver `` cd ..`` presionamos Enter.
   
 ### Descargando manualmente el zip o desde PowerShell:
 
-- [Descarga ZIP](https://github.com/hneemann/Digital/releases/download/v0.30/Digital.zip)
+- [Descarga ZIP](https://github.com/hneemann/Digital/releases/latest/download/Digital.zip)
 - Descomprimir con el Explorador de Windows.
 - O con PowerShell descargamos y descomprimimos:
   - ````bash
