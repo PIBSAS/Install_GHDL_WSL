@@ -17,7 +17,7 @@
 
 - ````bash
   sudo apt update
-  sudo apt install -y wget zlib1g-dev gnat-14 unzip openjdk-25-jdk gtkwave
+  sudo apt install -y wget zlib1g-dev gnat-13 unzip openjdk-25-jdk gtkwave
   ````
 
 #
@@ -28,7 +28,7 @@
   mkdir ghdl
   wget "https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-gcc-5.1.1-ubuntu24.04-x86_64.tar.gz" -P ghdl/
   cd ghdl
-  tar -xzvf ghdl*.gz
+  tar -xzvf ghdl*.gz --strip-components=1
   rm g*.gz
   ````
 
