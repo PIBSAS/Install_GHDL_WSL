@@ -98,9 +98,6 @@
 
 #
 
-GHDL Requiere GLIBC 2.34 y Debian Bullseye tiene 2.31 , si instalamos desde Microsoft Store obtendremos Debian Bookworm que viene con GLIBC 2.36.
-
-
 ### Trixie:
 #
 - ````bash
@@ -115,29 +112,6 @@ GHDL Requiere GLIBC 2.34 y Debian Bullseye tiene 2.31 , si instalamos desde Micr
     sudo apt install -y wget zlib1g-dev gnat-13 unzip openjdk-25-jdk gtkwave build-essential
     ````
 
-### Bullseye:
-#
-- ````bash
-  wsl --install Debian
-  ````
-
-## Actualizamos e instalamos dependencias:
-  #### Bullseye:
-
-  - ````bash
-    sudo apt update
-    sudo apt install -y wget zlib1g-dev gnat-10 unzip openjdk-17-jdk gtkwave build-essential
-    ````
-#
-
-#### Bookworm:
-
-Usando Winget evitamos usar la interfaz grafica:
-
-- ````bash
-  winget install Debian -s msstore
-  ````
-
 O directamente desde el repo de winget:
 
 - ````bash
@@ -151,36 +125,15 @@ Lo lanzamos con:
   ````
 
 Creamos usuario y contraseña.
-
-### Agregamos temporalmente la repo de Bullseye para obtener ``gnat-10`` :
-
-- ````bash
-  echo 'deb http://deb.debian.org/debian bullseye main' | sudo tee -a /etc/apt/sources.list
-  ````
-
-### Actualizamos e instalamos dependencias:
-
-- ````bash
-  sudo apt update
-  sudo apt install -y gnat-10
-  sudo apt install -y wget zlib1g-dev unzip openjdk-17-jdk gtkwave build-essential
-  ````
-
-### Eliminamos el repo de bullseye(Opcional, podemos dejarlo):
-
-- ````bash
-  sudo sed -i '$ d' /etc/apt/sources.list
-  sudo apt update
-  ````
 #
 ## Obtenemos GHDL:
 
 - ````bash
   mkdir ghdl
-  wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-gha-ubuntu-22.04-gcc.tgz -P ghdl/
+  wget "https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-gcc-5.1.1-ubuntu24.04-x86_64.tar.gz" -P ghdl/
   cd ghdl
-  tar -xzvf ghdl*.tgz
-  rm g*tgz
+  tar -xzvf ghdl*.gz --strip-components=1
+  rm g*.gz
   ````
 
 ### Agregamos GHDL a .bashrc:
@@ -227,34 +180,6 @@ Creamos usuario y contraseña.
   source .bashrc
   ````
 #
-
-### Debian Bullseye:
-- ````bash
-  sudo apt update && sudo apt install -y curl
-  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_bullseye.sh | bash
-  source .bashrc
-  ````
-### En PC con Debian Bullseye solo:
-
-- ````bash
-  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_bullseye.sh | bash
-  source .bashrc
-  ````
-#
-
-### Debian Bookworm:
-- ````bash
-  sudo apt update && sudo apt install -y curl
-  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_bookworm.sh | bash
-  source .bashrc
-  ````
-### En PC con Debian Bookworm solo:
-
-- ````bash
-  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_bookworm.sh | bash
-  source .bashrc
-  ````
-
 
 <br>
 <h1 align="center">Desinstalar todo</h1>
