@@ -5,28 +5,28 @@
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
 </p>
 
-#
+---
 
-- ````bash
+- ```powershell
   wsl --install
-  ````
+  ```
 
-#
+---
 
 ### Actualizamos e instalamos dependencias:
 
-- ````bash
+- ```bash
   sudo apt update
   sudo apt install -y wget zlib1g-dev gnat-13 unzip openjdk-25-jdk gtkwave build-essential
-  ````
+  ```
 
-#
+---
 
-### Obtenemos GHDL:
+### Obtenemos [GHDL](https://github.com/ghdl/ghdl/releases/latest/):
 
 - ````bash
   mkdir ghdl
-  wget "https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-gcc-5.1.1-ubuntu24.04-x86_64.tar.gz" -P ghdl/
+  wget "https://github.com/ghdl/ghdl/releases/download/v6.0.0/ghdl-gcc-6.0.0-ubuntu24.04-x86_64.tar.gz" -P ghdl/
   cd ghdl
   tar -xzvf ghdl*.gz --strip-components=1
   rm g*.gz
@@ -40,7 +40,7 @@
   source .bashrc
   ````
 
-#
+---
 
 ### Obtenemos Digital un fork de LogiSim:
 
