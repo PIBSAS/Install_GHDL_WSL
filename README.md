@@ -132,7 +132,7 @@ sudo apt update && sudo apt install -y curl
 
 Mediante curl obtenemos el script y lo ejecutamos con bash:
 <pre><code language="bash">
-curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian.sh | bash
+curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_trixie.sh | bash
 </code></pre>
 
 Recargamos la terminal, para que las variables de entorno agregadas tengan efecto:
@@ -143,9 +143,12 @@ source .bashrc
 <strong>Listo</strong>
 </div>
 
+----
+----
 
-----
-----
+<div align="center">
+<h1>Instalación manual</h1>
+</div>
 
 ## Actualizamos e instalamos dependencias:
   #### Trixie:
@@ -201,31 +204,14 @@ Creamos usuario y contraseña.
 ----
 
 <br>
-
-## Script para ejecutar todos los pasos de instalación automaticamente:
-
-### Debian Trixie:
-- ````bash
-  sudo apt update && sudo apt install -y curl
-  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_trixie.sh | bash
-  source .bashrc
-  ````
-### En PC con Debian Trixie solo:
-
-- ````bash
-  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian_trixie.sh | bash
-  source .bashrc
-  ````
-#
-
-<br>
 <h1 align="center">Desinstalar todo</h1>
 
 - ````bash
   wsl --unregister Debian
   ````
 
-#
+----
+----
 
 <br>
 <h1 align="center">Instalar GHDL en Windows</h1>
@@ -236,16 +222,17 @@ Creamos usuario y contraseña.
 Imagen de Windows 11 solo ilustrtiva, funciona en cualquier Windows.
 </p>
 
-#
+----
 
 - [Verificamos cual es la última versión de GHDL](https://github.com/ghdl/ghdl/releases/latest/)
 - [Descarga 32 bit Última version 2023. ghdl-MINGW32 ](https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip)
-- [Descarga 64 bit Última version 2026. ghdl-UCRT64 ](https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-mcode-5.1.1-ucrt64.zip)
+- [Descarga 64 bit Última version 2026. ghdl-UCRT64 ](https://github.com/ghdl/ghdl/releases/download/v6.0.0/ghdl-mcode-6.0.0-ucrt64.zip)
 
 - Descomprimimos con el Explorador de Windows.
 - O Desde PowerShell se puede descargar y descomprimir con:
   - 32 bit:
-    - ````bash
+    
+    - ```powershell
       cd $HOME\Downloads\
       wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-MINGW32.zip -OutFile ghdl-MINGW32.zip
       Expand-Archive ghdl*.zip -DestinationPath C:\
@@ -254,29 +241,34 @@ Imagen de Windows 11 solo ilustrtiva, funciona en cualquier Windows.
       ````
     
   - 64 bit:
-    - ````bash
+    
+    - ```powershell
       cd $HOME\Downloads\
-      wget "https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-mcode-5.1.1-ucrt64.zip" -OutFile ghdl-UCRT64.zip
+      wget "https://github.com/ghdl/ghdl/releases/download/v6.0.0/ghdl-mcode-6.0.0-ucrt64.zip" -OutFile ghdl-UCRT64.zip
       Expand-Archive ghdl*.zip -DestinationPath C:\
       rm ghdl-UCRT64.zip
       cd ..
       ````
+
 Al ver `` cd ..`` presionamos Enter.
 
 ### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta GHDL:
 
-- 32 bit
-  - ````bash
+- 32 bit:
+  
+  - ```powershell
     cd $HOME\Downloads\
     Move-Item -Path ghdl-MINGW32/GHDL -Destination C:\
     cd ..
-    ````
+    ```
+    
 - 64bit:
-  - ````bash
+  
+  - ```powershell
     cd $HOME\Downloads\
     Move-Item -Path ghdl-UCRT64/GHDL -Destination C:\
     cd ..
-    ````
+    ```
 
 #### El ejecutable quedará en:
 
@@ -285,57 +277,61 @@ Al ver `` cd ..`` presionamos Enter.
   ````
   Usaremos esto después.
 
-#
+----
 
 ## Obtenemos Digital un fork de LogiSim(Al final hay un enlace a un servidor para obtener pre-release version):
 
 - Dependencia [Descarga Java Runtime Environment >= 1.8.0](https://javadl.oracle.com/webapps/download/AutoDL?BundleId=252627_99a6cb9582554a09bd4ac60f73f9b8e6)
 - O con Winget:
-  - ````bash
+  
+  - ```powershell
     winget install "Java 8"
-    ````
+    ```
   
 ### Descargando manualmente el zip o desde PowerShell:
 
 - [Descarga ZIP](https://github.com/hneemann/Digital/releases/latest/download/Digital.zip)
 - Descomprimir con el Explorador de Windows.
 - O con PowerShell descargamos y descomprimimos:
-  - ````bash
+  
+  - ```powershell
     cd $HOME\Downloads\
     wget https://github.com/hneemann/Digital/releases/latest/download/Digital.zip -OutFile Digital.zip
     Expand-Archive Di*.zip -DestinationPath C:\
     rm Di*zip
     cd ..
     ````
+    
 Al ver `` cd ..`` presionamos Enter.
   
 ### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta Digital:
 
-  - ````bash
+  - ```powershell
     cd $HOME\Downloads\
     Move-Item -Path Digital -Destination C:\
     cd ..
-    ````
+    ```
 
 ### El ejecutable quedará en:
 
-- ````bash
+- ```powershell
   C:\Digital\
-  ````
+  ```
 
 Usaremos esto después.
 
-#
+----
+----
 
 ### Como editor de texto además de Digital, podemos utilizar Notepad++ que nos permite guardar con la extensión `` .vhdl `` al igual que el bloc de notas, pero detecta la sintaxis:
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
 
 - Con Winget:
-  - ````bash
+  - ```powershell
     winget install "notepad++"
-    ````
+    ```
 
-#
+----
 
 ## GTKWave
   Visor de diagrama temporal archivo `` .vcd `` generado con GHDL.
@@ -347,50 +343,63 @@ Usaremos esto después.
 - Descomprimimos con el Explorador de Windows.
 - O Desde PowerShell se puede descargar y descomprimir con:
   - 32 bit:
-    - ````bash
+    
+    - ```powershell
       cd $HOME\Downloads\
       Start-BitsTransfer -Source https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win32/gtkwave-3.3.100-bin-win32.zip/download -Destination gtkwave.zip
       Expand-Archive gtk*.zip -DestinationPath C:\
       rm gtk*.zip
       cd ..
-      ````
+      ```
     
   - 64 bit:
-    - ````bash
+    
+    - ```powershell
       cd $HOME\Downloads\
       Start-BitsTransfer -Source https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip/download -Destination gtkwave.zip
       Expand-Archive gtk*.zip -DestinationPath C:\
       rm gtk*.zip
       Rename-Item -Path "C:\gtkwave64" -NewName "gtkwave"
       cd ..
-      ````
+      ```
+      
 Al ver `` cd ..`` presionamos Enter.
 
 ### Si descomprimimos con el Explorador de Windows Movemos a la unidad C la carpeta gtkwave:
-  - 32 bit
-    - ````bash
+  - 32 bit:
+    
+    - ```powershell
       cd $HOME\Downloads\
       Move-Item -Path gtkwave -Destination C:\
       cd ..
-      ````
-  - 64bit
-    - ````bash
+      ```
+    
+  - 64bit:
+    
+    - ```powershell
       cd $HOME\Downloads\
       Rename-Item -Path "C:\gtkwave64" -NewName "gtkwave"
       Move-Item -Path gtkwave -Destination C:\
       cd ..
-      ````
+      ```
+      
 Al ver `` cd ..`` presionamos Enter.
     
 ### El ejecutable quedará en:
-  - ````bash
+
+  - ```powershell
     C:\gtkwave\bin\
-    ````
+    ```
+    
 Usaremos esto después.
-#
+
+----
+----
 
 ### Agregamos las carpetas a las variable de entorno del Sitema para poder ejecutar desde la Terminal al solo escribir `` ghdl ``, `` Digital ``, `` gtkwave ``.
-#
+
+----
+
   - Buscamos Variables y nos saldrá el acceso a ``Editar las variables de entorno del sistema``
     
     ![Variables de Entorno del Sistema](media/18.png)
@@ -409,15 +418,17 @@ Usaremos esto después.
 
   - Ingresamos las 3 rutas de los ejecutables:
     
-    - ````bash
+    - ```powershell
       C:\GHDL\bin\
-      ````
-    - ````bash
+      ```
+      
+    - ```powershell
       C:\Digital\
-      ````
-    - ````bash
+      ```
+      
+    - ```powershell
       C:\gtkwave\bin\
-      ````
+      ```
     
     ![Rutas de los ejecutables](media/22.png)
 
@@ -427,7 +438,8 @@ Usaremos esto después.
 
     ![Version](media/23.png)
 
-#
+----
+----
 
 <br>
 
@@ -437,24 +449,27 @@ Aun deberemos agregar las variables de entorno, pero el resto se hará solo.
 ### Abrimos una Terminal(Administrador) como admin, copiamos y pegamos estas 2 líneas, pulsa ``Enter``. Agregar las variables de entorno y listo.
 
 ### 32bit:
-- ````bash
+
+- ```powershell
   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/VHDL_win_32bit.ps1" -OutFile "$env:TEMP\VHDL_win_32bit.ps1"
   powershell -ExecutionPolicy Bypass -File "$env:TEMP\VHDL_win_32bit.ps1"
-  ````
+  ```
   
 ### 64bit:
-- ````bash
+
+- ```powershell
   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/VHDL_win_64bit.ps1" -OutFile "$env:TEMP\VHDL_win_64bit.ps1"
   powershell -ExecutionPolicy Bypass -File "$env:TEMP\VHDL_win_64bit.ps1"
-  ````
-#
+  ```
+
+----
 
 # Video Script PowerShell Windows:
 <p>Click en imagen para abrir video en Youtube</p>
 
 [<img src="media/almacenamiento.png" width="600" height="300"/>](https://www.youtube.com/embed/mRiR3jPgsS0)
 
-#
+---
 
 ### Opción no tan fácil, bajamos el código fuente para compilar una versión más actual(últimos cambios hace 2 días):
 #### Cygwin necesario para Compilar GTKWave:
@@ -480,45 +495,48 @@ Aun deberemos agregar las variables de entorno, pero el resto se hará solo.
 
 #### Una vez instalado usamos Cygwin para instalar las dependencias de GTKWave:
 
-  - ````bash
+  - ```powershell
     cd $HOME\Downloads\
     .\setup-x86_64.exe -q -P gcc-g++,gperf,libbz2-devel,liblzma-devel,zlib-devel,libgtk3-devel,make,git,xinit,tcl-tk-devel,autotools-dev,automake,libJudy-devel
-    ````
+    ```
   
   12. ![](media/12.png)
   13. ![](media/13.png)
 
 ### Abrimos la Terminal de Cygwin, clonamos la repo de GTKWave y Compilamos:
 
-  - ````bash
+  - ```powershell
     git clone https://github.com/gtkwave/gtkwave/ -b lts gtkwave
     cd gtkwave/gtkwave3-gtk3 && ./autogen.sh
     ./configure --enable-gtk3 --enable-judy
     make -j
     make install
-    ````
+    ```
   
   14. ![](media/14.png)
 
 #### Ahora iniciamos XServer para poder ejecutar aplicaciones con GUI:
 
-  - ````bash
+  - ```powershell
     startxwin
-    ````
+    ```
 Aparecerán 2 iconos de sistemas.
 
   15. ![](media/15.png)
   
 #### Luego abrimos otra Cygwin Terminal y lanzamos GTKWave:
 
-  - ````bash
+  - ```powershell
     gtkwave
-    ````
+    ```
+
   O desde el icono del Sistema opción Accesorios -> GTKWave
   
   16.  ![](media/16.png)
 
-#
+----
+----
+
 ### Uso de GHDL para crear archivo ``.vcd`` para GTKWave:
 
 - Creamos nuestro archivo ``.vhdl`` con Notepad++ o cualquier editor de texto.
@@ -527,7 +545,7 @@ Aparecerán 2 iconos de sistemas.
   
   [Testbench Creator Online](https://www.doulos.com/knowhow/perl/vhdl-testbench-creation-using-perl/)
   
-  - ````bash
+  - ```powershell
     ghdl -s archivo.vhdl
     ghdl -s archivo_tb.vhdl
     ghdl -a archivo.vhdl
@@ -535,12 +553,13 @@ Aparecerán 2 iconos de sistemas.
     ghdl -e archivo_tb
     ghdl -r archivo_tb
     ghdl -r archivo_tb --vcd=archivo.vcd
-    ````
+    ```
 
 - Abrimos el ``.vcd`` creado con GTKWave:
-  - ````bash
+  
+  - ```powershell
     gtkwave archivo.vcd
-    ````
+    ```
   
   Existe una sintaxis/convención respecto al nombre del archivo, que debe ser el nombre de la entidad de nuestra descripción para que no nos dé error.
   ``-s`` chequea error de sintaxis.
@@ -556,6 +575,9 @@ Aparecerán 2 iconos de sistemas.
     En sus diversas variantes.
 ### En Digital el ``archivo_tb`` no se necesita y tiene herramientas para ver en tiempo real(no muy preciso) el diagrama temporal.
 
+----
+----
+
 <br>
 <h1 align="center">Desinstalar todo</h1>
 
@@ -563,39 +585,47 @@ Aparecerán 2 iconos de sistemas.
 
   Si el Sistema esta en Español abre CMD:
   
-  - ````bash
+  - ```powershell
     takeown /f C:\cygwin64 /r /d s
     icacls C:\cygwin64 /t /grant todos:f
     del /s /q C:\cygwin64
     rmdir /s /q C:\cygwin64
-    ````
+    ```
   
   Si el Sistema esta en Inglés abre CMD:
   
-  - ````bash
+  - ```powershell
     takeown /f C:\cygwin64 /r /d y
     icacls C:\cygwin64 /t /grant everyone:f
     del /s /q C:\cygwin64
     rmdir /s /q C:\cygwin64
-    ````
-    Eliminar el Acceso directo del escritorio manualmente, al no existir Cygwin tampoco existirá GTKWave(el compilado).
+    ```
     
+    Eliminar el Acceso directo del escritorio manualmente, al no existir Cygwin tampoco existirá GTKWave(el compilado).
+
+----
+----
+
 #### GHDL, GTKWave(Opción Fácil), Digital:
 
 - Eliminar carpetas y las variables de entorno.
 - Java Runtime Environment desde Panel de Control como cualquier app.
 
-#
+----
+----
 
 # Digital crea Testbench automáticamente desde el Circuito si se usa la herramienta Test:
 - Si, por ejemplo realizamos un circuito desde su expresión o realizando las conexiones, luego usamos la opción ``Análisis -> Archivo -> Exportar el caso de prueba``, copiamos su contenido, vamos al árbol de componentes, elegimos en ``Varios -> Caso de Prueba`` lo editamos por separado, pegamos la TV generada y le damos al boton ``OK``, vamos a ``Archivo -> Exportar -> Exportar VHDL`` Guardamos con algún nombre, se guardan 2 archivos:
--  ````bash
+  
+-  ````powershell
    archivo.vhdl
    archivo_Y_tb.vhdl
    ````
+   
 - El cual si lo abrimos con notepad++ indica que no puede modificarse(Tranquilamente se puede), obviamente para su simulación en Digital. El Testbench no pasa un ``ghdl archivo_Y_tb.vhdl``
-- indicandonos un warning:
--  ````bash
+- Indicandonos un warning:
+  
+-  ```powershell
    PS C:\Users\black\Documents> ghdl -s .\c4_ej7.vhdl
    PS C:\Users\black\Documents> ghdl -s .\c4_ej7_Y_tb.vhdl
    .\c4_ej7_Y_tb.vhdl:22:24:warning: declaration of "a" hides signal "A" [-Whide]
@@ -603,17 +633,22 @@ Aparecerán 2 iconos de sistemas.
    function to_string ( a: std_logic_vector) return string is
    .\c4_ej7_Y_tb.vhdl:23:16:warning: declaration of "b" hides signal "B" [-Whide]
    variable b : string (1 to a'length) := (others => NUL);
-   ````
+   ```
+  
 - Pero en Digital se simula tranquilamente. Entonces podemos pasar el warning con:
--  ````bash
+  
+-  ```powershell
    ghdl -s -Wno-hide .\c4_ej7_Y_tb.vhdl
-   ````
+   ```
+   
    Este warning no sucede si a las entradas no las nombramos D,C,B,A en otro ejemplo se usa B3,B2,B1,B0 y no hubo ningún warning.
+
+----
 
 ## Descripciones generadas por Digital:
 
 ###  Descripción ``c4_ej7.vhdl`` generada del circuito de la expresión ``Z=!( (B+C). !( (A.B)+C ) )``:
-- ````bash
+- ```vhdl
   -- generated by Digital. Don't modify this file!
   -- Any changes will be lost if this file is regenerated.
   
@@ -633,10 +668,11 @@ Aparecerán 2 iconos de sistemas.
   begin
     Y <= NOT (NOT ((A AND B) OR C) AND (B OR C));
   end Behavioral;
-  ````
+  ```
 
 ### Testbench ``c4_ej7_Y.vhdl``:
-- ````bash
+
+- ```vhdl
   --  A testbench for c4_ej7_Y_tb
   LIBRARY ieee;
   USE ieee.std_logic_1164.all;
@@ -703,26 +739,35 @@ Aparecerán 2 iconos de sistemas.
       wait;
     end process;
   end behav;
-  ````
+  ```
+
+----
+
 ### Captura el único caso donde ``Z = 0``:  
 <p style="background-color: white; display: inline-block; padding: 10px;">
   <img src="/ejemplo/c4_ej7.svg" alt="Simulación">
 </p>
+
+----
 
 # Video Crear VHDL y Testbench:
 <p>Click en imagen para abrir video en Youtube</p>
 
 [<img src="https://img.youtube.com/vi/odJ0-ChNOQc/maxresdefault.jpg" width="600" height="300"/>](https://www.youtube.com/embed/odJ0-ChNOQc?si=Oane7fiXmgdJasLQ)
 
+----
+----
 
 # Para la Raspberry Pi
+
 ## Script para ejecutar todos los pasos de instalación automaticamente:
 
-- ````bash
+- ```bash
   curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/raspberry.sh | bash
-  ````
+  ```
 
-#
+----
+----
 
 <br>
 <h1 align="center">Documentación</h1>
@@ -751,8 +796,17 @@ Aparecerán 2 iconos de sistemas.
 - [IEEE Standard VHDL Language Reference Manual PDF](https://edg.uchicago.edu/~tang/VHDLref.pdf)
 - [IEEE Standard VHDL Language Reference Manual Online Actual](https://ieeexplore.ieee.org/document/10287898)
 
+----
+----
+
 ### GTKWave:
 ![](/ejemplo/GeneradordeParidad_4Ent_vcd.png)
 
+----
+----
+
 ### Extra:
 - [Compuertas lógicas con Transistor NPN 2N2222](https://pibsas.github.io/Compuertas/)
+
+----
+----
