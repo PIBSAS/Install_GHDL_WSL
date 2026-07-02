@@ -8,7 +8,7 @@ echo "Crear carpeta para guardar GHDL"
 mkdir ghdl
 echo "Obtener GHDL"
 #wget https://github.com/ghdl/ghdl/releases/download/v4.1.0/ghdl-gha-ubuntu-22.04-gcc.tgz -P ghdl/
-wget "https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-gcc-5.1.1-ubuntu24.04-x86_64.tar.gz" -P ghdl/
+wget "https://github.com/ghdl/ghdl/releases/download/v6.0.0/ghdl-gcc-6.0.0-ubuntu24.04-x86_64.tar.gz" -P ghdl/
 echo "Entrar al directorio y descomprimir GHDL"
 cd ghdl
 #tar -xzvf ghdl*.tgz
