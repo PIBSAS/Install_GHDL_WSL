@@ -12,6 +12,36 @@
   ```
 
 ---
+---
+
+<div align="center">
+  <h1>Instalación automatizada</h1>
+
+Una vez iniciado WSL Ubuntu, actualizamos repo y dependencia para poder llamar al script de bash:
+
+<pre><code language="bash">
+sudo apt update && sudo apt install -y curl
+</code></pre>
+
+Mediante curl obtenemos el script y lo ejecutamos con bash:
+<pre><code language="bash">
+curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/ubuntu.sh | bash
+</code></pre>
+
+Recargamos la terminal, para que las variables de entorno agregadas tengan efecto:
+<pre><code language="bash">
+source .bashrc
+</code></pre>
+
+<strong>Listo</strong>
+</div>
+
+---
+---
+
+<div align="center">
+<h1>Instalación manual</h1>
+</div>
 
 ### Actualizamos e instalamos dependencias:
 
@@ -60,25 +90,8 @@
   source .bashrc
   ````
 
-#
+----
 
-<br>
-
-## Script para ejecutar todos los pasos de instalación automaticamente:
-
-- ````bash
-  sudo apt update && sudo apt install -y curl
-  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/ubuntu.sh | bash
-  source .bashrc
-  ````
-### En PC con Ubuntu solo:
-
-- ````bash
-  curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/ubuntu_24_04.sh | bash
-  source .bashrc
-  ````
-
-#
 <br>
 <h1 align="center">Desinstalar todo</h1>
 
@@ -86,7 +99,8 @@
   wsl --unregister Ubuntu
   ````
  
- #
+ ----
+ ----
  
 <br>
 <h1 align="center">Instalar GHDL en Debian con WSL o Linux</h1>
@@ -96,13 +110,42 @@
 <image src ="https://github.com/ghdl/ghdl/blob/master/logo/banner.png?raw=true"/>
 </p>
 
-#
+----
 
 ### Trixie:
 #
 - ````bash
   wsl --install Debian
   ````
+
+----
+----
+
+<div align="center">
+  <h1>Instalación automatizada</h1>
+
+Una vez iniciado WSL Debian, actualizamos repo y dependencia para poder llamar al script de bash:
+
+<pre><code language="bash">
+sudo apt update && sudo apt install -y curl
+</code></pre>
+
+Mediante curl obtenemos el script y lo ejecutamos con bash:
+<pre><code language="bash">
+curl -sSL https://raw.githubusercontent.com/PIBSAS/Install_GHDL_WSL/main/debian.sh | bash
+</code></pre>
+
+Recargamos la terminal, para que las variables de entorno agregadas tengan efecto:
+<pre><code language="bash">
+source .bashrc
+</code></pre>
+
+<strong>Listo</strong>
+</div>
+
+
+----
+----
 
 ## Actualizamos e instalamos dependencias:
   #### Trixie:
@@ -112,25 +155,15 @@
     sudo apt install -y wget zlib1g-dev gnat-13 unzip openjdk-25-jdk gtkwave build-essential
     ````
 
-O directamente desde el repo de winget:
-
-- ````bash
-  winget install Debian.Debian
-  ````
-
-Lo lanzamos con:
-
-- ````bash
-  debian
-  ````
-
 Creamos usuario y contraseña.
-#
+
+----
+
 ## Obtenemos GHDL:
 
 - ````bash
   mkdir ghdl
-  wget "https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-gcc-5.1.1-ubuntu24.04-x86_64.tar.gz" -P ghdl/
+  wget "https://github.com/ghdl/ghdl/releases/download/v6.0.0/ghdl-gcc-6.0.0-ubuntu24.04-x86_64.tar.gz" -P ghdl/
   cd ghdl
   tar -xzvf ghdl*.gz --strip-components=1
   rm g*.gz
@@ -143,7 +176,9 @@ Creamos usuario y contraseña.
   echo 'export PATH="$HOME/ghdl/bin:$PATH"' >> $HOME/.bashrc
   source .bashrc
   ````
-#
+
+----
+
 ### Obtenemos Digital un fork de LogiSim:
 
 - ````bash
@@ -161,7 +196,9 @@ Creamos usuario y contraseña.
   echo 'alias digital=Digital.sh' >> $HOME/.bashrc
   source .bashrc
   ````
-#
+
+----
+----
 
 <br>
 
