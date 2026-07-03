@@ -4,7 +4,7 @@ Write-Host "Cambiar al directorio de descargas"
 cd $HOME\Downloads\
 
 Write-Host "Descargar y extraer GHDL"
-wget "https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-mcode-5.1.1-ucrt64.zip" -OutFile ghdl-UCRT64.zip
+wget "https://github.com/ghdl/ghdl/releases/download/v6.0.0/ghdl-mcode-6.0.0-ucrt64.zip" -OutFile ghdl-UCRT64.zip
 Expand-Archive ghdl*.zip -DestinationPath C:\ghdl
 Remove-Item ghdl-UCRT64.zip
 cd ..
@@ -27,5 +27,3 @@ cd ..
 Write-Host "Instalar Java 8 y Notepad++ usando winget"
 winget install "Java 8" --accept-package-agreements --silent
 winget install "notepad++" --accept-package-agreements --silent
-
-
